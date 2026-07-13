@@ -1,0 +1,1 @@
+When working with a python application, I prefer to use UV for package and environment management.
