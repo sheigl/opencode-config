@@ -1,6 +1,8 @@
 ---
+name: implement-ornith
 mode: all
-description: "Implement agent for this project — implements features, writes
+model: litellm/ornith-1.0:35b
+description: "Implement agent (ornith-1.0:35b) — implements features, writes
   production code, fixes bugs. Use when: implementing a feature, writing code,
   fixing bugs, refactoring, coding tasks assigned by orchestrator."
 temperature: 0.1
