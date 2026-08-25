@@ -23,21 +23,112 @@
       "name": "litellm",
       "npm": "@ai-sdk/openai-compatible",
       "models": {        
-        "qwen3.6:27b": {
-          "name": "qwen3.6:27b",
+        "qwen3.8:27b": {
+          "name": "qwen3.8:27b",
           "tool_call": true,
+          "reasoning": true,
           "limit": {
-            "context": 65536,
-            "input": 65536,
-            "output": 8192
+            "context": 131072,
+            "input": 98304,
+            "output": 32768
+          },
+          "options": {
+            "reasoningEffort": "medium"
+          },
+          "variants": {
+            "low": {
+              "reasoningEffort": "low"
+            },
+            "medium": {
+              "reasoningEffort": "medium"
+            },
+            "xhigh": {
+              "reasoningEffort": "xhigh"
+            }
           }
         },
-        "ornith-1.0:35b": {
-          "name": "ornith-1.0:35b",
+        "qwen3.8-27b:q6": {
+          "name": "qwen3.8-27b:q6",
+          "tool_call": true,
+          "reasoning": true,
+          "limit": {
+            "context": 131072,
+            "input": 122880,
+            "output": 8192
+          },
+          "options": {
+            "reasoningEffort": "medium"
+          },
+          "variants": {
+            "low": {
+              "reasoningEffort": "low"
+            },
+            "medium": {
+              "reasoningEffort": "medium"
+            },
+            "xhigh": {
+              "reasoningEffort": "xhigh"
+            }
+          }
+        },
+        "qwen3.8-27b:q6-large": {
+          "name": "qwen3.8-27b:q6-large",
+          "tool_call": true,
+          "reasoning": true,
+          "limit": {
+            "context": 262144,
+            "input": 245760,
+            "output": 16384
+          },
+          "options": {
+            "reasoningEffort": "medium"
+          },
+          "variants": {
+            "low": {
+              "reasoningEffort": "low"
+            },
+            "medium": {
+              "reasoningEffort": "medium"
+            },
+            "xhigh": {
+              "reasoningEffort": "xhigh"
+            }
+          }
+        },
+        "qwen3.8-27b:q4": {
+          "name": "qwen3.8-27b:q4",
+          "tool_call": true,
+          "reasoning": true,
+          "limit": {
+            "context": 131072,
+            "input": 122880,
+            "output": 8192
+          },
+          "options": {
+            "reasoningEffort": "medium"
+          },
+          "variants": {
+            "low": {
+              "reasoningEffort": "low"
+            },
+            "medium": {
+              "reasoningEffort": "medium"
+            },
+            "xhigh": {
+              "reasoningEffort": "xhigh"
+            }
+          }
+        },
+        "ornith1.5:35b-a3b": {
+          "name": "ornith1.5:35b-a3b",
+          "tool_call": true
+        },
+        "kat-coder": {
+          "name": "kat-coder",
           "tool_call": true,
           "limit": {
-            "context": 65536,
-            "input": 57344,
+            "context": 262144,
+            "input": 253952,
             "output": 8192
           }
         },
@@ -72,9 +163,36 @@
             "output": 8192
           }
         },
+        "gemma4:31b": {
+          "name": "gemma4:31b",
+          "tool_call": true,
+          "limit": {
+            "context": 131072,
+            "input": 122880,
+            "output": 8192
+          }
+        },
+        "muse:30b": {
+          "name": "muse:30b",
+          "tool_call": true,
+          "limit": {
+            "context": 131072,
+            "input": 122880,
+            "output": 8192
+          }
+        },
         "gemma4:12b": {
           "name": "gemma4:12b",
           "tool_call": true
+        },
+        "grug:27b": {
+          "name": "grug:27b",
+          "tool_call": true,
+          "limit": {
+            "context": 65536,
+            "input": 65536,
+            "output": 8192
+          }
         }
       },
       "options": {
