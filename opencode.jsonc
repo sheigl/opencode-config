@@ -140,6 +140,24 @@
             "output": 8192
           }
         },
+        "tiel:35b-a3b": {
+          "name": "tiel:35b-a3b",
+          "tool_call": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 131072,
+            "input": 122880,
+            "output": 8192
+          }
+        },
         "kat-coder": {
           "name": "kat-coder",
           "tool_call": true,
