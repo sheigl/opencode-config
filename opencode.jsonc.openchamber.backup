@@ -4,18 +4,15 @@
     "uv_python.md"
   ],
   "plugin": [
-    [
-      "opencode-auto-resume",
-      {
-        "chunkTimeoutMs": 45000,
-        "gracePeriosMs": 3000,
-        "maxRetries": 3
-      }
-    ]
+    [ "opencode-auto-resume", {
+      "chunkTimeoutMs": 45000,
+      "gracePeriosMs": 3000,
+      "maxRetries": 3
+    } ]
   ],
   "mcp": {
     "open-webui": {
-      "enabled": false,
+      "enabled": true,
       "type": "remote",
       "url": "http://server.tailc63ae8.ts.net:4042/mcp"
     }
@@ -25,7 +22,7 @@
     "litellm": {
       "name": "litellm",
       "npm": "@ai-sdk/openai-compatible",
-      "models": {
+      "models": {        
         "qwen3.8:27b": {
           "name": "qwen3.8:27b",
           "tool_call": true,
