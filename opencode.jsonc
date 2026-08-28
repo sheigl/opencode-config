@@ -30,6 +30,15 @@
           "name": "qwen3.8:27b",
           "tool_call": true,
           "reasoning": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
           "limit": {
             "context": 131072,
             "input": 98304,
