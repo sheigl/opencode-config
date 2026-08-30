@@ -123,8 +123,8 @@
             ]
           },
           "limit": {
-            "context": 65536,
-            "input": 57344,
+            "context": 131072,
+            "input": 122880,
             "output": 8192
           }
         },
