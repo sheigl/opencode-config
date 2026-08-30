@@ -59,65 +59,26 @@
             }
           }
         },
-        "qwen3.8-27b:q6": {
-          "name": "qwen3.8-27b:q6",
-          "tool_call": true,
-          "reasoning": true,
-          "limit": {
-            "context": 131072,
-            "input": 122880,
-            "output": 8192
-          },
-          "options": {
-            "reasoningEffort": "medium"
-          },
-          "variants": {
-            "low": {
-              "reasoningEffort": "low"
-            },
-            "medium": {
-              "reasoningEffort": "medium"
-            },
-            "xhigh": {
-              "reasoningEffort": "xhigh"
-            }
-          }
-        },
-        "qwen3.8-27b:q6-large": {
-          "name": "qwen3.8-27b:q6-large",
-          "tool_call": true,
-          "reasoning": true,
-          "limit": {
-            "context": 262144,
-            "input": 245760,
-            "output": 16384
-          },
-          "options": {
-            "reasoningEffort": "medium"
-          },
-          "variants": {
-            "low": {
-              "reasoningEffort": "low"
-            },
-            "medium": {
-              "reasoningEffort": "medium"
-            },
-            "xhigh": {
-              "reasoningEffort": "xhigh"
-            }
-          }
-        },
         "qwen3.8-27b:q4": {
           "name": "qwen3.8-27b:q4",
           "tool_call": true,
           "reasoning": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
           "limit": {
-            "context": 131072,
-            "input": 122880,
+            "context": 65536,
+            "input": 57344,
             "output": 8192
           },
           "options": {
-            "reasoningEffort": "medium"
+            "reasoningEffort": "xhigh"
           },
           "variants": {
             "low": {
