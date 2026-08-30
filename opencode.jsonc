@@ -40,9 +40,9 @@
             ]
           },
           "limit": {
-            "context": 131072,
-            "input": 98304,
-            "output": 32768
+            "context": 196608,
+            "input": 180608,
+            "output": 16000
           },
           "options": {
             "reasoningEffort": "medium"
@@ -146,6 +146,24 @@
           "limit": {
             "context": 131072,
             "input": 122880,
+            "output": 8192
+          }
+        },
+        "ornith1.5:35b-a3b-small": {
+          "name": "ornith1.5:35b-a3b-small",
+          "tool_call": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 65536,
+            "input": 57344,
             "output": 8192
           }
         },
