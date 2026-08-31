@@ -128,6 +128,24 @@
             "output": 8192
           }
         },
+        "ornith1.5:9b": {
+          "name": "ornith1.5:9b",
+          "tool_call": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 32768,
+            "input": 24576,
+            "output": 8192
+          }
+        },
         "tiel:35b-a3b": {
           "name": "tiel:35b-a3b",
           "tool_call": true,
