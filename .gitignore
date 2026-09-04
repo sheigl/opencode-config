@@ -1,0 +1,14 @@
+# Ignore everything
+*
+
+# Unignore the agents directory
+!agents/
+!agents/**
+!opencode.jsonc
+
+# Unignore uv_python.md
+!uv_python.md
+
+# Unignore the model-generation script and its machines config
+!scripts/
+!scripts/**

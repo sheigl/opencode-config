@@ -1,0 +1,23 @@
+{
+  "llama_swap": {
+    "machines": {
+      "sheigl-ms-7a38.tailc63ae8.ts.net": {
+        "local": true,
+        "config": "/home/sheigl/.config/llama-swap/config.yaml"
+      },
+      "desktop-1cosh3m2.tailc63ae8.ts.net": {
+        "ssh": "desktop2.home",
+        "config": "~/.config/llama-swap/config.yaml"
+      },
+      "server.tailc63ae8.ts.net": {
+        "ssh": "server.local",
+        "config": "~/.config/llama-swap/config.yaml"
+      }
+    }
+  },
+  "defaults": {
+    "tool_call": true,
+    "max_output": null
+  },
+  "overrides": {}
+}
