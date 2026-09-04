@@ -301,13 +301,17 @@ def build_model_entry(model_id: str, meta: dict, caps: dict, defaults: dict) -> 
     entry["modalities"] = {"input": modalities_in, "output": ["text"]}
 
     context = caps.get("context")
-    output = caps.get("output")
     if context:
-        limit = {"context": int(context)}
-        if output:
-            limit["output"] = int(output)
-            limit["input"] = int(context) - int(output)
-        entry["limit"] = limit
+        # opencode's schema requires all three limit keys. llama.cpp gives no
+        # hard output cap, so reserve `max_output` from the context for
+        # generation (defaults.max_output in scripts/config.json).
+        output = caps.get("output") or int(defaults.get("max_output") or 8192)
+        output = min(output, int(context))
+        entry["limit"] = {
+            "context": int(context),
+            "input": max(int(context) - output, 1),
+            "output": output,
+        }
 
     if caps.get("reasoning") and caps.get("effort"):
         entry["options"] = {"reasoningEffort": "medium"}

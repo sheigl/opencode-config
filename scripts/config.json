@@ -17,7 +17,7 @@
   },
   "defaults": {
     "tool_call": true,
-    "max_output": null
+    "max_output": 8192
   },
   "overrides": {}
 }
