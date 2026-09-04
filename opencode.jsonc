@@ -14,6 +14,17 @@
     ]
   ],
   "mcp": {
+    "blender": {
+      "type": "local",
+      "command": [
+        "/home/sheigl/.local/bin/uvx",
+        "blender-mcp"
+      ],
+      "enabled": true,
+      "environment": {
+        "DISABLE_TELEMETRY": "true"
+      }
+    },
     "open-webui": {
       "enabled": false,
       "type": "remote",
@@ -73,9 +84,9 @@
             ]
           },
           "limit": {
-            "context": 65536,
-            "input": 57344,
-            "output": 8192
+            "context": 196608,
+            "input": 180608,
+            "output": 16000
           },
           "options": {
             "reasoningEffort": "xhigh"
@@ -216,6 +227,15 @@
         "muse:30b": {
           "name": "muse:30b",
           "tool_call": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
           "limit": {
             "context": 131072,
             "input": 122880,
