@@ -24,8 +24,8 @@
           },
           "limit": {
             "context": 32768,
-            "input": 24576,
-            "output": 8192
+            "input": 16768,
+            "output": 16000
           }
         },
         "big-pickle": {
@@ -53,8 +53,8 @@
           },
           "limit": {
             "context": 32768,
-            "input": 24576,
-            "output": 8192
+            "input": 16768,
+            "output": 16000
           }
         },
         "deepseek-v4-flash": {
@@ -70,8 +70,8 @@
           },
           "limit": {
             "context": 65536,
-            "input": 57344,
-            "output": 8192
+            "input": 49536,
+            "output": 16000
           }
         },
         "desktop2.ornith1.5:35b-a3b": {
@@ -89,8 +89,8 @@
           },
           "limit": {
             "context": 65536,
-            "input": 57344,
-            "output": 8192
+            "input": 49536,
+            "output": 16000
           }
         },
         "desktop2.ornith1.5:35b-a3b-small": {
@@ -108,8 +108,8 @@
           },
           "limit": {
             "context": 65536,
-            "input": 57344,
-            "output": 8192
+            "input": 49536,
+            "output": 16000
           }
         },
         "gemma4:12b": {
@@ -127,8 +127,8 @@
           },
           "limit": {
             "context": 32768,
-            "input": 24576,
-            "output": 8192
+            "input": 16768,
+            "output": 16000
           }
         },
         "gemma4:31b": {
@@ -146,8 +146,8 @@
           },
           "limit": {
             "context": 32768,
-            "input": 24576,
-            "output": 8192
+            "input": 16768,
+            "output": 16000
           }
         },
         "gemma4:31b-small": {
@@ -164,8 +164,8 @@
           },
           "limit": {
             "context": 16384,
-            "input": 8192,
-            "output": 8192
+            "input": 384,
+            "output": 16000
           }
         },
         "gemma4:e4b": {
@@ -221,8 +221,8 @@
           },
           "limit": {
             "context": 131072,
-            "input": 122880,
-            "output": 8192
+            "input": 115072,
+            "output": 16000
           }
         },
         "homeassistant": {
@@ -253,8 +253,8 @@
           },
           "limit": {
             "context": 131072,
-            "input": 122880,
-            "output": 8192
+            "input": 115072,
+            "output": 16000
           }
         },
         "lfm2.5-vl:3b": {
@@ -272,8 +272,8 @@
           },
           "limit": {
             "context": 65536,
-            "input": 57344,
-            "output": 8192
+            "input": 49536,
+            "output": 16000
           }
         },
         "muse:30b": {
@@ -291,8 +291,8 @@
           },
           "limit": {
             "context": 131072,
-            "input": 122880,
-            "output": 8192
+            "input": 115072,
+            "output": 16000
           }
         },
         "muse:30b-small": {
@@ -310,8 +310,8 @@
           },
           "limit": {
             "context": 32768,
-            "input": 24576,
-            "output": 8192
+            "input": 16768,
+            "output": 16000
           }
         },
         "ornith-1.0:9b": {
@@ -341,8 +341,8 @@
           },
           "limit": {
             "context": 262144,
-            "input": 253952,
-            "output": 8192
+            "input": 246144,
+            "output": 16000
           }
         },
         "ornith1.5:35b-a3b-small": {
@@ -360,8 +360,8 @@
           },
           "limit": {
             "context": 262144,
-            "input": 253952,
-            "output": 8192
+            "input": 246144,
+            "output": 16000
           }
         },
         "ornith1.5:9b": {
@@ -379,8 +379,8 @@
           },
           "limit": {
             "context": 32768,
-            "input": 24576,
-            "output": 8192
+            "input": 16768,
+            "output": 16000
           }
         },
         "qwen3.5:9b": {
@@ -396,8 +396,8 @@
           },
           "limit": {
             "context": 65536,
-            "input": 57344,
-            "output": 8192
+            "input": 49536,
+            "output": 16000
           }
         },
         "qwen3.5:9b-claude": {
@@ -413,8 +413,8 @@
           },
           "limit": {
             "context": 65536,
-            "input": 57344,
-            "output": 8192
+            "input": 49536,
+            "output": 16000
           }
         },
         "qwen3.6:35b-a3b": {
@@ -431,8 +431,8 @@
           },
           "limit": {
             "context": 32768,
-            "input": 24576,
-            "output": 8192
+            "input": 16768,
+            "output": 16000
           }
         },
         "qwen3.8-27b:q4": {
@@ -450,8 +450,8 @@
           },
           "limit": {
             "context": 65536,
-            "input": 57344,
-            "output": 8192
+            "input": 49536,
+            "output": 16000
           }
         },
         "qwen3.8-27b:q4_k_xl": {
@@ -504,9 +504,9 @@
             ]
           },
           "limit": {
-            "context": 131072,
-            "input": 122880,
-            "output": 8192
+            "context": 262144,
+            "input": 246144,
+            "output": 16000
           },
           "options": {
             "reasoningEffort": "medium"
@@ -572,8 +572,8 @@
           },
           "limit": {
             "context": 65536,
-            "input": 57344,
-            "output": 8192
+            "input": 49536,
+            "output": 16000
           }
         },
         "summarizer": {
@@ -589,8 +589,8 @@
           },
           "limit": {
             "context": 65536,
-            "input": 57344,
-            "output": 8192
+            "input": 49536,
+            "output": 16000
           }
         },
         "ternary-bonsai:27b": {
@@ -620,8 +620,8 @@
           },
           "limit": {
             "context": 131072,
-            "input": 122880,
-            "output": 8192
+            "input": 115072,
+            "output": 16000
           }
         }
       }
