@@ -449,18 +449,6 @@
             "output": 16000
           }
         },
-        "qwen3.8-27b:q4_k_xl": {
-          "name": "qwen3.8-27b:q4_k_xl",
-          "tool_call": true,
-          "modalities": {
-            "input": [
-              "text"
-            ],
-            "output": [
-              "text"
-            ]
-          }
-        },
         "qwen3.8-27b:q6": {
           "name": "qwen3.8-27b:q6",
           "tool_call": true,
@@ -542,18 +530,6 @@
             ]
           }
         },
-        "qwythos:9b-small": {
-          "name": "qwythos:9b-small",
-          "tool_call": true,
-          "modalities": {
-            "input": [
-              "text"
-            ],
-            "output": [
-              "text"
-            ]
-          }
-        },
         "smol-pickle": {
           "name": "smol-pickle",
           "tool_call": true,
@@ -614,8 +590,8 @@
             ]
           },
           "limit": {
-            "context": 131072,
-            "input": 115072,
+            "context": 262144,
+            "input": 246144,
             "output": 16000
           }
         }
@@ -643,7 +619,7 @@
         "/home/sheigl/.local/bin/uvx",
         "blender-mcp"
       ],
-      "enabled": true,
+      "enabled": false,
       "environment": {
         "DISABLE_TELEMETRY": "true"
       }
