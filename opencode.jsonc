@@ -74,6 +74,25 @@
             "output": 16000
           }
         },
+        "desktop2.muse:30b": {
+          "name": "desktop2.muse:30b",
+          "tool_call": true,
+          "reasoning": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 65536,
+            "input": 49536,
+            "output": 16000
+          }
+        },
         "desktop2.ornith1.5:35b-a3b": {
           "name": "desktop2.ornith1.5:35b-a3b",
           "tool_call": true,
@@ -96,6 +115,18 @@
         "desktop2.ornith1.5:35b-a3b-small": {
           "name": "desktop2.ornith1.5:35b-a3b-small",
           "tool_call": true,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "gemma4:12b": {
+          "name": "gemma4:12b",
+          "tool_call": true,
           "reasoning": true,
           "modalities": {
             "input": [
@@ -107,21 +138,9 @@
             ]
           },
           "limit": {
-            "context": 65536,
-            "input": 49536,
+            "context": 32768,
+            "input": 16768,
             "output": 16000
-          }
-        },
-        "gemma4:12b": {
-          "name": "gemma4:12b",
-          "tool_call": true,
-          "modalities": {
-            "input": [
-              "text"
-            ],
-            "output": [
-              "text"
-            ]
           }
         },
         "gemma4:31b": {
@@ -268,25 +287,6 @@
           "limit": {
             "context": 131072,
             "input": 115072,
-            "output": 16000
-          }
-        },
-        "muse:30b-small": {
-          "name": "muse:30b-small",
-          "tool_call": true,
-          "reasoning": true,
-          "modalities": {
-            "input": [
-              "text",
-              "image"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "limit": {
-            "context": 32768,
-            "input": 16768,
             "output": 16000
           }
         },
