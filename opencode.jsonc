@@ -316,8 +316,8 @@
             ]
           },
           "limit": {
-            "context": 262144,
-            "input": 246144,
+            "context": 131072,
+            "input": 115072,
             "output": 16000
           }
         },
@@ -335,8 +335,8 @@
             ]
           },
           "limit": {
-            "context": 262144,
-            "input": 246144,
+            "context": 131072,
+            "input": 115072,
             "output": 16000
           }
         },
@@ -425,8 +425,8 @@
             ]
           },
           "limit": {
-            "context": 32768,
-            "input": 16768,
+            "context": 16384,
+            "input": 384,
             "output": 16000
           }
         },
@@ -590,8 +590,8 @@
             ]
           },
           "limit": {
-            "context": 262144,
-            "input": 246144,
+            "context": 131072,
+            "input": 115072,
             "output": 16000
           }
         }
