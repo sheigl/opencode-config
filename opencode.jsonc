@@ -12,54 +12,19 @@
         "assistant": {
           "name": "assistant",
           "tool_call": true,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "desktop.gemma4:12b": {
+          "name": "desktop.gemma4:12b",
+          "tool_call": true,
           "reasoning": true,
-          "modalities": {
-            "input": [
-              "text",
-              "image"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "limit": {
-            "context": 32768,
-            "input": 16768,
-            "output": 16000
-          }
-        },
-        "big-pickle": {
-          "name": "big-pickle",
-          "tool_call": true,
-          "modalities": {
-            "input": [
-              "text"
-            ],
-            "output": [
-              "text"
-            ]
-          }
-        },
-        "bonsai-27b-q1": {
-          "name": "bonsai-27b-q1",
-          "tool_call": true,
-          "modalities": {
-            "input": [
-              "text"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "limit": {
-            "context": 32768,
-            "input": 16768,
-            "output": 16000
-          }
-        },
-        "deepseek-v4-flash": {
-          "name": "deepseek-v4-flash",
-          "tool_call": true,
           "modalities": {
             "input": [
               "text"
@@ -74,10 +39,10 @@
             "output": 16000
           }
         },
-        "desktop2.muse:30b": {
-          "name": "desktop2.muse:30b",
+        "desktop.gemma4:12b-no-reasoning": {
+          "name": "desktop.gemma4:12b-no-reasoning",
           "tool_call": true,
-          "reasoning": true,
+          "reasoning": false,
           "modalities": {
             "input": [
               "text",
@@ -93,39 +58,8 @@
             "output": 16000
           }
         },
-        "desktop2.ornith1.5:35b-a3b": {
-          "name": "desktop2.ornith1.5:35b-a3b",
-          "tool_call": true,
-          "reasoning": true,
-          "modalities": {
-            "input": [
-              "text",
-              "image"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "limit": {
-            "context": 65536,
-            "input": 49536,
-            "output": 16000
-          }
-        },
-        "desktop2.ornith1.5:35b-a3b-small": {
-          "name": "desktop2.ornith1.5:35b-a3b-small",
-          "tool_call": true,
-          "modalities": {
-            "input": [
-              "text"
-            ],
-            "output": [
-              "text"
-            ]
-          }
-        },
-        "gemma4:12b": {
-          "name": "gemma4:12b",
+        "desktop.gemma4:26b-a4b": {
+          "name": "desktop.gemma4:26b-a4b",
           "tool_call": true,
           "reasoning": true,
           "modalities": {
@@ -143,8 +77,8 @@
             "output": 16000
           }
         },
-        "gemma4:31b": {
-          "name": "gemma4:31b",
+        "desktop.gemma4:31b": {
+          "name": "desktop.gemma4:31b",
           "tool_call": true,
           "reasoning": true,
           "modalities": {
@@ -162,9 +96,48 @@
             "output": 16000
           }
         },
-        "gemma4:31b-small": {
-          "name": "gemma4:31b-small",
+        "desktop.gemma4:e4b": {
+          "name": "desktop.gemma4:e4b",
           "tool_call": true,
+          "reasoning": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 65536,
+            "input": 49536,
+            "output": 16000
+          }
+        },
+        "desktop.gemma4:e4b-no-reasoning": {
+          "name": "desktop.gemma4:e4b-no-reasoning",
+          "tool_call": true,
+          "reasoning": false,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 65536,
+            "input": 49536,
+            "output": 16000
+          }
+        },
+        "desktop.ibm-granite4.1:3b": {
+          "name": "desktop.ibm-granite4.1:3b",
+          "tool_call": true,
+          "reasoning": true,
           "modalities": {
             "input": [
               "text"
@@ -172,11 +145,17 @@
             "output": [
               "text"
             ]
+          },
+          "limit": {
+            "context": 65538,
+            "input": 49538,
+            "output": 16000
           }
         },
-        "gemma4:e4b": {
-          "name": "gemma4:e4b",
+        "desktop.kat-coder": {
+          "name": "desktop.kat-coder",
           "tool_call": true,
+          "reasoning": true,
           "modalities": {
             "input": [
               "text"
@@ -184,34 +163,15 @@
             "output": [
               "text"
             ]
+          },
+          "limit": {
+            "context": 131072,
+            "input": 115072,
+            "output": 16000
           }
         },
-        "glm-5.1": {
-          "name": "glm-5.1",
-          "tool_call": true,
-          "modalities": {
-            "input": [
-              "text"
-            ],
-            "output": [
-              "text"
-            ]
-          }
-        },
-        "glm-5.2": {
-          "name": "glm-5.2",
-          "tool_call": true,
-          "modalities": {
-            "input": [
-              "text"
-            ],
-            "output": [
-              "text"
-            ]
-          }
-        },
-        "grug:27b": {
-          "name": "grug:27b",
+        "desktop.muse:30b": {
+          "name": "desktop.muse:30b",
           "tool_call": true,
           "reasoning": true,
           "modalities": {
@@ -229,50 +189,8 @@
             "output": 16000
           }
         },
-        "homeassistant": {
-          "name": "homeassistant",
-          "tool_call": true,
-          "modalities": {
-            "input": [
-              "text"
-            ],
-            "output": [
-              "text"
-            ]
-          }
-        },
-        "kat-coder": {
-          "name": "kat-coder",
-          "tool_call": true,
-          "reasoning": true,
-          "modalities": {
-            "input": [
-              "text"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "limit": {
-            "context": 131072,
-            "input": 115072,
-            "output": 16000
-          }
-        },
-        "lfm2.5-vl:3b": {
-          "name": "lfm2.5-vl:3b",
-          "tool_call": true,
-          "modalities": {
-            "input": [
-              "text"
-            ],
-            "output": [
-              "text"
-            ]
-          }
-        },
-        "muse:30b": {
-          "name": "muse:30b",
+        "desktop.ornith1.5:35b-a3b": {
+          "name": "desktop.ornith1.5:35b-a3b",
           "tool_call": true,
           "reasoning": true,
           "modalities": {
@@ -290,20 +208,8 @@
             "output": 16000
           }
         },
-        "ornith-1.0:9b": {
-          "name": "ornith-1.0:9b",
-          "tool_call": true,
-          "modalities": {
-            "input": [
-              "text"
-            ],
-            "output": [
-              "text"
-            ]
-          }
-        },
-        "ornith1.5:35b-a3b": {
-          "name": "ornith1.5:35b-a3b",
+        "desktop.ornith1.5:35b-a3b-full": {
+          "name": "desktop.ornith1.5:35b-a3b-full",
           "tool_call": true,
           "reasoning": true,
           "modalities": {
@@ -321,8 +227,8 @@
             "output": 16000
           }
         },
-        "ornith1.5:35b-a3b-small": {
-          "name": "ornith1.5:35b-a3b-small",
+        "desktop.ornith1.5:35b-a3b-small": {
+          "name": "desktop.ornith1.5:35b-a3b-small",
           "tool_call": true,
           "reasoning": true,
           "modalities": {
@@ -340,8 +246,83 @@
             "output": 16000
           }
         },
-        "ornith1.5:9b": {
-          "name": "ornith1.5:9b",
+        "desktop.ornith1.5:35b-a3b-small-24gb": {
+          "name": "desktop.ornith1.5:35b-a3b-small-24gb",
+          "tool_call": true,
+          "reasoning": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 131072,
+            "input": 115072,
+            "output": 16000
+          }
+        },
+        "desktop.phi3.5:mini": {
+          "name": "desktop.phi3.5:mini",
+          "tool_call": true,
+          "reasoning": true,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 65538,
+            "input": 49538,
+            "output": 16000
+          }
+        },
+        "desktop.qwen3.5:9b": {
+          "name": "desktop.qwen3.5:9b",
+          "tool_call": true,
+          "reasoning": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 65536,
+            "input": 49536,
+            "output": 16000
+          }
+        },
+        "desktop.qwen3.5:9b-no-reasoning": {
+          "name": "desktop.qwen3.5:9b-no-reasoning",
+          "tool_call": true,
+          "reasoning": false,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 65536,
+            "input": 49536,
+            "output": 16000
+          }
+        },
+        "desktop.qwen3.6:35b-a3b": {
+          "name": "desktop.qwen3.6:35b-a3b",
           "tool_call": true,
           "reasoning": true,
           "modalities": {
@@ -359,10 +340,10 @@
             "output": 16000
           }
         },
-        "pooled": {
-          "name": "pooled",
+        "desktop.qwen3.6:35b-a3b-multimodal-no-reasoning": {
+          "name": "desktop.qwen3.6:35b-a3b-multimodal-no-reasoning",
           "tool_call": true,
-          "reasoning": true,
+          "reasoning": false,
           "modalities": {
             "input": [
               "text",
@@ -373,14 +354,15 @@
             ]
           },
           "limit": {
-            "context": 98304,
-            "input": 82304,
+            "context": 32768,
+            "input": 16768,
             "output": 16000
           }
         },
-        "qwen3.5:9b": {
-          "name": "qwen3.5:9b",
+        "desktop.qwen3.6:35b-a3b-no-reasoning": {
+          "name": "desktop.qwen3.6:35b-a3b-no-reasoning",
           "tool_call": true,
+          "reasoning": false,
           "modalities": {
             "input": [
               "text"
@@ -390,30 +372,13 @@
             ]
           },
           "limit": {
-            "context": 65536,
-            "input": 49536,
+            "context": 81920,
+            "input": 65920,
             "output": 16000
           }
         },
-        "qwen3.5:9b-claude": {
-          "name": "qwen3.5:9b-claude",
-          "tool_call": true,
-          "modalities": {
-            "input": [
-              "text"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "limit": {
-            "context": 65536,
-            "input": 49536,
-            "output": 16000
-          }
-        },
-        "qwen3.6:35b-a3b": {
-          "name": "qwen3.6:35b-a3b",
+        "desktop.qwen3.6:35b-a3b-small": {
+          "name": "desktop.qwen3.6:35b-a3b-small",
           "tool_call": true,
           "reasoning": true,
           "modalities": {
@@ -430,8 +395,44 @@
             "output": 16000
           }
         },
-        "qwen3.8-27b:q4": {
-          "name": "qwen3.8-27b:q4",
+        "desktop.qwen3.6:35b-a3b-small-context": {
+          "name": "desktop.qwen3.6:35b-a3b-small-context",
+          "tool_call": true,
+          "reasoning": true,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 8192,
+            "input": 1,
+            "output": 8192
+          }
+        },
+        "desktop.qwen3.6:35b-a3b-unsensored": {
+          "name": "desktop.qwen3.6:35b-a3b-unsensored",
+          "tool_call": true,
+          "reasoning": true,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 32768,
+            "input": 16768,
+            "output": 16000
+          }
+        },
+        "desktop.qwen3.8-27b:q4": {
+          "name": "desktop.qwen3.8-27b:q4",
           "tool_call": true,
           "reasoning": true,
           "modalities": {
@@ -449,8 +450,8 @@
             "output": 16000
           }
         },
-        "qwen3.8-27b:q6": {
-          "name": "qwen3.8-27b:q6",
+        "desktop.qwen3.8:27b": {
+          "name": "desktop.qwen3.8:27b",
           "tool_call": true,
           "modalities": {
             "input": [
@@ -461,20 +462,8 @@
             ]
           }
         },
-        "qwen3.8-27b:q6-large": {
-          "name": "qwen3.8-27b:q6-large",
-          "tool_call": true,
-          "modalities": {
-            "input": [
-              "text"
-            ],
-            "output": [
-              "text"
-            ]
-          }
-        },
-        "qwen3.8:27b": {
-          "name": "qwen3.8:27b",
+        "desktop.qwen3.8:27b-b70": {
+          "name": "desktop.qwen3.8:27b-b70",
           "tool_call": true,
           "reasoning": true,
           "modalities": {
@@ -506,8 +495,41 @@
             }
           }
         },
-        "qwen3:14b": {
-          "name": "qwen3:14b",
+        "desktop.qwen3.8:27b-full": {
+          "name": "desktop.qwen3.8:27b-full",
+          "tool_call": true,
+          "reasoning": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 131072,
+            "input": 115072,
+            "output": 16000
+          },
+          "options": {
+            "reasoningEffort": "medium"
+          },
+          "variants": {
+            "low": {
+              "reasoningEffort": "low"
+            },
+            "medium": {
+              "reasoningEffort": "medium"
+            },
+            "xhigh": {
+              "reasoningEffort": "xhigh"
+            }
+          }
+        },
+        "desktop.qwen3.8:27b-vllm": {
+          "name": "desktop.qwen3.8:27b-vllm",
           "tool_call": true,
           "modalities": {
             "input": [
@@ -518,8 +540,8 @@
             ]
           }
         },
-        "qwythos:9b": {
-          "name": "qwythos:9b",
+        "desktop2.gemma4:12b": {
+          "name": "desktop2.gemma4:12b",
           "tool_call": true,
           "modalities": {
             "input": [
@@ -530,8 +552,225 @@
             ]
           }
         },
-        "smol-pickle": {
-          "name": "smol-pickle",
+        "desktop2.ibm-granite4.1:3b": {
+          "name": "desktop2.ibm-granite4.1:3b",
+          "tool_call": true,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "desktop2.muse:30b:IQ4_XS": {
+          "name": "desktop2.muse:30b:IQ4_XS",
+          "tool_call": true,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "desktop2.ornith1.5:35b-a3b:q4": {
+          "name": "desktop2.ornith1.5:35b-a3b:q4",
+          "tool_call": true,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "desktop2.qwen3-embedding-4b": {
+          "name": "desktop2.qwen3-embedding-4b",
+          "tool_call": true,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "desktop2.qwen3-reranking-4b": {
+          "name": "desktop2.qwen3-reranking-4b",
+          "tool_call": true,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "desktop2.qwen3.8-27b:q4": {
+          "name": "desktop2.qwen3.8-27b:q4",
+          "tool_call": true,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "pooled": {
+          "name": "pooled",
+          "tool_call": true,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "qwen3.8-27b:q4": {
+          "name": "qwen3.8-27b:q4",
+          "tool_call": true,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "server.bonsai-27b-q1": {
+          "name": "server.bonsai-27b-q1",
+          "tool_call": true,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 32768,
+            "input": 16768,
+            "output": 16000
+          }
+        },
+        "server.bonsai-27b-q2": {
+          "name": "server.bonsai-27b-q2",
+          "tool_call": true,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 32768,
+            "input": 16768,
+            "output": 16000
+          }
+        },
+        "server.gemma-4-E2B": {
+          "name": "server.gemma-4-E2B",
+          "tool_call": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 32768,
+            "input": 16768,
+            "output": 16000
+          }
+        },
+        "server.granite-4.1-3b": {
+          "name": "server.granite-4.1-3b",
+          "tool_call": true,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 32768,
+            "input": 16768,
+            "output": 16000
+          }
+        },
+        "server.qwen3-4b": {
+          "name": "server.qwen3-4b",
+          "tool_call": true,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 32768,
+            "input": 16768,
+            "output": 16000
+          }
+        },
+        "server.qwen3.5-4b": {
+          "name": "server.qwen3.5-4b",
+          "tool_call": true,
+          "reasoning": false,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 32768,
+            "input": 16768,
+            "output": 16000
+          }
+        },
+        "server.qwen3.5-9b": {
+          "name": "server.qwen3.5-9b",
+          "tool_call": true,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 65536,
+            "input": 49536,
+            "output": 16000
+          }
+        },
+        "server.qwen3.5-9b-claude": {
+          "name": "server.qwen3.5-9b-claude",
           "tool_call": true,
           "modalities": {
             "input": [
@@ -557,42 +796,6 @@
             "output": [
               "text"
             ]
-          },
-          "limit": {
-            "context": 65536,
-            "input": 49536,
-            "output": 16000
-          }
-        },
-        "ternary-bonsai:27b": {
-          "name": "ternary-bonsai:27b",
-          "tool_call": true,
-          "modalities": {
-            "input": [
-              "text"
-            ],
-            "output": [
-              "text"
-            ]
-          }
-        },
-        "tiel:35b-a3b": {
-          "name": "tiel:35b-a3b",
-          "tool_call": true,
-          "reasoning": true,
-          "modalities": {
-            "input": [
-              "text",
-              "image"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "limit": {
-            "context": 131072,
-            "input": 115072,
-            "output": 16000
           }
         }
       }
@@ -628,6 +831,19 @@
       "enabled": false,
       "type": "remote",
       "url": "http://server.tailc63ae8.ts.net:4042/mcp"
+    },
+    "browse-server": {
+      "type": "remote",
+      "url": "http://server.home:8111/mcp",
+      "enabled": true
+    },
+    "github": {
+      "type": "remote",
+      "url": "https://api.githubcopilot.com/mcp",
+      "headers": {
+        "Authorization": "Bearer ***REMOVED***"
+      },
+      "enabled": true
     }
   }
 }
