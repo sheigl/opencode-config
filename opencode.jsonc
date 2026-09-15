@@ -21,6 +21,24 @@
             ]
           }
         },
+        "desktop.K2-Horizon-MoVA-36B-A4B-B70": {
+          "name": "desktop.K2-Horizon-MoVA-36B-A4B-B70",
+          "tool_call": true,
+          "reasoning": true,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 131072,
+            "input": 115072,
+            "output": 16000
+          }
+        },
         "desktop.gemma4:12b": {
           "name": "desktop.gemma4:12b",
           "tool_call": true,
@@ -624,6 +642,48 @@
             ]
           }
         },
+        "github_copilot/gpt-5": {
+          "name": "github_copilot/gpt-5",
+          "tool_call": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 128000,
+            "input": 1,
+            "output": 128000
+          }
+        },
+        "gpt-5.6-luna": {
+          "name": "gpt-5.6-luna",
+          "tool_call": true,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "kimi-k3": {
+          "name": "kimi-k3",
+          "tool_call": true,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
         "pooled": {
           "name": "pooled",
           "tool_call": true,
@@ -819,13 +879,17 @@
     "blender": {
       "type": "local",
       "command": [
-        "/home/sheigl/.local/bin/uvx",
-        "blender-mcp"
+        "docker",
+        "exec",
+        "-i",
+        "-e",
+        "DISABLE_TELEMETRY=true",
+        "blender",
+        "/config/blender-mcp/venv/bin/python",
+        "-m",
+        "blender_mcp.server"
       ],
-      "enabled": false,
-      "environment": {
-        "DISABLE_TELEMETRY": "true"
-      }
+      "enabled": true
     },
     "open-webui": {
       "enabled": false,
