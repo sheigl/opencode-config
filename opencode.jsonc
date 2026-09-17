@@ -35,8 +35,8 @@
           },
           "limit": {
             "context": 131072,
-            "input": 115072,
-            "output": 16000
+            "input": 122880,
+            "output": 8192
           }
         },
         "desktop.gemma4:12b": {
@@ -53,8 +53,8 @@
           },
           "limit": {
             "context": 65536,
-            "input": 49536,
-            "output": 16000
+            "input": 57344,
+            "output": 8192
           }
         },
         "desktop.gemma4:12b-no-reasoning": {
@@ -72,8 +72,8 @@
           },
           "limit": {
             "context": 65536,
-            "input": 49536,
-            "output": 16000
+            "input": 57344,
+            "output": 8192
           }
         },
         "desktop.gemma4:26b-a4b": {
@@ -91,8 +91,8 @@
           },
           "limit": {
             "context": 32768,
-            "input": 16768,
-            "output": 16000
+            "input": 24576,
+            "output": 8192
           }
         },
         "desktop.gemma4:31b": {
@@ -110,8 +110,8 @@
           },
           "limit": {
             "context": 32768,
-            "input": 16768,
-            "output": 16000
+            "input": 24576,
+            "output": 8192
           }
         },
         "desktop.gemma4:e4b": {
@@ -128,9 +128,9 @@
             ]
           },
           "limit": {
-            "context": 65536,
-            "input": 49536,
-            "output": 16000
+            "context": 131072,
+            "input": 122880,
+            "output": 8192
           }
         },
         "desktop.gemma4:e4b-no-reasoning": {
@@ -147,9 +147,9 @@
             ]
           },
           "limit": {
-            "context": 65536,
-            "input": 49536,
-            "output": 16000
+            "context": 131072,
+            "input": 122880,
+            "output": 8192
           }
         },
         "desktop.ibm-granite4.1:3b": {
@@ -166,8 +166,8 @@
           },
           "limit": {
             "context": 65538,
-            "input": 49538,
-            "output": 16000
+            "input": 57346,
+            "output": 8192
           }
         },
         "desktop.kat-coder": {
@@ -184,8 +184,8 @@
           },
           "limit": {
             "context": 131072,
-            "input": 115072,
-            "output": 16000
+            "input": 122880,
+            "output": 8192
           }
         },
         "desktop.muse:30b": {
@@ -203,8 +203,8 @@
           },
           "limit": {
             "context": 131072,
-            "input": 115072,
-            "output": 16000
+            "input": 122880,
+            "output": 8192
           }
         },
         "desktop.ornith1.5:35b-a3b": {
@@ -222,8 +222,8 @@
           },
           "limit": {
             "context": 131072,
-            "input": 115072,
-            "output": 16000
+            "input": 122880,
+            "output": 8192
           }
         },
         "desktop.ornith1.5:35b-a3b-full": {
@@ -240,9 +240,9 @@
             ]
           },
           "limit": {
-            "context": 131072,
-            "input": 115072,
-            "output": 16000
+            "context": 262144,
+            "input": 253952,
+            "output": 8192
           }
         },
         "desktop.ornith1.5:35b-a3b-small": {
@@ -259,9 +259,9 @@
             ]
           },
           "limit": {
-            "context": 131072,
-            "input": 115072,
-            "output": 16000
+            "context": 262144,
+            "input": 253952,
+            "output": 8192
           }
         },
         "desktop.ornith1.5:35b-a3b-small-24gb": {
@@ -279,8 +279,8 @@
           },
           "limit": {
             "context": 131072,
-            "input": 115072,
-            "output": 16000
+            "input": 122880,
+            "output": 8192
           }
         },
         "desktop.phi3.5:mini": {
@@ -297,8 +297,8 @@
           },
           "limit": {
             "context": 65538,
-            "input": 49538,
-            "output": 16000
+            "input": 57346,
+            "output": 8192
           }
         },
         "desktop.qwen3.5:9b": {
@@ -315,9 +315,9 @@
             ]
           },
           "limit": {
-            "context": 65536,
-            "input": 49536,
-            "output": 16000
+            "context": 131072,
+            "input": 122880,
+            "output": 8192
           }
         },
         "desktop.qwen3.5:9b-no-reasoning": {
@@ -334,9 +334,9 @@
             ]
           },
           "limit": {
-            "context": 65536,
-            "input": 49536,
-            "output": 16000
+            "context": 131072,
+            "input": 122880,
+            "output": 8192
           }
         },
         "desktop.qwen3.6:35b-a3b": {
@@ -353,9 +353,9 @@
             ]
           },
           "limit": {
-            "context": 32768,
-            "input": 16768,
-            "output": 16000
+            "context": 65536,
+            "input": 57344,
+            "output": 8192
           }
         },
         "desktop.qwen3.6:35b-a3b-multimodal-no-reasoning": {
@@ -373,8 +373,8 @@
           },
           "limit": {
             "context": 32768,
-            "input": 16768,
-            "output": 16000
+            "input": 24576,
+            "output": 8192
           }
         },
         "desktop.qwen3.6:35b-a3b-no-reasoning": {
@@ -391,8 +391,8 @@
           },
           "limit": {
             "context": 81920,
-            "input": 65920,
-            "output": 16000
+            "input": 73728,
+            "output": 8192
           }
         },
         "desktop.qwen3.6:35b-a3b-small": {
@@ -409,8 +409,8 @@
           },
           "limit": {
             "context": 16384,
-            "input": 384,
-            "output": 16000
+            "input": 8192,
+            "output": 8192
           }
         },
         "desktop.qwen3.6:35b-a3b-small-context": {
@@ -445,8 +445,8 @@
           },
           "limit": {
             "context": 32768,
-            "input": 16768,
-            "output": 16000
+            "input": 24576,
+            "output": 8192
           }
         },
         "desktop.qwen3.8-27b:q4": {
@@ -464,8 +464,8 @@
           },
           "limit": {
             "context": 131072,
-            "input": 115072,
-            "output": 16000
+            "input": 122880,
+            "output": 8192
           }
         },
         "desktop.qwen3.8:27b": {
@@ -483,8 +483,8 @@
           },
           "limit": {
             "context": 196608,
-            "input": 180608,
-            "output": 16000
+            "input": 188416,
+            "output": 8192
           },
           "options": {
             "reasoningEffort": "medium"
@@ -516,8 +516,8 @@
           },
           "limit": {
             "context": 131072,
-            "input": 115072,
-            "output": 16000
+            "input": 122880,
+            "output": 8192
           },
           "options": {
             "reasoningEffort": "medium"
@@ -549,8 +549,8 @@
           },
           "limit": {
             "context": 196608,
-            "input": 180608,
-            "output": 16000
+            "input": 188416,
+            "output": 8192
           },
           "options": {
             "reasoningEffort": "medium"
@@ -742,8 +742,8 @@
           },
           "limit": {
             "context": 32768,
-            "input": 16768,
-            "output": 16000
+            "input": 24576,
+            "output": 8192
           }
         },
         "server.bonsai-27b-q2": {
@@ -759,8 +759,8 @@
           },
           "limit": {
             "context": 32768,
-            "input": 16768,
-            "output": 16000
+            "input": 24576,
+            "output": 8192
           }
         },
         "server.gemma-4-E2B": {
@@ -777,8 +777,8 @@
           },
           "limit": {
             "context": 32768,
-            "input": 16768,
-            "output": 16000
+            "input": 24576,
+            "output": 8192
           }
         },
         "server.granite-4.1-3b": {
@@ -794,8 +794,8 @@
           },
           "limit": {
             "context": 32768,
-            "input": 16768,
-            "output": 16000
+            "input": 24576,
+            "output": 8192
           }
         },
         "server.qwen3-4b": {
@@ -811,8 +811,8 @@
           },
           "limit": {
             "context": 32768,
-            "input": 16768,
-            "output": 16000
+            "input": 24576,
+            "output": 8192
           }
         },
         "server.qwen3.5-4b": {
@@ -829,8 +829,8 @@
           },
           "limit": {
             "context": 32768,
-            "input": 16768,
-            "output": 16000
+            "input": 24576,
+            "output": 8192
           }
         },
         "server.qwen3.5-9b": {
@@ -846,8 +846,8 @@
           },
           "limit": {
             "context": 65536,
-            "input": 49536,
-            "output": 16000
+            "input": 57344,
+            "output": 8192
           }
         },
         "server.qwen3.5-9b-claude": {
@@ -863,8 +863,8 @@
           },
           "limit": {
             "context": 65536,
-            "input": 49536,
-            "output": 16000
+            "input": 57344,
+            "output": 8192
           }
         },
         "summarizer": {
