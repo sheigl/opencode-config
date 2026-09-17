@@ -471,13 +471,34 @@
         "desktop.qwen3.8:27b": {
           "name": "desktop.qwen3.8:27b",
           "tool_call": true,
+          "reasoning": true,
           "modalities": {
             "input": [
-              "text"
+              "text",
+              "image"
             ],
             "output": [
               "text"
             ]
+          },
+          "limit": {
+            "context": 196608,
+            "input": 180608,
+            "output": 16000
+          },
+          "options": {
+            "reasoningEffort": "medium"
+          },
+          "variants": {
+            "low": {
+              "reasoningEffort": "low"
+            },
+            "medium": {
+              "reasoningEffort": "medium"
+            },
+            "xhigh": {
+              "reasoningEffort": "xhigh"
+            }
           }
         },
         "desktop.qwen3.8:27b-b70": {
@@ -527,8 +548,8 @@
             ]
           },
           "limit": {
-            "context": 131072,
-            "input": 115072,
+            "context": 196608,
+            "input": 180608,
             "output": 16000
           },
           "options": {
