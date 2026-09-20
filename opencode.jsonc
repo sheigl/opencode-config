@@ -463,8 +463,8 @@
             ]
           },
           "limit": {
-            "context": 131072,
-            "input": 122880,
+            "context": 98304,
+            "input": 90112,
             "output": 8192
           }
         },
@@ -515,8 +515,8 @@
             ]
           },
           "limit": {
-            "context": 131072,
-            "input": 122880,
+            "context": 196608,
+            "input": 188416,
             "output": 8192
           },
           "options": {
@@ -570,6 +570,7 @@
         "desktop.qwen3.8:27b-vllm": {
           "name": "desktop.qwen3.8:27b-vllm",
           "tool_call": true,
+          "reasoning": true,
           "modalities": {
             "input": [
               "text"
@@ -577,6 +578,11 @@
             "output": [
               "text"
             ]
+          },
+          "limit": {
+            "context": 131072,
+            "input": 122880,
+            "output": 8192
           }
         },
         "desktop2.gemma4:12b": {
@@ -589,6 +595,11 @@
             "output": [
               "text"
             ]
+          },
+          "limit": {
+            "context": 32768,
+            "input": 24576,
+            "output": 8192
           }
         },
         "desktop2.ibm-granite4.1:3b": {
@@ -601,6 +612,11 @@
             "output": [
               "text"
             ]
+          },
+          "limit": {
+            "context": 65536,
+            "input": 57344,
+            "output": 8192
           }
         },
         "desktop2.muse:30b:IQ4_XS": {
@@ -613,6 +629,11 @@
             "output": [
               "text"
             ]
+          },
+          "limit": {
+            "context": 32768,
+            "input": 24576,
+            "output": 8192
           }
         },
         "desktop2.ornith1.5:35b-a3b:q4": {
@@ -625,6 +646,11 @@
             "output": [
               "text"
             ]
+          },
+          "limit": {
+            "context": 65536,
+            "input": 57344,
+            "output": 8192
           }
         },
         "desktop2.qwen3-embedding-4b": {
@@ -637,6 +663,11 @@
             "output": [
               "text"
             ]
+          },
+          "limit": {
+            "context": 8192,
+            "input": 1,
+            "output": 8192
           }
         },
         "desktop2.qwen3-reranking-4b": {
@@ -649,6 +680,11 @@
             "output": [
               "text"
             ]
+          },
+          "limit": {
+            "context": 16384,
+            "input": 8192,
+            "output": 8192
           }
         },
         "desktop2.qwen3.8-27b:q4": {
@@ -661,6 +697,11 @@
             "output": [
               "text"
             ]
+          },
+          "limit": {
+            "context": 98304,
+            "input": 90112,
+            "output": 8192
           }
         },
         "github_copilot/gpt-5": {
