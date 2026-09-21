@@ -24,7 +24,6 @@
         "desktop.K2-Horizon-MoVA-36B-A4B-B70": {
           "name": "desktop.K2-Horizon-MoVA-36B-A4B-B70",
           "tool_call": true,
-          "reasoning": true,
           "modalities": {
             "input": [
               "text"
@@ -173,7 +172,6 @@
         "desktop.kat-coder": {
           "name": "desktop.kat-coder",
           "tool_call": true,
-          "reasoning": true,
           "modalities": {
             "input": [
               "text"
@@ -515,8 +513,8 @@
             ]
           },
           "limit": {
-            "context": 196608,
-            "input": 188416,
+            "context": 163840,
+            "input": 155648,
             "output": 8192
           },
           "options": {
