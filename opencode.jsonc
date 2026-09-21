@@ -646,8 +646,8 @@
             ]
           },
           "limit": {
-            "context": 65536,
-            "input": 57344,
+            "context": 131072,
+            "input": 122880,
             "output": 8192
           }
         },
@@ -687,6 +687,23 @@
         },
         "desktop2.qwen3.8-27b:q4": {
           "name": "desktop2.qwen3.8-27b:q4",
+          "tool_call": true,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 65536,
+            "input": 57344,
+            "output": 8192
+          }
+        },
+        "desktop2.qwen3.8-27b:q4-2": {
+          "name": "desktop2.qwen3.8-27b:q4-2",
           "tool_call": true,
           "modalities": {
             "input": [
