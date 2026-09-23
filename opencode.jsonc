@@ -359,11 +359,9 @@
         "desktop.qwen3.6:35b-a3b-multimodal-no-reasoning": {
           "name": "desktop.qwen3.6:35b-a3b-multimodal-no-reasoning",
           "tool_call": true,
-          "reasoning": false,
           "modalities": {
             "input": [
-              "text",
-              "image"
+              "text"
             ],
             "output": [
               "text"
@@ -378,7 +376,6 @@
         "desktop.qwen3.6:35b-a3b-no-reasoning": {
           "name": "desktop.qwen3.6:35b-a3b-no-reasoning",
           "tool_call": true,
-          "reasoning": false,
           "modalities": {
             "input": [
               "text"
@@ -399,22 +396,22 @@
           "reasoning": true,
           "modalities": {
             "input": [
-              "text"
+              "text",
+              "image"
             ],
             "output": [
               "text"
             ]
           },
           "limit": {
-            "context": 16384,
-            "input": 8192,
+            "context": 131072,
+            "input": 122880,
             "output": 8192
           }
         },
         "desktop.qwen3.6:35b-a3b-small-context": {
           "name": "desktop.qwen3.6:35b-a3b-small-context",
           "tool_call": true,
-          "reasoning": true,
           "modalities": {
             "input": [
               "text"
