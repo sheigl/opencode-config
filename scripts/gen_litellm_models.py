@@ -161,10 +161,12 @@ def parse_flags(cmd: str) -> dict:
 
     # llama.cpp takes the LAST context flag; macros may set one that the
     # model cmd overrides with -c/--ctx-size later in the string.
+    # vllm (bare or behind docker) uses --max-model-len instead of -c.
     ctx_patterns = [
         re.compile(r"(?:^|\s)--ctx-size\s+(\d+)"),
         re.compile(r"(?:^|\s)--context-size\s+(\d+)"),
         re.compile(r"(?:^|\s)-c\s+(\d+)"),
+        re.compile(r"(?:^|\s)--max-model-len\s+(\d+)"),
     ]
     ctx = None
     for pattern in ctx_patterns:
@@ -179,6 +181,16 @@ def parse_flags(cmd: str) -> dict:
     caps["embedding"] = bool(emb or rerank)
 
     caps["vision"] = "--mmproj" in cmd
+    # vllm speaks a different grammar than llama.cpp: --language-model-only
+    # is an explicit text-only toggle, while multimodal limit/token flags
+    # mark a vision-capable server.
+    if "--language-model-only" in cmd:
+        caps["vision"] = False
+    elif re.search(
+        r"(?:^|\s)(?:--limit-mm-per-prompt|--image-token-id|--image-input-type|--image-feature-size)\b",
+        cmd,
+    ):
+        caps["vision"] = True
 
     reasoning = None
     m = re.search(r"(?:^|\s)--reasoning\s+(\S+)", cmd)
@@ -186,6 +198,12 @@ def parse_flags(cmd: str) -> dict:
         reasoning = m.group(1).strip().lower() not in ("off", "0", "false", "no")
     if re.search(r"(?:^|\s)--no-reasoning\b", cmd):
         reasoning = False
+    # vllm enables reasoning-content parsing via --reasoning-parser <name>
+    m = re.search(r"(?:^|\s)--reasoning-parser\s+(\S+)", cmd)
+    if m:
+        parser = m.group(1).strip().lower()
+        if reasoning is None and parser not in ("none", "null", "off", "0", "false", "no"):
+            reasoning = True
     if reasoning is None and "--reasoning-preserve" in cmd:
         reasoning = True
     caps["reasoning"] = reasoning
@@ -266,7 +284,7 @@ def merge_caps(model_id: str, meta: dict, caps: dict | None, mach, overrides: di
     # litellm model_info as fallback when llama-swap gives nothing
     mi = meta.get("model_info") or {}
     if final.get("context") is None:
-        ctx = mi.get("max_input_tokens") or mi.get("max_tokens")
+        ctx = mi.get("max_input_tokens") or mi.get("max_tokens") or mi.get("context_window")
         if ctx:
             final["context"] = int(ctx)
     if "reasoning" not in final and mi.get("supports_reasoning") is not None:
