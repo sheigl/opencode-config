@@ -463,6 +463,39 @@
             "output": 8192
           }
         },
+        "desktop.qwen3.8-flash-next": {
+          "name": "desktop.qwen3.8-flash-next",
+          "tool_call": true,
+          "reasoning": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 131072,
+            "input": 122880,
+            "output": 8192
+          },
+          "options": {
+            "reasoningEffort": "medium"
+          },
+          "variants": {
+            "low": {
+              "reasoningEffort": "low"
+            },
+            "medium": {
+              "reasoningEffort": "medium"
+            },
+            "xhigh": {
+              "reasoningEffort": "xhigh"
+            }
+          }
+        },
         "desktop.qwen3.8:27b": {
           "name": "desktop.qwen3.8:27b",
           "tool_call": true,
