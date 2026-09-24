@@ -681,6 +681,40 @@
             "output": 16384
           }
         },
+        "desktop2.ornith1.5:9b": {
+          "name": "desktop2.ornith1.5:9b",
+          "tool_call": true,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 65536,
+            "input": 57344,
+            "output": 8192
+          }
+        },
+        "desktop2.ornith1.5:9b-uncensored": {
+          "name": "desktop2.ornith1.5:9b-uncensored",
+          "tool_call": true,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 65536,
+            "input": 57344,
+            "output": 8192
+          }
+        },
         "desktop2.qwen3-embedding-4b": {
           "name": "desktop2.qwen3-embedding-4b",
           "tool_call": true,
