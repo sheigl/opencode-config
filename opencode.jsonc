@@ -466,11 +466,9 @@
         "desktop.qwen3.8-flash-next": {
           "name": "desktop.qwen3.8-flash-next",
           "tool_call": true,
-          "reasoning": true,
           "modalities": {
             "input": [
-              "text",
-              "image"
+              "text"
             ],
             "output": [
               "text"
@@ -480,20 +478,6 @@
             "context": 131072,
             "input": 114688,
             "output": 16384
-          },
-          "options": {
-            "reasoningEffort": "medium"
-          },
-          "variants": {
-            "low": {
-              "reasoningEffort": "low"
-            },
-            "medium": {
-              "reasoningEffort": "medium"
-            },
-            "xhigh": {
-              "reasoningEffort": "xhigh"
-            }
           }
         },
         "desktop.qwen3.8:27b": {
@@ -611,6 +595,39 @@
             "context": 131072,
             "input": 114688,
             "output": 16384
+          }
+        },
+        "desktop.swift3.8-27b:q6_k_l": {
+          "name": "desktop.swift3.8-27b:q6_k_l",
+          "tool_call": true,
+          "reasoning": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 131072,
+            "input": 114688,
+            "output": 16384
+          },
+          "options": {
+            "reasoningEffort": "medium"
+          },
+          "variants": {
+            "low": {
+              "reasoningEffort": "low"
+            },
+            "medium": {
+              "reasoningEffort": "medium"
+            },
+            "xhigh": {
+              "reasoningEffort": "xhigh"
+            }
           }
         },
         "desktop2.gemma4:12b": {
