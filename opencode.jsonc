@@ -592,9 +592,9 @@
             ]
           },
           "limit": {
-            "context": 131072,
-            "input": 114688,
-            "output": 16384
+            "context": 114688,
+            "input": 100352,
+            "output": 14336
           }
         },
         "desktop.swift3.8-27b:q6_k_l": {
