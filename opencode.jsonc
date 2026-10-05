@@ -592,9 +592,9 @@
             ]
           },
           "limit": {
-            "context": 114688,
-            "input": 100352,
-            "output": 14336
+            "context": 131072,
+            "input": 114688,
+            "output": 16384
           }
         },
         "desktop.swift3.8-27b:q6_k_l": {
@@ -800,6 +800,18 @@
             "output": 12288
           }
         },
+        "desktop2.swift-qwen3.8-flash-next": {
+          "name": "desktop2.swift-qwen3.8-flash-next",
+          "tool_call": true,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
         "github_copilot/gpt-5": {
           "name": "github_copilot/gpt-5",
           "tool_call": true,
@@ -920,6 +932,23 @@
         },
         "server.granite-4.1-3b": {
           "name": "server.granite-4.1-3b",
+          "tool_call": true,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 32768,
+            "input": 28672,
+            "output": 4096
+          }
+        },
+        "server.muse:30b": {
+          "name": "server.muse:30b",
           "tool_call": true,
           "modalities": {
             "input": [
