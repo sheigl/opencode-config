@@ -814,8 +814,8 @@
           },
           "limit": {
             "context": 65536,
-            "input": 49152,
-            "output": 16384
+            "input": 32768,
+            "output": 32768
           }
         },
         "github_copilot/gpt-5": {
