@@ -932,6 +932,23 @@
             "output": 8192
           }
         },
+        "desktop2.k2-horizon-7b": {
+          "name": "desktop2.k2-horizon-7b",
+          "tool_call": true,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 65536,
+            "input": 57344,
+            "output": 8192
+          }
+        },
         "desktop2.muse:30b:IQ4_XS": {
           "name": "desktop2.muse:30b:IQ4_XS",
           "tool_call": true,
