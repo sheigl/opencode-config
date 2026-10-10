@@ -1451,6 +1451,24 @@
               "text"
             ]
           }
+        },
+        "swift1.5-qwen3.8-27b-vllm": {
+          "name": "swift1.5-qwen3.8-27b-vllm",
+          "tool_call": true,
+          "reasoning": true,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 131072,
+            "input": 122880,
+            "output": 8192
+          }
         }
       }
     }
