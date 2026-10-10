@@ -681,8 +681,8 @@
           },
           "limit": {
             "context": 65536,
-            "input": 57344,
-            "output": 8192
+            "input": 32768,
+            "output": 32768
           },
           "options": {
             "reasoningEffort": "medium"
@@ -945,8 +945,8 @@
           },
           "limit": {
             "context": 65536,
-            "input": 57344,
-            "output": 8192
+            "input": 32768,
+            "output": 32768
           }
         },
         "desktop2.muse:30b:IQ4_XS": {
@@ -1090,17 +1090,11 @@
           "tool_call": true,
           "modalities": {
             "input": [
-              "text",
-              "image"
+              "text"
             ],
             "output": [
               "text"
             ]
-          },
-          "limit": {
-            "context": 65536,
-            "input": 32768,
-            "output": 32768
           }
         },
         "github_copilot/gpt-5": {
