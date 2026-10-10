@@ -21,40 +21,6 @@
             ]
           }
         },
-        "desktop.K2-Horizon-MoVA-36B-A4B-B70": {
-          "name": "desktop.K2-Horizon-MoVA-36B-A4B-B70",
-          "tool_call": true,
-          "modalities": {
-            "input": [
-              "text"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "limit": {
-            "context": 131072,
-            "input": 122880,
-            "output": 8192
-          }
-        },
-        "desktop.arex:27b": {
-          "name": "desktop.arex:27b",
-          "tool_call": true,
-          "modalities": {
-            "input": [
-              "text"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "limit": {
-            "context": 163840,
-            "input": 155648,
-            "output": 8192
-          }
-        },
         "desktop.fara1.5:27b": {
           "name": "desktop.fara1.5:27b",
           "tool_call": true,
@@ -201,23 +167,6 @@
           "limit": {
             "context": 65538,
             "input": 57346,
-            "output": 8192
-          }
-        },
-        "desktop.kat-coder": {
-          "name": "desktop.kat-coder",
-          "tool_call": true,
-          "modalities": {
-            "input": [
-              "text"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "limit": {
-            "context": 131072,
-            "input": 122880,
             "output": 8192
           }
         },
@@ -426,40 +375,6 @@
             "output": 8192
           }
         },
-        "desktop.qwen3.6:35b-a3b-multimodal-no-reasoning": {
-          "name": "desktop.qwen3.6:35b-a3b-multimodal-no-reasoning",
-          "tool_call": true,
-          "modalities": {
-            "input": [
-              "text"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "limit": {
-            "context": 32768,
-            "input": 24576,
-            "output": 8192
-          }
-        },
-        "desktop.qwen3.6:35b-a3b-no-reasoning": {
-          "name": "desktop.qwen3.6:35b-a3b-no-reasoning",
-          "tool_call": true,
-          "modalities": {
-            "input": [
-              "text"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "limit": {
-            "context": 81920,
-            "input": 73728,
-            "output": 8192
-          }
-        },
         "desktop.qwen3.6:35b-a3b-small": {
           "name": "desktop.qwen3.6:35b-a3b-small",
           "tool_call": true,
@@ -479,40 +394,6 @@
             "output": 8192
           }
         },
-        "desktop.qwen3.6:35b-a3b-small-context": {
-          "name": "desktop.qwen3.6:35b-a3b-small-context",
-          "tool_call": true,
-          "modalities": {
-            "input": [
-              "text"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "limit": {
-            "context": 8192,
-            "input": 1,
-            "output": 8192
-          }
-        },
-        "desktop.qwen3.6:35b-a3b-unsensored": {
-          "name": "desktop.qwen3.6:35b-a3b-unsensored",
-          "tool_call": true,
-          "modalities": {
-            "input": [
-              "text"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "limit": {
-            "context": 32768,
-            "input": 24576,
-            "output": 8192
-          }
-        },
         "desktop.qwen3.8-27b:q4": {
           "name": "desktop.qwen3.8-27b:q4",
           "tool_call": true,
@@ -529,23 +410,6 @@
           "limit": {
             "context": 65536,
             "input": 57344,
-            "output": 8192
-          }
-        },
-        "desktop.qwen3.8-flash-next": {
-          "name": "desktop.qwen3.8-flash-next",
-          "tool_call": true,
-          "modalities": {
-            "input": [
-              "text"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "limit": {
-            "context": 131072,
-            "input": 122880,
             "output": 8192
           }
         },
@@ -648,8 +512,41 @@
             }
           }
         },
-        "desktop.qwen3.8:27b-vllm": {
-          "name": "desktop.qwen3.8:27b-vllm",
+        "desktop.swift1.5-qwen3.8-27b": {
+          "name": "desktop.swift1.5-qwen3.8-27b",
+          "tool_call": true,
+          "reasoning": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 262144,
+            "input": 253952,
+            "output": 8192
+          },
+          "options": {
+            "reasoningEffort": "medium"
+          },
+          "variants": {
+            "low": {
+              "reasoningEffort": "low"
+            },
+            "medium": {
+              "reasoningEffort": "medium"
+            },
+            "xhigh": {
+              "reasoningEffort": "xhigh"
+            }
+          }
+        },
+        "desktop.swift1.5-qwen3.8-27b-vllm-1": {
+          "name": "desktop.swift1.5-qwen3.8-27b-vllm-1",
           "tool_call": true,
           "reasoning": true,
           "modalities": {
@@ -664,6 +561,57 @@
             "context": 131072,
             "input": 122880,
             "output": 8192
+          }
+        },
+        "desktop.swift1.5-qwen3.8-27b-vllm-2": {
+          "name": "desktop.swift1.5-qwen3.8-27b-vllm-2",
+          "tool_call": true,
+          "reasoning": true,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 131072,
+            "input": 122880,
+            "output": 8192
+          }
+        },
+        "desktop.swift1.5-qwen3.8-27b:Q6_K_L": {
+          "name": "desktop.swift1.5-qwen3.8-27b:Q6_K_L",
+          "tool_call": true,
+          "reasoning": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 262144,
+            "input": 253952,
+            "output": 8192
+          },
+          "options": {
+            "reasoningEffort": "medium"
+          },
+          "variants": {
+            "low": {
+              "reasoningEffort": "low"
+            },
+            "medium": {
+              "reasoningEffort": "medium"
+            },
+            "xhigh": {
+              "reasoningEffort": "xhigh"
+            }
           }
         },
         "desktop.swift1.5-qwen3.8-flash-next": {
@@ -732,9 +680,97 @@
             }
           }
         },
-        "desktop.swift3.8-27b:q6_k_l": {
-          "name": "desktop.swift3.8-27b:q6_k_l",
+        "desktop.swift1.5:27b": {
+          "name": "desktop.swift1.5:27b",
           "tool_call": true,
+          "reasoning": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 262144,
+            "input": 253952,
+            "output": 8192
+          },
+          "options": {
+            "reasoningEffort": "medium"
+          },
+          "variants": {
+            "low": {
+              "reasoningEffort": "low"
+            },
+            "medium": {
+              "reasoningEffort": "medium"
+            },
+            "xhigh": {
+              "reasoningEffort": "xhigh"
+            }
+          }
+        },
+        "desktop.swift1.5:27b-int4-1": {
+          "name": "desktop.swift1.5:27b-int4-1",
+          "tool_call": true,
+          "reasoning": true,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 131072,
+            "input": 122880,
+            "output": 8192
+          }
+        },
+        "desktop.swift1.5:27b-int4-2": {
+          "name": "desktop.swift1.5:27b-int4-2",
+          "tool_call": true,
+          "reasoning": true,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 131072,
+            "input": 122880,
+            "output": 8192
+          }
+        },
+        "desktop.swift1.5:27b-vllm-1": {
+          "name": "desktop.swift1.5:27b-vllm-1",
+          "tool_call": true,
+          "reasoning": true,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 131072,
+            "input": 122880,
+            "output": 8192
+          }
+        },
+        "desktop.swift1.5:27b-vllm-2": {
+          "name": "desktop.swift1.5:27b-vllm-2",
+          "tool_call": true,
+          "reasoning": true,
           "modalities": {
             "input": [
               "text"
@@ -763,8 +799,8 @@
             ]
           },
           "limit": {
-            "context": 327680,
-            "input": 319488,
+            "context": 262144,
+            "input": 253952,
             "output": 8192
           },
           "options": {
@@ -928,8 +964,8 @@
             ]
           },
           "limit": {
-            "context": 327680,
-            "input": 319488,
+            "context": 262144,
+            "input": 253952,
             "output": 8192
           },
           "options": {
@@ -1208,25 +1244,6 @@
             ]
           }
         },
-        "gpt-5.6-luna": {
-          "name": "gpt-5.6-luna",
-          "tool_call": true,
-          "reasoning": true,
-          "modalities": {
-            "input": [
-              "text",
-              "image"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "limit": {
-            "context": 200000,
-            "input": 72000,
-            "output": 128000
-          }
-        },
         "k2-horizon-7b": {
           "name": "k2-horizon-7b",
           "tool_call": true,
@@ -1242,24 +1259,6 @@
             "context": 65536,
             "input": 32768,
             "output": 32768
-          }
-        },
-        "kimi-k3": {
-          "name": "kimi-k3",
-          "tool_call": true,
-          "modalities": {
-            "input": [
-              "text",
-              "image"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "limit": {
-            "context": 917504,
-            "input": 786432,
-            "output": 131072
           }
         },
         "pooled": {
