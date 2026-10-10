@@ -961,9 +961,9 @@
             ]
           },
           "limit": {
-            "context": 327680,
-            "input": 319488,
-            "output": 8192
+            "context": 163840,
+            "input": 131072,
+            "output": 32768
           },
           "options": {
             "reasoningEffort": "medium"
