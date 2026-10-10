@@ -932,8 +932,8 @@
             "output": 8192
           }
         },
-        "desktop2.k2-horizon-7b": {
-          "name": "desktop2.k2-horizon-7b",
+        "desktop2.k2-horizon-7b-1": {
+          "name": "desktop2.k2-horizon-7b-1",
           "tool_call": true,
           "modalities": {
             "input": [
@@ -944,9 +944,26 @@
             ]
           },
           "limit": {
-            "context": 131072,
-            "input": 98304,
-            "output": 32768
+            "context": 65536,
+            "input": 57344,
+            "output": 8192
+          }
+        },
+        "desktop2.k2-horizon-7b-2": {
+          "name": "desktop2.k2-horizon-7b-2",
+          "tool_call": true,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 65536,
+            "input": 57344,
+            "output": 8192
           }
         },
         "desktop2.muse:30b:IQ4_XS": {
@@ -1126,6 +1143,18 @@
             "context": 200000,
             "input": 72000,
             "output": 128000
+          }
+        },
+        "k2-horizon-7b": {
+          "name": "k2-horizon-7b",
+          "tool_call": true,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
           }
         },
         "kimi-k3": {
