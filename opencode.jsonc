@@ -749,6 +749,39 @@
             "output": 8192
           }
         },
+        "desktop.terse-coder-27b": {
+          "name": "desktop.terse-coder-27b",
+          "tool_call": true,
+          "reasoning": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 327680,
+            "input": 319488,
+            "output": 8192
+          },
+          "options": {
+            "reasoningEffort": "medium"
+          },
+          "variants": {
+            "low": {
+              "reasoningEffort": "low"
+            },
+            "medium": {
+              "reasoningEffort": "medium"
+            },
+            "xhigh": {
+              "reasoningEffort": "xhigh"
+            }
+          }
+        },
         "desktop.terse-coder-27b-0": {
           "name": "desktop.terse-coder-27b-0",
           "tool_call": true,
@@ -881,21 +914,70 @@
             }
           }
         },
-        "desktop.terse-coder:27b": {
-          "name": "desktop.terse-coder:27b",
+        "desktop.terse-coder-27b:Q6_K": {
+          "name": "desktop.terse-coder-27b:Q6_K",
           "tool_call": true,
+          "reasoning": true,
           "modalities": {
             "input": [
-              "text"
+              "text",
+              "image"
             ],
             "output": [
               "text"
             ]
           },
           "limit": {
-            "context": 163840,
-            "input": 155648,
+            "context": 327680,
+            "input": 319488,
             "output": 8192
+          },
+          "options": {
+            "reasoningEffort": "medium"
+          },
+          "variants": {
+            "low": {
+              "reasoningEffort": "low"
+            },
+            "medium": {
+              "reasoningEffort": "medium"
+            },
+            "xhigh": {
+              "reasoningEffort": "xhigh"
+            }
+          }
+        },
+        "desktop.terse-coder:27b": {
+          "name": "desktop.terse-coder:27b",
+          "tool_call": true,
+          "reasoning": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 327680,
+            "input": 319488,
+            "output": 8192
+          },
+          "options": {
+            "reasoningEffort": "medium"
+          },
+          "variants": {
+            "low": {
+              "reasoningEffort": "low"
+            },
+            "medium": {
+              "reasoningEffort": "medium"
+            },
+            "xhigh": {
+              "reasoningEffort": "xhigh"
+            }
           }
         },
         "desktop2.gemma4:12b": {
