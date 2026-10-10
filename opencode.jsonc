@@ -944,8 +944,8 @@
             ]
           },
           "limit": {
-            "context": 65536,
-            "input": 32768,
+            "context": 131072,
+            "input": 98304,
             "output": 32768
           }
         },
