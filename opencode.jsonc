@@ -41,11 +41,9 @@
         "desktop.arex:27b": {
           "name": "desktop.arex:27b",
           "tool_call": true,
-          "reasoning": true,
           "modalities": {
             "input": [
-              "text",
-              "image"
+              "text"
             ],
             "output": [
               "text"
@@ -55,20 +53,6 @@
             "context": 163840,
             "input": 155648,
             "output": 8192
-          },
-          "options": {
-            "reasoningEffort": "medium"
-          },
-          "variants": {
-            "low": {
-              "reasoningEffort": "low"
-            },
-            "medium": {
-              "reasoningEffort": "medium"
-            },
-            "xhigh": {
-              "reasoningEffort": "xhigh"
-            }
           }
         },
         "desktop.fara1.5:27b": {
@@ -515,7 +499,6 @@
         "desktop.qwen3.6:35b-a3b-unsensored": {
           "name": "desktop.qwen3.6:35b-a3b-unsensored",
           "tool_call": true,
-          "reasoning": true,
           "modalities": {
             "input": [
               "text"
@@ -683,8 +666,8 @@
             "output": 8192
           }
         },
-        "desktop.swift3.8-27b:q6_k_l": {
-          "name": "desktop.swift3.8-27b:q6_k_l",
+        "desktop.swift1.5-qwen3.8-flash-next": {
+          "name": "desktop.swift1.5-qwen3.8-flash-next",
           "tool_call": true,
           "reasoning": true,
           "modalities": {
@@ -697,8 +680,8 @@
             ]
           },
           "limit": {
-            "context": 131072,
-            "input": 122880,
+            "context": 65536,
+            "input": 57344,
             "output": 8192
           },
           "options": {
@@ -716,8 +699,58 @@
             }
           }
         },
-        "desktop.terse-coder:27b": {
-          "name": "desktop.terse-coder:27b",
+        "desktop.swift1.5-qwen3.8-flash-next:Q4_K_M": {
+          "name": "desktop.swift1.5-qwen3.8-flash-next:Q4_K_M",
+          "tool_call": true,
+          "reasoning": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 65536,
+            "input": 57344,
+            "output": 8192
+          },
+          "options": {
+            "reasoningEffort": "medium"
+          },
+          "variants": {
+            "low": {
+              "reasoningEffort": "low"
+            },
+            "medium": {
+              "reasoningEffort": "medium"
+            },
+            "xhigh": {
+              "reasoningEffort": "xhigh"
+            }
+          }
+        },
+        "desktop.swift3.8-27b:q6_k_l": {
+          "name": "desktop.swift3.8-27b:q6_k_l",
+          "tool_call": true,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 131072,
+            "input": 122880,
+            "output": 8192
+          }
+        },
+        "desktop.terse-coder-27b-0": {
+          "name": "desktop.terse-coder-27b-0",
           "tool_call": true,
           "reasoning": true,
           "modalities": {
@@ -747,6 +780,122 @@
             "xhigh": {
               "reasoningEffort": "xhigh"
             }
+          }
+        },
+        "desktop.terse-coder-27b-0:Q4_K_M": {
+          "name": "desktop.terse-coder-27b-0:Q4_K_M",
+          "tool_call": true,
+          "reasoning": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 163840,
+            "input": 155648,
+            "output": 8192
+          },
+          "options": {
+            "reasoningEffort": "medium"
+          },
+          "variants": {
+            "low": {
+              "reasoningEffort": "low"
+            },
+            "medium": {
+              "reasoningEffort": "medium"
+            },
+            "xhigh": {
+              "reasoningEffort": "xhigh"
+            }
+          }
+        },
+        "desktop.terse-coder-27b-1": {
+          "name": "desktop.terse-coder-27b-1",
+          "tool_call": true,
+          "reasoning": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 163840,
+            "input": 155648,
+            "output": 8192
+          },
+          "options": {
+            "reasoningEffort": "medium"
+          },
+          "variants": {
+            "low": {
+              "reasoningEffort": "low"
+            },
+            "medium": {
+              "reasoningEffort": "medium"
+            },
+            "xhigh": {
+              "reasoningEffort": "xhigh"
+            }
+          }
+        },
+        "desktop.terse-coder-27b-1:Q4_K_M": {
+          "name": "desktop.terse-coder-27b-1:Q4_K_M",
+          "tool_call": true,
+          "reasoning": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 163840,
+            "input": 155648,
+            "output": 8192
+          },
+          "options": {
+            "reasoningEffort": "medium"
+          },
+          "variants": {
+            "low": {
+              "reasoningEffort": "low"
+            },
+            "medium": {
+              "reasoningEffort": "medium"
+            },
+            "xhigh": {
+              "reasoningEffort": "xhigh"
+            }
+          }
+        },
+        "desktop.terse-coder:27b": {
+          "name": "desktop.terse-coder:27b",
+          "tool_call": true,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 163840,
+            "input": 155648,
+            "output": 8192
           }
         },
         "desktop2.gemma4:12b": {
@@ -942,6 +1091,19 @@
           "tool_call": true,
           "modalities": {
             "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "gpt-5.6-luna": {
+          "name": "gpt-5.6-luna",
+          "tool_call": true,
+          "reasoning": true,
+          "modalities": {
+            "input": [
               "text",
               "image"
             ],
@@ -950,21 +1112,9 @@
             ]
           },
           "limit": {
-            "context": 128000,
-            "input": 1,
+            "context": 200000,
+            "input": 72000,
             "output": 128000
-          }
-        },
-        "gpt-5.6-luna": {
-          "name": "gpt-5.6-luna",
-          "tool_call": true,
-          "modalities": {
-            "input": [
-              "text"
-            ],
-            "output": [
-              "text"
-            ]
           }
         },
         "kimi-k3": {
@@ -972,11 +1122,17 @@
           "tool_call": true,
           "modalities": {
             "input": [
-              "text"
+              "text",
+              "image"
             ],
             "output": [
               "text"
             ]
+          },
+          "limit": {
+            "context": 917504,
+            "input": 786432,
+            "output": 131072
           }
         },
         "pooled": {
