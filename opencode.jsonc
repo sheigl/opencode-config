@@ -170,6 +170,38 @@
             "output": 8192
           }
         },
+        "desktop.k2-horizon-7b": {
+          "name": "desktop.k2-horizon-7b",
+          "tool_call": true,
+          "reasoning": true,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 65536,
+            "input": 32768,
+            "output": 32768
+          },
+          "options": {
+            "reasoningEffort": "medium"
+          },
+          "variants": {
+            "low": {
+              "reasoningEffort": "low"
+            },
+            "medium": {
+              "reasoningEffort": "medium"
+            },
+            "xhigh": {
+              "reasoningEffort": "xhigh"
+            }
+          }
+        },
         "desktop.liquid-d1:3b": {
           "name": "desktop.liquid-d1:3b",
           "tool_call": true,
@@ -188,101 +220,8 @@
             "output": 8192
           }
         },
-        "desktop.magentic-brain:14b": {
-          "name": "desktop.magentic-brain:14b",
-          "tool_call": true,
-          "modalities": {
-            "input": [
-              "text"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "limit": {
-            "context": 32768,
-            "input": 24576,
-            "output": 8192
-          }
-        },
         "desktop.muse:30b": {
           "name": "desktop.muse:30b",
-          "tool_call": true,
-          "reasoning": true,
-          "modalities": {
-            "input": [
-              "text",
-              "image"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "limit": {
-            "context": 131072,
-            "input": 122880,
-            "output": 8192
-          }
-        },
-        "desktop.ornith1.5:35b-a3b": {
-          "name": "desktop.ornith1.5:35b-a3b",
-          "tool_call": true,
-          "reasoning": true,
-          "modalities": {
-            "input": [
-              "text",
-              "image"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "limit": {
-            "context": 131072,
-            "input": 122880,
-            "output": 8192
-          }
-        },
-        "desktop.ornith1.5:35b-a3b-full": {
-          "name": "desktop.ornith1.5:35b-a3b-full",
-          "tool_call": true,
-          "reasoning": true,
-          "modalities": {
-            "input": [
-              "text",
-              "image"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "limit": {
-            "context": 262144,
-            "input": 253952,
-            "output": 8192
-          }
-        },
-        "desktop.ornith1.5:35b-a3b-small": {
-          "name": "desktop.ornith1.5:35b-a3b-small",
-          "tool_call": true,
-          "reasoning": true,
-          "modalities": {
-            "input": [
-              "text",
-              "image"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "limit": {
-            "context": 262144,
-            "input": 253952,
-            "output": 8192
-          }
-        },
-        "desktop.ornith1.5:35b-a3b-small-24gb": {
-          "name": "desktop.ornith1.5:35b-a3b-small-24gb",
           "tool_call": true,
           "reasoning": true,
           "modalities": {
@@ -356,162 +295,6 @@
             "output": 8192
           }
         },
-        "desktop.qwen3.6:35b-a3b": {
-          "name": "desktop.qwen3.6:35b-a3b",
-          "tool_call": true,
-          "reasoning": true,
-          "modalities": {
-            "input": [
-              "text",
-              "image"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "limit": {
-            "context": 65536,
-            "input": 57344,
-            "output": 8192
-          }
-        },
-        "desktop.qwen3.6:35b-a3b-small": {
-          "name": "desktop.qwen3.6:35b-a3b-small",
-          "tool_call": true,
-          "reasoning": true,
-          "modalities": {
-            "input": [
-              "text",
-              "image"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "limit": {
-            "context": 131072,
-            "input": 122880,
-            "output": 8192
-          }
-        },
-        "desktop.qwen3.8-27b:q4": {
-          "name": "desktop.qwen3.8-27b:q4",
-          "tool_call": true,
-          "reasoning": true,
-          "modalities": {
-            "input": [
-              "text",
-              "image"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "limit": {
-            "context": 65536,
-            "input": 57344,
-            "output": 8192
-          }
-        },
-        "desktop.qwen3.8:27b": {
-          "name": "desktop.qwen3.8:27b",
-          "tool_call": true,
-          "reasoning": true,
-          "modalities": {
-            "input": [
-              "text",
-              "image"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "limit": {
-            "context": 196608,
-            "input": 188416,
-            "output": 8192
-          },
-          "options": {
-            "reasoningEffort": "medium"
-          },
-          "variants": {
-            "low": {
-              "reasoningEffort": "low"
-            },
-            "medium": {
-              "reasoningEffort": "medium"
-            },
-            "xhigh": {
-              "reasoningEffort": "xhigh"
-            }
-          }
-        },
-        "desktop.qwen3.8:27b-b70": {
-          "name": "desktop.qwen3.8:27b-b70",
-          "tool_call": true,
-          "reasoning": true,
-          "modalities": {
-            "input": [
-              "text",
-              "image"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "limit": {
-            "context": 163840,
-            "input": 155648,
-            "output": 8192
-          },
-          "options": {
-            "reasoningEffort": "medium"
-          },
-          "variants": {
-            "low": {
-              "reasoningEffort": "low"
-            },
-            "medium": {
-              "reasoningEffort": "medium"
-            },
-            "xhigh": {
-              "reasoningEffort": "xhigh"
-            }
-          }
-        },
-        "desktop.qwen3.8:27b-full": {
-          "name": "desktop.qwen3.8:27b-full",
-          "tool_call": true,
-          "reasoning": true,
-          "modalities": {
-            "input": [
-              "text",
-              "image"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "limit": {
-            "context": 196608,
-            "input": 188416,
-            "output": 8192
-          },
-          "options": {
-            "reasoningEffort": "medium"
-          },
-          "variants": {
-            "low": {
-              "reasoningEffort": "low"
-            },
-            "medium": {
-              "reasoningEffort": "medium"
-            },
-            "xhigh": {
-              "reasoningEffort": "xhigh"
-            }
-          }
-        },
         "desktop.swift1.5-qwen3.8-27b": {
           "name": "desktop.swift1.5-qwen3.8-27b",
           "tool_call": true,
@@ -558,8 +341,8 @@
             ]
           },
           "limit": {
-            "context": 131072,
-            "input": 122880,
+            "context": 163840,
+            "input": 155648,
             "output": 8192
           }
         },
@@ -576,8 +359,8 @@
             ]
           },
           "limit": {
-            "context": 131072,
-            "input": 122880,
+            "context": 163840,
+            "input": 155648,
             "output": 8192
           }
         },
@@ -726,8 +509,8 @@
             ]
           },
           "limit": {
-            "context": 131072,
-            "input": 122880,
+            "context": 163840,
+            "input": 155648,
             "output": 8192
           }
         },
@@ -744,8 +527,8 @@
             ]
           },
           "limit": {
-            "context": 131072,
-            "input": 122880,
+            "context": 163840,
+            "input": 155648,
             "output": 8192
           }
         },
@@ -762,8 +545,8 @@
             ]
           },
           "limit": {
-            "context": 131072,
-            "input": 122880,
+            "context": 163840,
+            "input": 155648,
             "output": 8192
           }
         },
@@ -780,8 +563,8 @@
             ]
           },
           "limit": {
-            "context": 131072,
-            "input": 122880,
+            "context": 163840,
+            "input": 155648,
             "output": 8192
           }
         },
@@ -801,138 +584,6 @@
           "limit": {
             "context": 262144,
             "input": 253952,
-            "output": 8192
-          },
-          "options": {
-            "reasoningEffort": "medium"
-          },
-          "variants": {
-            "low": {
-              "reasoningEffort": "low"
-            },
-            "medium": {
-              "reasoningEffort": "medium"
-            },
-            "xhigh": {
-              "reasoningEffort": "xhigh"
-            }
-          }
-        },
-        "desktop.terse-coder-27b-0": {
-          "name": "desktop.terse-coder-27b-0",
-          "tool_call": true,
-          "reasoning": true,
-          "modalities": {
-            "input": [
-              "text",
-              "image"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "limit": {
-            "context": 163840,
-            "input": 155648,
-            "output": 8192
-          },
-          "options": {
-            "reasoningEffort": "medium"
-          },
-          "variants": {
-            "low": {
-              "reasoningEffort": "low"
-            },
-            "medium": {
-              "reasoningEffort": "medium"
-            },
-            "xhigh": {
-              "reasoningEffort": "xhigh"
-            }
-          }
-        },
-        "desktop.terse-coder-27b-0:Q4_K_M": {
-          "name": "desktop.terse-coder-27b-0:Q4_K_M",
-          "tool_call": true,
-          "reasoning": true,
-          "modalities": {
-            "input": [
-              "text",
-              "image"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "limit": {
-            "context": 163840,
-            "input": 155648,
-            "output": 8192
-          },
-          "options": {
-            "reasoningEffort": "medium"
-          },
-          "variants": {
-            "low": {
-              "reasoningEffort": "low"
-            },
-            "medium": {
-              "reasoningEffort": "medium"
-            },
-            "xhigh": {
-              "reasoningEffort": "xhigh"
-            }
-          }
-        },
-        "desktop.terse-coder-27b-1": {
-          "name": "desktop.terse-coder-27b-1",
-          "tool_call": true,
-          "reasoning": true,
-          "modalities": {
-            "input": [
-              "text",
-              "image"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "limit": {
-            "context": 163840,
-            "input": 155648,
-            "output": 8192
-          },
-          "options": {
-            "reasoningEffort": "medium"
-          },
-          "variants": {
-            "low": {
-              "reasoningEffort": "low"
-            },
-            "medium": {
-              "reasoningEffort": "medium"
-            },
-            "xhigh": {
-              "reasoningEffort": "xhigh"
-            }
-          }
-        },
-        "desktop.terse-coder-27b-1:Q4_K_M": {
-          "name": "desktop.terse-coder-27b-1:Q4_K_M",
-          "tool_call": true,
-          "reasoning": true,
-          "modalities": {
-            "input": [
-              "text",
-              "image"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "limit": {
-            "context": 163840,
-            "input": 155648,
             "output": 8192
           },
           "options": {
@@ -1254,11 +905,6 @@
             "output": [
               "text"
             ]
-          },
-          "limit": {
-            "context": 65536,
-            "input": 32768,
-            "output": 32768
           }
         },
         "pooled": {
@@ -1458,16 +1104,17 @@
           "reasoning": true,
           "modalities": {
             "input": [
-              "text"
+              "text",
+              "image"
             ],
             "output": [
               "text"
             ]
           },
           "limit": {
-            "context": 131072,
-            "input": 122880,
-            "output": 8192
+            "context": 163840,
+            "input": 131072,
+            "output": 32768
           }
         }
       }
