@@ -220,6 +220,23 @@
             "output": 8192
           }
         },
+        "desktop.magentic-brain:14b": {
+          "name": "desktop.magentic-brain:14b",
+          "tool_call": true,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 32768,
+            "input": 24576,
+            "output": 8192
+          }
+        },
         "desktop.muse:30b": {
           "name": "desktop.muse:30b",
           "tool_call": true,
@@ -311,6 +328,72 @@
           "limit": {
             "context": 262144,
             "input": 253952,
+            "output": 8192
+          },
+          "options": {
+            "reasoningEffort": "medium"
+          },
+          "variants": {
+            "low": {
+              "reasoningEffort": "low"
+            },
+            "medium": {
+              "reasoningEffort": "medium"
+            },
+            "xhigh": {
+              "reasoningEffort": "xhigh"
+            }
+          }
+        },
+        "desktop.swift1.5-qwen3.8-27b-q4-1": {
+          "name": "desktop.swift1.5-qwen3.8-27b-q4-1",
+          "tool_call": true,
+          "reasoning": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 163840,
+            "input": 155648,
+            "output": 8192
+          },
+          "options": {
+            "reasoningEffort": "medium"
+          },
+          "variants": {
+            "low": {
+              "reasoningEffort": "low"
+            },
+            "medium": {
+              "reasoningEffort": "medium"
+            },
+            "xhigh": {
+              "reasoningEffort": "xhigh"
+            }
+          }
+        },
+        "desktop.swift1.5-qwen3.8-27b-q4-2": {
+          "name": "desktop.swift1.5-qwen3.8-27b-q4-2",
+          "tool_call": true,
+          "reasoning": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 163840,
+            "input": 155648,
             "output": 8192
           },
           "options": {
@@ -563,6 +646,72 @@
           "modalities": {
             "input": [
               "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 163840,
+            "input": 155648,
+            "output": 8192
+          },
+          "options": {
+            "reasoningEffort": "medium"
+          },
+          "variants": {
+            "low": {
+              "reasoningEffort": "low"
+            },
+            "medium": {
+              "reasoningEffort": "medium"
+            },
+            "xhigh": {
+              "reasoningEffort": "xhigh"
+            }
+          }
+        },
+        "desktop.swift1.5:27b-q4-1": {
+          "name": "desktop.swift1.5:27b-q4-1",
+          "tool_call": true,
+          "reasoning": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 163840,
+            "input": 155648,
+            "output": 8192
+          },
+          "options": {
+            "reasoningEffort": "medium"
+          },
+          "variants": {
+            "low": {
+              "reasoningEffort": "low"
+            },
+            "medium": {
+              "reasoningEffort": "medium"
+            },
+            "xhigh": {
+              "reasoningEffort": "xhigh"
+            }
+          }
+        },
+        "desktop.swift1.5:27b-q4-2": {
+          "name": "desktop.swift1.5:27b-q4-2",
+          "tool_call": true,
+          "reasoning": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
             ],
             "output": [
               "text"
