@@ -315,49 +315,133 @@
         "desktop.strata-iq3s": {
           "name": "desktop.strata-iq3s",
           "tool_call": true,
+          "reasoning": true,
           "modalities": {
             "input": [
-              "text"
+              "text",
+              "image"
             ],
             "output": [
               "text"
             ]
+          },
+          "limit": {
+            "context": 131072,
+            "input": 122880,
+            "output": 8192
+          },
+          "options": {
+            "reasoningEffort": "medium"
+          },
+          "variants": {
+            "low": {
+              "reasoningEffort": "low"
+            },
+            "medium": {
+              "reasoningEffort": "medium"
+            },
+            "xhigh": {
+              "reasoningEffort": "xhigh"
+            }
           }
         },
         "desktop.strata-q4km": {
           "name": "desktop.strata-q4km",
           "tool_call": true,
+          "reasoning": true,
           "modalities": {
             "input": [
-              "text"
+              "text",
+              "image"
             ],
             "output": [
               "text"
             ]
+          },
+          "limit": {
+            "context": 131072,
+            "input": 122880,
+            "output": 8192
+          },
+          "options": {
+            "reasoningEffort": "medium"
+          },
+          "variants": {
+            "low": {
+              "reasoningEffort": "low"
+            },
+            "medium": {
+              "reasoningEffort": "medium"
+            },
+            "xhigh": {
+              "reasoningEffort": "xhigh"
+            }
           }
         },
         "desktop.strata:iq3_s": {
           "name": "desktop.strata:iq3_s",
           "tool_call": true,
+          "reasoning": true,
           "modalities": {
             "input": [
-              "text"
+              "text",
+              "image"
             ],
             "output": [
               "text"
             ]
+          },
+          "limit": {
+            "context": 131072,
+            "input": 122880,
+            "output": 8192
+          },
+          "options": {
+            "reasoningEffort": "medium"
+          },
+          "variants": {
+            "low": {
+              "reasoningEffort": "low"
+            },
+            "medium": {
+              "reasoningEffort": "medium"
+            },
+            "xhigh": {
+              "reasoningEffort": "xhigh"
+            }
           }
         },
         "desktop.strata:q4_k_m": {
           "name": "desktop.strata:q4_k_m",
           "tool_call": true,
+          "reasoning": true,
           "modalities": {
             "input": [
-              "text"
+              "text",
+              "image"
             ],
             "output": [
               "text"
             ]
+          },
+          "limit": {
+            "context": 131072,
+            "input": 122880,
+            "output": 8192
+          },
+          "options": {
+            "reasoningEffort": "medium"
+          },
+          "variants": {
+            "low": {
+              "reasoningEffort": "low"
+            },
+            "medium": {
+              "reasoningEffort": "medium"
+            },
+            "xhigh": {
+              "reasoningEffort": "xhigh"
+            }
           }
         },
         "desktop.swift1.5-qwen3.8-27b": {
