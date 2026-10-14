@@ -312,6 +312,54 @@
             "output": 8192
           }
         },
+        "desktop.strata-iq3s": {
+          "name": "desktop.strata-iq3s",
+          "tool_call": true,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "desktop.strata-q4km": {
+          "name": "desktop.strata-q4km",
+          "tool_call": true,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "desktop.strata:iq3_s": {
+          "name": "desktop.strata:iq3_s",
+          "tool_call": true,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "desktop.strata:q4_k_m": {
+          "name": "desktop.strata:q4_k_m",
+          "tool_call": true,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
         "desktop.swift1.5-qwen3.8-27b": {
           "name": "desktop.swift1.5-qwen3.8-27b",
           "tool_call": true,
@@ -493,72 +541,6 @@
           "limit": {
             "context": 262144,
             "input": 253952,
-            "output": 8192
-          },
-          "options": {
-            "reasoningEffort": "medium"
-          },
-          "variants": {
-            "low": {
-              "reasoningEffort": "low"
-            },
-            "medium": {
-              "reasoningEffort": "medium"
-            },
-            "xhigh": {
-              "reasoningEffort": "xhigh"
-            }
-          }
-        },
-        "desktop.swift1.5-qwen3.8-flash-next": {
-          "name": "desktop.swift1.5-qwen3.8-flash-next",
-          "tool_call": true,
-          "reasoning": true,
-          "modalities": {
-            "input": [
-              "text",
-              "image"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "limit": {
-            "context": 65536,
-            "input": 32768,
-            "output": 32768
-          },
-          "options": {
-            "reasoningEffort": "medium"
-          },
-          "variants": {
-            "low": {
-              "reasoningEffort": "low"
-            },
-            "medium": {
-              "reasoningEffort": "medium"
-            },
-            "xhigh": {
-              "reasoningEffort": "xhigh"
-            }
-          }
-        },
-        "desktop.swift1.5-qwen3.8-flash-next:Q4_K_M": {
-          "name": "desktop.swift1.5-qwen3.8-flash-next:Q4_K_M",
-          "tool_call": true,
-          "reasoning": true,
-          "modalities": {
-            "input": [
-              "text",
-              "image"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "limit": {
-            "context": 65536,
-            "input": 57344,
             "output": 8192
           },
           "options": {
