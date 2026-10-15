@@ -21,8 +21,26 @@
             ]
           }
         },
-        "desktop.fara1.5:27b": {
-          "name": "desktop.fara1.5:27b",
+        "desktop.fara1.5": {
+          "name": "desktop.fara1.5",
+          "tool_call": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 32768,
+            "input": 24576,
+            "output": 8192
+          }
+        },
+        "desktop.fara1.5:9b": {
+          "name": "desktop.fara1.5:9b",
           "tool_call": true,
           "modalities": {
             "input": [
@@ -220,8 +238,8 @@
             "output": 8192
           }
         },
-        "desktop.magentic-brain:14b": {
-          "name": "desktop.magentic-brain:14b",
+        "desktop.magentic-brain": {
+          "name": "desktop.magentic-brain",
           "tool_call": true,
           "modalities": {
             "input": [
@@ -326,8 +344,8 @@
             ]
           },
           "limit": {
-            "context": 131072,
-            "input": 122880,
+            "context": 200000,
+            "input": 191808,
             "output": 8192
           },
           "options": {
@@ -392,8 +410,8 @@
             ]
           },
           "limit": {
-            "context": 131072,
-            "input": 122880,
+            "context": 200000,
+            "input": 191808,
             "output": 8192
           },
           "options": {
