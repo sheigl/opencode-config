@@ -19,5 +19,51 @@
     "tool_call": true,
     "max_output": 8192
   },
-  "overrides": {}
+  "overrides": {
+    "desktop.terse-coder:27b": {
+      "context": 163840,
+      "output": 32768,
+      "vision": true
+    },
+    "desktop.swift1.5-qwen3.8-flash-next": {
+      "context": 65536,
+      "output": 32768,
+      "vision": true
+    },
+    "desktop.k2-horizon-7b": {
+      "context": 65536,
+      "output": 32768
+    },
+    "swift1.5-qwen3.8-27b-vllm": {
+      "context": 163840,
+      "output": 32768,
+      "vision": true
+    },
+    "desktop.swift1.5-qwen3.8-27b-vllm-1": {
+      "context": 163840,
+      "output": 32768,
+      "vision": true
+    },
+    "desktop.swift1.5-qwen3.8-27b-vllm-2": {
+      "context": 163840,
+      "output": 32768,
+      "vision": true
+    },
+    "desktop.strata-iq3s": {
+      "context": 200000,
+      "output": 32768,
+      "vision": true
+    },
+    "desktop.strata-q4km-3gpu": {
+      "context": 200000,
+      "output": 32768,
+      "vision": true
+    },
+    "desktop.strata:q4_k_m-3gpu": {
+      "context": 200000,
+      "output": 32768,
+      "vision": true
+    }
+
+  }
 }
