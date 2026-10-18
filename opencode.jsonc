@@ -377,9 +377,9 @@
             ]
           },
           "limit": {
-            "context": 131072,
-            "input": 122880,
-            "output": 8192
+            "context": 135168,
+            "input": 102400,
+            "output": 32768
           },
           "options": {
             "reasoningEffort": "medium"
@@ -476,8 +476,8 @@
             ]
           },
           "limit": {
-            "context": 131072,
-            "input": 122880,
+            "context": 135168,
+            "input": 126976,
             "output": 8192
           },
           "options": {
@@ -1055,11 +1055,9 @@
         "desktop2.gemma4:12b": {
           "name": "desktop2.gemma4:12b",
           "tool_call": true,
-          "reasoning": true,
           "modalities": {
             "input": [
-              "text",
-              "image"
+              "text"
             ],
             "output": [
               "text"
@@ -1091,7 +1089,6 @@
         "desktop2.k2-horizon-7b-1": {
           "name": "desktop2.k2-horizon-7b-1",
           "tool_call": true,
-          "reasoning": true,
           "modalities": {
             "input": [
               "text"
@@ -1104,26 +1101,11 @@
             "context": 65536,
             "input": 57344,
             "output": 8192
-          },
-          "options": {
-            "reasoningEffort": "medium"
-          },
-          "variants": {
-            "low": {
-              "reasoningEffort": "low"
-            },
-            "medium": {
-              "reasoningEffort": "medium"
-            },
-            "xhigh": {
-              "reasoningEffort": "xhigh"
-            }
           }
         },
         "desktop2.k2-horizon-7b-2": {
           "name": "desktop2.k2-horizon-7b-2",
           "tool_call": true,
-          "reasoning": true,
           "modalities": {
             "input": [
               "text"
@@ -1136,30 +1118,14 @@
             "context": 65536,
             "input": 57344,
             "output": 8192
-          },
-          "options": {
-            "reasoningEffort": "medium"
-          },
-          "variants": {
-            "low": {
-              "reasoningEffort": "low"
-            },
-            "medium": {
-              "reasoningEffort": "medium"
-            },
-            "xhigh": {
-              "reasoningEffort": "xhigh"
-            }
           }
         },
         "desktop2.muse:30b:IQ4_XS": {
           "name": "desktop2.muse:30b:IQ4_XS",
           "tool_call": true,
-          "reasoning": true,
           "modalities": {
             "input": [
-              "text",
-              "image"
+              "text"
             ],
             "output": [
               "text"
@@ -1174,11 +1140,9 @@
         "desktop2.ornith1.5:35b-a3b:q4": {
           "name": "desktop2.ornith1.5:35b-a3b:q4",
           "tool_call": true,
-          "reasoning": true,
           "modalities": {
             "input": [
-              "text",
-              "image"
+              "text"
             ],
             "output": [
               "text"
@@ -1193,11 +1157,9 @@
         "desktop2.ornith1.5:9b": {
           "name": "desktop2.ornith1.5:9b",
           "tool_call": true,
-          "reasoning": true,
           "modalities": {
             "input": [
-              "text",
-              "image"
+              "text"
             ],
             "output": [
               "text"
@@ -1212,11 +1174,9 @@
         "desktop2.ornith1.5:9b-uncensored": {
           "name": "desktop2.ornith1.5:9b-uncensored",
           "tool_call": true,
-          "reasoning": true,
           "modalities": {
             "input": [
-              "text",
-              "image"
+              "text"
             ],
             "output": [
               "text"
@@ -1228,14 +1188,46 @@
             "output": 8192
           }
         },
+        "desktop2.qwen3-embedding-4b": {
+          "name": "desktop2.qwen3-embedding-4b",
+          "tool_call": true,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 8192,
+            "input": 1,
+            "output": 8192
+          }
+        },
+        "desktop2.qwen3-reranking-4b": {
+          "name": "desktop2.qwen3-reranking-4b",
+          "tool_call": true,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 16384,
+            "input": 8192,
+            "output": 8192
+          }
+        },
         "desktop2.qwen3.8-27b:q4": {
           "name": "desktop2.qwen3.8-27b:q4",
           "tool_call": true,
-          "reasoning": true,
           "modalities": {
             "input": [
-              "text",
-              "image"
+              "text"
             ],
             "output": [
               "text"
@@ -1250,11 +1242,9 @@
         "desktop2.qwen3.8-27b:q4-2": {
           "name": "desktop2.qwen3.8-27b:q4-2",
           "tool_call": true,
-          "reasoning": true,
           "modalities": {
             "input": [
-              "text",
-              "image"
+              "text"
             ],
             "output": [
               "text"
@@ -1269,7 +1259,6 @@
         "desktop2.swift-qwen3.8-flash-next": {
           "name": "desktop2.swift-qwen3.8-flash-next",
           "tool_call": true,
-          "reasoning": true,
           "modalities": {
             "input": [
               "text"
@@ -1277,25 +1266,6 @@
             "output": [
               "text"
             ]
-          },
-          "limit": {
-            "context": 131072,
-            "input": 122880,
-            "output": 8192
-          },
-          "options": {
-            "reasoningEffort": "medium"
-          },
-          "variants": {
-            "low": {
-              "reasoningEffort": "low"
-            },
-            "medium": {
-              "reasoningEffort": "medium"
-            },
-            "xhigh": {
-              "reasoningEffort": "xhigh"
-            }
           }
         },
         "github_copilot/gpt-5": {
@@ -1337,20 +1307,13 @@
         "qwen3.8-27b:q4": {
           "name": "qwen3.8-27b:q4",
           "tool_call": true,
-          "reasoning": true,
           "modalities": {
             "input": [
-              "text",
-              "image"
+              "text"
             ],
             "output": [
               "text"
             ]
-          },
-          "limit": {
-            "context": 65536,
-            "input": 57344,
-            "output": 8192
           }
         },
         "server.bonsai-27b-q1": {
