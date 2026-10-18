@@ -97,11 +97,9 @@
         "desktop.gemma4:26b-a4b": {
           "name": "desktop.gemma4:26b-a4b",
           "tool_call": true,
-          "reasoning": true,
           "modalities": {
             "input": [
-              "text",
-              "image"
+              "text"
             ],
             "output": [
               "text"
@@ -116,11 +114,9 @@
         "desktop.gemma4:31b": {
           "name": "desktop.gemma4:31b",
           "tool_call": true,
-          "reasoning": true,
           "modalities": {
             "input": [
-              "text",
-              "image"
+              "text"
             ],
             "output": [
               "text"
@@ -531,11 +527,9 @@
         "desktop.swift1.5-qwen3.8-27b": {
           "name": "desktop.swift1.5-qwen3.8-27b",
           "tool_call": true,
-          "reasoning": true,
           "modalities": {
             "input": [
-              "text",
-              "image"
+              "text"
             ],
             "output": [
               "text"
@@ -545,20 +539,6 @@
             "context": 262144,
             "input": 253952,
             "output": 8192
-          },
-          "options": {
-            "reasoningEffort": "medium"
-          },
-          "variants": {
-            "low": {
-              "reasoningEffort": "low"
-            },
-            "medium": {
-              "reasoningEffort": "medium"
-            },
-            "xhigh": {
-              "reasoningEffort": "xhigh"
-            }
           }
         },
         "desktop.swift1.5-qwen3.8-27b-q4-1": {
@@ -696,11 +676,9 @@
         "desktop.swift1.5-qwen3.8-27b:Q6_K_L": {
           "name": "desktop.swift1.5-qwen3.8-27b:Q6_K_L",
           "tool_call": true,
-          "reasoning": true,
           "modalities": {
             "input": [
-              "text",
-              "image"
+              "text"
             ],
             "output": [
               "text"
@@ -710,30 +688,14 @@
             "context": 262144,
             "input": 253952,
             "output": 8192
-          },
-          "options": {
-            "reasoningEffort": "medium"
-          },
-          "variants": {
-            "low": {
-              "reasoningEffort": "low"
-            },
-            "medium": {
-              "reasoningEffort": "medium"
-            },
-            "xhigh": {
-              "reasoningEffort": "xhigh"
-            }
           }
         },
         "desktop.swift1.5:27b": {
           "name": "desktop.swift1.5:27b",
           "tool_call": true,
-          "reasoning": true,
           "modalities": {
             "input": [
-              "text",
-              "image"
+              "text"
             ],
             "output": [
               "text"
@@ -743,20 +705,6 @@
             "context": 262144,
             "input": 253952,
             "output": 8192
-          },
-          "options": {
-            "reasoningEffort": "medium"
-          },
-          "variants": {
-            "low": {
-              "reasoningEffort": "low"
-            },
-            "medium": {
-              "reasoningEffort": "medium"
-            },
-            "xhigh": {
-              "reasoningEffort": "xhigh"
-            }
           }
         },
         "desktop.swift1.5:27b-int4-1": {
@@ -956,11 +904,9 @@
         "desktop.terse-coder-27b": {
           "name": "desktop.terse-coder-27b",
           "tool_call": true,
-          "reasoning": true,
           "modalities": {
             "input": [
-              "text",
-              "image"
+              "text"
             ],
             "output": [
               "text"
@@ -970,30 +916,14 @@
             "context": 262144,
             "input": 253952,
             "output": 8192
-          },
-          "options": {
-            "reasoningEffort": "medium"
-          },
-          "variants": {
-            "low": {
-              "reasoningEffort": "low"
-            },
-            "medium": {
-              "reasoningEffort": "medium"
-            },
-            "xhigh": {
-              "reasoningEffort": "xhigh"
-            }
           }
         },
         "desktop.terse-coder-27b:Q6_K": {
           "name": "desktop.terse-coder-27b:Q6_K",
           "tool_call": true,
-          "reasoning": true,
           "modalities": {
             "input": [
-              "text",
-              "image"
+              "text"
             ],
             "output": [
               "text"
@@ -1003,26 +933,11 @@
             "context": 262144,
             "input": 253952,
             "output": 8192
-          },
-          "options": {
-            "reasoningEffort": "medium"
-          },
-          "variants": {
-            "low": {
-              "reasoningEffort": "low"
-            },
-            "medium": {
-              "reasoningEffort": "medium"
-            },
-            "xhigh": {
-              "reasoningEffort": "xhigh"
-            }
           }
         },
         "desktop.terse-coder:27b": {
           "name": "desktop.terse-coder:27b",
           "tool_call": true,
-          "reasoning": true,
           "modalities": {
             "input": [
               "text",
@@ -1036,20 +951,6 @@
             "context": 163840,
             "input": 131072,
             "output": 32768
-          },
-          "options": {
-            "reasoningEffort": "medium"
-          },
-          "variants": {
-            "low": {
-              "reasoningEffort": "low"
-            },
-            "medium": {
-              "reasoningEffort": "medium"
-            },
-            "xhigh": {
-              "reasoningEffort": "xhigh"
-            }
           }
         },
         "desktop2.gemma4:12b": {
@@ -1205,8 +1106,8 @@
           },
           "limit": {
             "context": 131072,
-            "input": 122880,
-            "output": 8192
+            "input": 98304,
+            "output": 32768
           },
           "options": {
             "reasoningEffort": "medium"
