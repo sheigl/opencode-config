@@ -34,8 +34,8 @@
             ]
           },
           "limit": {
-            "context": 32768,
-            "input": 24576,
+            "context": 24576,
+            "input": 16384,
             "output": 8192
           }
         },
@@ -52,8 +52,8 @@
             ]
           },
           "limit": {
-            "context": 32768,
-            "input": 24576,
+            "context": 24576,
+            "input": 16384,
             "output": 8192
           }
         },
@@ -1050,6 +1050,25 @@
             "xhigh": {
               "reasoningEffort": "xhigh"
             }
+          }
+        },
+        "desktop2.fara1.5": {
+          "name": "desktop2.fara1.5",
+          "tool_call": true,
+          "reasoning": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 65536,
+            "input": 57344,
+            "output": 8192
           }
         },
         "desktop2.gemma4:12b": {
