@@ -1052,10 +1052,9 @@
             }
           }
         },
-        "desktop2.fara1.5": {
-          "name": "desktop2.fara1.5",
+        "desktop2.embeddinggemma-2": {
+          "name": "desktop2.embeddinggemma-2",
           "tool_call": true,
-          "reasoning": true,
           "modalities": {
             "input": [
               "text",
@@ -1066,13 +1065,13 @@
             ]
           },
           "limit": {
-            "context": 65536,
-            "input": 57344,
+            "context": 8192,
+            "input": 1,
             "output": 8192
           }
         },
-        "desktop2.gemma4:12b": {
-          "name": "desktop2.gemma4:12b",
+        "desktop2.fara1.5": {
+          "name": "desktop2.fara1.5",
           "tool_call": true,
           "reasoning": true,
           "modalities": {
@@ -1105,70 +1104,6 @@
             "context": 65536,
             "input": 57344,
             "output": 8192
-          }
-        },
-        "desktop2.k2-horizon-7b-1": {
-          "name": "desktop2.k2-horizon-7b-1",
-          "tool_call": true,
-          "reasoning": true,
-          "modalities": {
-            "input": [
-              "text"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "limit": {
-            "context": 65536,
-            "input": 57344,
-            "output": 8192
-          },
-          "options": {
-            "reasoningEffort": "medium"
-          },
-          "variants": {
-            "low": {
-              "reasoningEffort": "low"
-            },
-            "medium": {
-              "reasoningEffort": "medium"
-            },
-            "xhigh": {
-              "reasoningEffort": "xhigh"
-            }
-          }
-        },
-        "desktop2.k2-horizon-7b-2": {
-          "name": "desktop2.k2-horizon-7b-2",
-          "tool_call": true,
-          "reasoning": true,
-          "modalities": {
-            "input": [
-              "text"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "limit": {
-            "context": 65536,
-            "input": 57344,
-            "output": 8192
-          },
-          "options": {
-            "reasoningEffort": "medium"
-          },
-          "variants": {
-            "low": {
-              "reasoningEffort": "low"
-            },
-            "medium": {
-              "reasoningEffort": "medium"
-            },
-            "xhigh": {
-              "reasoningEffort": "xhigh"
-            }
           }
         },
         "desktop2.ornith1.5:9b": {
@@ -1207,6 +1142,39 @@
             "context": 65536,
             "input": 57344,
             "output": 8192
+          }
+        },
+        "desktop2.swift-1.5-qwen3.8-27b:q4": {
+          "name": "desktop2.swift-1.5-qwen3.8-27b:q4",
+          "tool_call": true,
+          "reasoning": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 155648,
+            "input": 147456,
+            "output": 8192
+          },
+          "options": {
+            "reasoningEffort": "medium"
+          },
+          "variants": {
+            "low": {
+              "reasoningEffort": "low"
+            },
+            "medium": {
+              "reasoningEffort": "medium"
+            },
+            "xhigh": {
+              "reasoningEffort": "xhigh"
+            }
           }
         },
         "desktop2.swift-1.5-qwen3.8-27b:q6": {
