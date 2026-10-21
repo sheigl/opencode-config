@@ -399,7 +399,6 @@
         "desktop.strata-q4km-3gpu": {
           "name": "desktop.strata-q4km-3gpu",
           "tool_call": true,
-          "reasoning": true,
           "modalities": {
             "input": [
               "text",
@@ -413,20 +412,6 @@
             "context": 200000,
             "input": 167232,
             "output": 32768
-          },
-          "options": {
-            "reasoningEffort": "medium"
-          },
-          "variants": {
-            "low": {
-              "reasoningEffort": "low"
-            },
-            "medium": {
-              "reasoningEffort": "medium"
-            },
-            "xhigh": {
-              "reasoningEffort": "xhigh"
-            }
           }
         },
         "desktop.strata:iq3_s": {
@@ -498,7 +483,6 @@
         "desktop.strata:q4_k_m-3gpu": {
           "name": "desktop.strata:q4_k_m-3gpu",
           "tool_call": true,
-          "reasoning": true,
           "modalities": {
             "input": [
               "text",
@@ -512,20 +496,6 @@
             "context": 200000,
             "input": 167232,
             "output": 32768
-          },
-          "options": {
-            "reasoningEffort": "medium"
-          },
-          "variants": {
-            "low": {
-              "reasoningEffort": "low"
-            },
-            "medium": {
-              "reasoningEffort": "medium"
-            },
-            "xhigh": {
-              "reasoningEffort": "xhigh"
-            }
           }
         },
         "desktop.swift1.5-qwen3.8-27b": {
@@ -1158,8 +1128,8 @@
             ]
           },
           "limit": {
-            "context": 155648,
-            "input": 147456,
+            "context": 135168,
+            "input": 126976,
             "output": 8192
           },
           "options": {
