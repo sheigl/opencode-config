@@ -1035,8 +1035,8 @@
             ]
           },
           "limit": {
-            "context": 8192,
-            "input": 1,
+            "context": 65536,
+            "input": 57344,
             "output": 8192
           }
         },
@@ -1056,6 +1056,24 @@
           "limit": {
             "context": 32768,
             "input": 24576,
+            "output": 8192
+          }
+        },
+        "desktop2.flint:q4": {
+          "name": "desktop2.flint:q4",
+          "tool_call": true,
+          "reasoning": true,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 180224,
+            "input": 172032,
             "output": 8192
           }
         },
@@ -1445,6 +1463,18 @@
         "Authorization": "{env:GITHUB_MCP_TOKEN}"
       },
       "enabled": true
+    },
+    "servers": {
+      "memory-vault-read": {
+        "type": "remote",
+        "url": "http://server.tailc63ae8.ts.net:8766/mcp",
+        "oauth": false
+      },
+      "memory-vault-write": {
+        "type": "remote",
+        "url": "http://server.tailc63ae8.ts.net:8767/mcp",
+        "oauth": false
+      }
     }
   }
 }
