@@ -1073,8 +1073,8 @@
           },
           "limit": {
             "context": 131072,
-            "input": 122880,
-            "output": 8192
+            "input": 114688,
+            "output": 16384
           }
         },
         "desktop2.ibm-granite4.1:3b": {
