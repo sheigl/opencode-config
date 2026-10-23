@@ -462,8 +462,8 @@
           },
           "limit": {
             "context": 135168,
-            "input": 126976,
-            "output": 8192
+            "input": 1,
+            "output": 135168
           },
           "options": {
             "reasoningEffort": "medium"
@@ -1132,8 +1132,8 @@
             "output": 8192
           }
         },
-        "desktop2.qwen3.8-27b:iq3_s": {
-          "name": "desktop2.qwen3.8-27b:iq3_s",
+        "desktop2.qwen3.8-27b:q4": {
+          "name": "desktop2.qwen3.8-27b:q4",
           "tool_call": true,
           "reasoning": true,
           "modalities": {
@@ -1237,13 +1237,34 @@
         "qwen3.8-27b:q4": {
           "name": "qwen3.8-27b:q4",
           "tool_call": true,
+          "reasoning": true,
           "modalities": {
             "input": [
-              "text"
+              "text",
+              "image"
             ],
             "output": [
               "text"
             ]
+          },
+          "limit": {
+            "context": 135168,
+            "input": 126976,
+            "output": 8192
+          },
+          "options": {
+            "reasoningEffort": "medium"
+          },
+          "variants": {
+            "low": {
+              "reasoningEffort": "low"
+            },
+            "medium": {
+              "reasoningEffort": "medium"
+            },
+            "xhigh": {
+              "reasoningEffort": "xhigh"
+            }
           }
         },
         "server.bonsai-27b-q1": {
