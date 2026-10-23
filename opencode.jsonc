@@ -1132,8 +1132,8 @@
             "output": 8192
           }
         },
-        "desktop2.swift-1.5-qwen3.8-27b:q4": {
-          "name": "desktop2.swift-1.5-qwen3.8-27b:q4",
+        "desktop2.qwen3.8-27b:iq3_s": {
+          "name": "desktop2.qwen3.8-27b:iq3_s",
           "tool_call": true,
           "reasoning": true,
           "modalities": {
@@ -1147,8 +1147,8 @@
           },
           "limit": {
             "context": 135168,
-            "input": 126976,
-            "output": 8192
+            "input": 1,
+            "output": 135168
           },
           "options": {
             "reasoningEffort": "medium"
@@ -1165,8 +1165,8 @@
             }
           }
         },
-        "desktop2.swift-1.5-qwen3.8-27b:q6": {
-          "name": "desktop2.swift-1.5-qwen3.8-27b:q6",
+        "desktop2.swift-1.5-qwen3.8-27b:q4": {
+          "name": "desktop2.swift-1.5-qwen3.8-27b:q4",
           "tool_call": true,
           "reasoning": true,
           "modalities": {
@@ -1179,8 +1179,8 @@
             ]
           },
           "limit": {
-            "context": 65536,
-            "input": 57344,
+            "context": 135168,
+            "input": 126976,
             "output": 8192
           },
           "options": {
