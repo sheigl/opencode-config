@@ -1147,8 +1147,8 @@
           },
           "limit": {
             "context": 135168,
-            "input": 1,
-            "output": 135168
+            "input": 118784,
+            "output": 16384
           },
           "options": {
             "reasoningEffort": "medium"
