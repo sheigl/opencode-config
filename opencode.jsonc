@@ -377,8 +377,40 @@
           },
           "limit": {
             "context": 131072,
-            "input": 114688,
-            "output": 16384
+            "input": 1,
+            "output": 131072
+          },
+          "options": {
+            "reasoningEffort": "medium"
+          },
+          "variants": {
+            "low": {
+              "reasoningEffort": "low"
+            },
+            "medium": {
+              "reasoningEffort": "medium"
+            },
+            "xhigh": {
+              "reasoningEffort": "xhigh"
+            }
+          }
+        },
+        "desktop.strata-iq3xxs-3060": {
+          "name": "desktop.strata-iq3xxs-3060",
+          "tool_call": true,
+          "reasoning": true,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 131072,
+            "input": 1,
+            "output": 131072
           },
           "options": {
             "reasoningEffort": "medium"
@@ -487,8 +519,8 @@
           },
           "limit": {
             "context": 131072,
-            "input": 114688,
-            "output": 16384
+            "input": 1,
+            "output": 131072
           },
           "options": {
             "reasoningEffort": "medium"
