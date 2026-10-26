@@ -501,15 +501,41 @@ def resolve_caps(model_id: str, meta: dict, entries_by_host: dict[str, dict]) ->
     return None
 
 
+QUANT_SUFFIX_RE = re.compile(r":q[\w-]*$", re.IGNORECASE)
+
+
+def override_key_for(overrides: dict, model_id: str) -> str | None:
+    """The overrides key a model id resolves to, exact or family fallback.
+
+    Served ids carry a quantization suffix the user often leaves off when
+    writing overrides (`desktop2.flint:q4` -> override `desktop2.flint`), so
+    an exact-only lookup silently drops those.
+    """
+    if model_id in overrides:
+        return model_id
+    base = QUANT_SUFFIX_RE.sub("", model_id)
+    if base != model_id and base in overrides:
+        return base
+    return None
+
+
+def override_entry(overrides: dict, model_id: str) -> dict:
+    key = override_key_for(overrides, model_id)
+    return overrides.get(key) or {} if key else {}
+
+
 def merge_caps(model_id: str, meta: dict, caps: dict | None, mach, overrides: dict) -> dict:
     final: dict = {}
     lp = {"host": "", "config": None}
     if meta.get("api_base"):
         lp["host"] = urlparse(meta["api_base"]).hostname or ""
 
-    # reality: explicit overrides (user-provided data) win
-    override_keys = set(overrides.get(model_id) or {})
-    final.update(overrides.get(model_id) or {})
+    # reality: explicit overrides (user-provided data) win; the key may be a
+    # family name the user wrote without the quant suffix (`desktop2.flint`
+    # for the served `desktop2.flint:q4`), so resolve through the fallback.
+    override = override_entry(overrides, model_id)
+    override_keys = set(override or {})
+    final.update(override or {})
 
     # llama-swap cmd flags are ground truth for the served instance
     if caps:
@@ -683,6 +709,7 @@ def main() -> int:
     skipped: list[str] = []
     no_caps: list[str] = []
     multi_host: list[str] = []
+    matched_overrides: set[str] = set()
     for mid in sorted(model_ids):
         meta = by_name.get(mid, {})
         if mid in ambiguous:
@@ -690,6 +717,9 @@ def main() -> int:
             caps = None
         else:
             caps = resolve_caps(mid, meta, entries_by_host)
+        okey = override_key_for(overrides, mid)
+        if okey:
+            matched_overrides.add(okey)
         caps = merge_caps(mid, meta, caps, machines, overrides)
         entry = build_model_entry(mid, meta, caps, defaults)
         if entry is None:
@@ -721,6 +751,12 @@ def main() -> int:
         for mid in no_caps:
             print(f"  - {mid}")
     print("\nAdd real values for those in scripts/config.json under 'overrides'.")
+
+    if overrides:
+        unused = sorted(k for k in overrides if k not in matched_overrides)
+        if unused:
+            print(f"\nOverrides matching no model (ignored): {', '.join(unused)}")
+            print("Check those keys against the served model ids in scripts/config.json.")
 
     config = build_config(models, load_existing_config(path))
     with open(path, "w", encoding="utf-8") as fh:

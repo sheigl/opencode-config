@@ -17,7 +17,7 @@
   },
   "defaults": {
     "tool_call": true,
-    "max_output": 8192
+    "max_output": 16384
   },
   "overrides": {
     "desktop.terse-coder:27b": {
@@ -54,16 +54,20 @@
       "output": 32768,
       "vision": true
     },
-    "desktop.strata-q4km-3gpu": {
+    "desktop.strata:iq3_s": {
       "context": 200000,
       "output": 32768,
       "vision": true
     },
-    "desktop.strata:q4_k_m-3gpu": {
-      "context": 200000,
+    "desktop.strata-q4km": {
       "output": 32768,
       "vision": true
+    },
+    "desktop2.swift-1.5-qwen3.8-27b:q6": {
+      "vision": true
+    },
+    "desktop2.qwen3.8-27b:q4": {
+      "vision": true
     }
-
   }
 }
