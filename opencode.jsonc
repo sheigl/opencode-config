@@ -35,8 +35,8 @@
           },
           "limit": {
             "context": 24576,
-            "input": 16384,
-            "output": 8192
+            "input": 8192,
+            "output": 16384
           }
         },
         "desktop.fara1.5:9b": {
@@ -53,8 +53,8 @@
           },
           "limit": {
             "context": 24576,
-            "input": 16384,
-            "output": 8192
+            "input": 8192,
+            "output": 16384
           }
         },
         "desktop.gemma4:12b": {
@@ -71,8 +71,8 @@
           },
           "limit": {
             "context": 65536,
-            "input": 57344,
-            "output": 8192
+            "input": 49152,
+            "output": 16384
           }
         },
         "desktop.gemma4:12b-no-reasoning": {
@@ -90,8 +90,8 @@
           },
           "limit": {
             "context": 65536,
-            "input": 57344,
-            "output": 8192
+            "input": 49152,
+            "output": 16384
           }
         },
         "desktop.gemma4:26b-a4b": {
@@ -109,8 +109,8 @@
           },
           "limit": {
             "context": 32768,
-            "input": 24576,
-            "output": 8192
+            "input": 16384,
+            "output": 16384
           }
         },
         "desktop.gemma4:31b": {
@@ -128,8 +128,8 @@
           },
           "limit": {
             "context": 32768,
-            "input": 24576,
-            "output": 8192
+            "input": 16384,
+            "output": 16384
           }
         },
         "desktop.gemma4:e4b": {
@@ -147,8 +147,8 @@
           },
           "limit": {
             "context": 131072,
-            "input": 122880,
-            "output": 8192
+            "input": 114688,
+            "output": 16384
           }
         },
         "desktop.gemma4:e4b-no-reasoning": {
@@ -166,8 +166,8 @@
           },
           "limit": {
             "context": 131072,
-            "input": 122880,
-            "output": 8192
+            "input": 114688,
+            "output": 16384
           }
         },
         "desktop.ibm-granite4.1:3b": {
@@ -184,8 +184,8 @@
           },
           "limit": {
             "context": 65538,
-            "input": 57346,
-            "output": 8192
+            "input": 49154,
+            "output": 16384
           }
         },
         "desktop.k2-horizon-7b": {
@@ -234,8 +234,8 @@
           },
           "limit": {
             "context": 32768,
-            "input": 24576,
-            "output": 8192
+            "input": 16384,
+            "output": 16384
           }
         },
         "desktop.magentic-brain": {
@@ -251,8 +251,8 @@
           },
           "limit": {
             "context": 32768,
-            "input": 24576,
-            "output": 8192
+            "input": 16384,
+            "output": 16384
           }
         },
         "desktop.muse:30b": {
@@ -270,8 +270,8 @@
           },
           "limit": {
             "context": 131072,
-            "input": 122880,
-            "output": 8192
+            "input": 114688,
+            "output": 16384
           }
         },
         "desktop.phi3.5:mini": {
@@ -288,8 +288,8 @@
           },
           "limit": {
             "context": 65538,
-            "input": 57346,
-            "output": 8192
+            "input": 49154,
+            "output": 16384
           }
         },
         "desktop.qwen3.5:9b": {
@@ -307,8 +307,8 @@
           },
           "limit": {
             "context": 131072,
-            "input": 122880,
-            "output": 8192
+            "input": 114688,
+            "output": 16384
           }
         },
         "desktop.qwen3.5:9b-no-reasoning": {
@@ -326,8 +326,8 @@
           },
           "limit": {
             "context": 131072,
-            "input": 122880,
-            "output": 8192
+            "input": 114688,
+            "output": 16384
           }
         },
         "desktop.strata-iq3s": {
@@ -347,6 +347,38 @@
             "context": 200000,
             "input": 167232,
             "output": 32768
+          },
+          "options": {
+            "reasoningEffort": "medium"
+          },
+          "variants": {
+            "low": {
+              "reasoningEffort": "low"
+            },
+            "medium": {
+              "reasoningEffort": "medium"
+            },
+            "xhigh": {
+              "reasoningEffort": "xhigh"
+            }
+          }
+        },
+        "desktop.strata-iq3s-3060": {
+          "name": "desktop.strata-iq3s-3060",
+          "tool_call": true,
+          "reasoning": true,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 131072,
+            "input": 114688,
+            "output": 16384
           },
           "options": {
             "reasoningEffort": "medium"
@@ -401,17 +433,11 @@
           "tool_call": true,
           "modalities": {
             "input": [
-              "text",
-              "image"
+              "text"
             ],
             "output": [
               "text"
             ]
-          },
-          "limit": {
-            "context": 200000,
-            "input": 167232,
-            "output": 32768
           }
         },
         "desktop.strata:iq3_s": {
@@ -447,6 +473,38 @@
             }
           }
         },
+        "desktop.strata:iq3_s-3060": {
+          "name": "desktop.strata:iq3_s-3060",
+          "tool_call": true,
+          "reasoning": true,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 131072,
+            "input": 114688,
+            "output": 16384
+          },
+          "options": {
+            "reasoningEffort": "medium"
+          },
+          "variants": {
+            "low": {
+              "reasoningEffort": "low"
+            },
+            "medium": {
+              "reasoningEffort": "medium"
+            },
+            "xhigh": {
+              "reasoningEffort": "xhigh"
+            }
+          }
+        },
         "desktop.strata:q4_k_m": {
           "name": "desktop.strata:q4_k_m",
           "tool_call": true,
@@ -462,8 +520,8 @@
           },
           "limit": {
             "context": 135168,
-            "input": 1,
-            "output": 135168
+            "input": 118784,
+            "output": 16384
           },
           "options": {
             "reasoningEffort": "medium"
@@ -485,17 +543,11 @@
           "tool_call": true,
           "modalities": {
             "input": [
-              "text",
-              "image"
+              "text"
             ],
             "output": [
               "text"
             ]
-          },
-          "limit": {
-            "context": 200000,
-            "input": 167232,
-            "output": 32768
           }
         },
         "desktop.swift1.5-qwen3.8-27b": {
@@ -513,8 +565,8 @@
           },
           "limit": {
             "context": 262144,
-            "input": 253952,
-            "output": 8192
+            "input": 245760,
+            "output": 16384
           },
           "options": {
             "reasoningEffort": "medium"
@@ -546,8 +598,8 @@
           },
           "limit": {
             "context": 163840,
-            "input": 155648,
-            "output": 8192
+            "input": 147456,
+            "output": 16384
           },
           "options": {
             "reasoningEffort": "medium"
@@ -579,8 +631,8 @@
           },
           "limit": {
             "context": 163840,
-            "input": 155648,
-            "output": 8192
+            "input": 147456,
+            "output": 16384
           },
           "options": {
             "reasoningEffort": "medium"
@@ -678,8 +730,74 @@
           },
           "limit": {
             "context": 262144,
-            "input": 253952,
-            "output": 8192
+            "input": 245760,
+            "output": 16384
+          },
+          "options": {
+            "reasoningEffort": "medium"
+          },
+          "variants": {
+            "low": {
+              "reasoningEffort": "low"
+            },
+            "medium": {
+              "reasoningEffort": "medium"
+            },
+            "xhigh": {
+              "reasoningEffort": "xhigh"
+            }
+          }
+        },
+        "desktop.swift1.5-qwen3.8-flash-next": {
+          "name": "desktop.swift1.5-qwen3.8-flash-next",
+          "tool_call": true,
+          "reasoning": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 65536,
+            "input": 32768,
+            "output": 32768
+          },
+          "options": {
+            "reasoningEffort": "medium"
+          },
+          "variants": {
+            "low": {
+              "reasoningEffort": "low"
+            },
+            "medium": {
+              "reasoningEffort": "medium"
+            },
+            "xhigh": {
+              "reasoningEffort": "xhigh"
+            }
+          }
+        },
+        "desktop.swift1.5-qwen3.8-flash-next:Q4_K_M": {
+          "name": "desktop.swift1.5-qwen3.8-flash-next:Q4_K_M",
+          "tool_call": true,
+          "reasoning": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 65536,
+            "input": 32768,
+            "output": 32768
           },
           "options": {
             "reasoningEffort": "medium"
@@ -711,8 +829,8 @@
           },
           "limit": {
             "context": 262144,
-            "input": 253952,
-            "output": 8192
+            "input": 245760,
+            "output": 16384
           },
           "options": {
             "reasoningEffort": "medium"
@@ -743,8 +861,8 @@
           },
           "limit": {
             "context": 163840,
-            "input": 155648,
-            "output": 8192
+            "input": 147456,
+            "output": 16384
           },
           "options": {
             "reasoningEffort": "medium"
@@ -775,8 +893,8 @@
           },
           "limit": {
             "context": 163840,
-            "input": 155648,
-            "output": 8192
+            "input": 147456,
+            "output": 16384
           },
           "options": {
             "reasoningEffort": "medium"
@@ -808,8 +926,8 @@
           },
           "limit": {
             "context": 163840,
-            "input": 155648,
-            "output": 8192
+            "input": 147456,
+            "output": 16384
           },
           "options": {
             "reasoningEffort": "medium"
@@ -841,8 +959,8 @@
           },
           "limit": {
             "context": 163840,
-            "input": 155648,
-            "output": 8192
+            "input": 147456,
+            "output": 16384
           },
           "options": {
             "reasoningEffort": "medium"
@@ -873,8 +991,8 @@
           },
           "limit": {
             "context": 163840,
-            "input": 155648,
-            "output": 8192
+            "input": 147456,
+            "output": 16384
           },
           "options": {
             "reasoningEffort": "medium"
@@ -905,8 +1023,8 @@
           },
           "limit": {
             "context": 163840,
-            "input": 155648,
-            "output": 8192
+            "input": 147456,
+            "output": 16384
           },
           "options": {
             "reasoningEffort": "medium"
@@ -938,8 +1056,8 @@
           },
           "limit": {
             "context": 262144,
-            "input": 253952,
-            "output": 8192
+            "input": 245760,
+            "output": 16384
           },
           "options": {
             "reasoningEffort": "medium"
@@ -971,8 +1089,8 @@
           },
           "limit": {
             "context": 262144,
-            "input": 253952,
-            "output": 8192
+            "input": 245760,
+            "output": 16384
           },
           "options": {
             "reasoningEffort": "medium"
@@ -1036,8 +1154,8 @@
           },
           "limit": {
             "context": 65536,
-            "input": 57344,
-            "output": 8192
+            "input": 49152,
+            "output": 16384
           }
         },
         "desktop2.fara1.5": {
@@ -1055,8 +1173,8 @@
           },
           "limit": {
             "context": 32768,
-            "input": 24576,
-            "output": 8192
+            "input": 16384,
+            "output": 16384
           }
         },
         "desktop2.flint:q4": {
@@ -1090,8 +1208,27 @@
           },
           "limit": {
             "context": 65536,
-            "input": 57344,
-            "output": 8192
+            "input": 49152,
+            "output": 16384
+          }
+        },
+        "desktop2.muse-glimmer-30b:q4": {
+          "name": "desktop2.muse-glimmer-30b:q4",
+          "tool_call": true,
+          "reasoning": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 131072,
+            "input": 1,
+            "output": 131072
           }
         },
         "desktop2.ornith1.5:9b": {
@@ -1109,8 +1246,8 @@
           },
           "limit": {
             "context": 65536,
-            "input": 57344,
-            "output": 8192
+            "input": 49152,
+            "output": 16384
           }
         },
         "desktop2.ornith1.5:9b-uncensored": {
@@ -1128,8 +1265,8 @@
           },
           "limit": {
             "context": 65536,
-            "input": 57344,
-            "output": 8192
+            "input": 49152,
+            "output": 16384
           }
         },
         "desktop2.qwen3.8-27b:q4": {
@@ -1147,8 +1284,8 @@
           },
           "limit": {
             "context": 135168,
-            "input": 118784,
-            "output": 16384
+            "input": 1,
+            "output": 135168
           },
           "options": {
             "reasoningEffort": "medium"
@@ -1180,8 +1317,8 @@
           },
           "limit": {
             "context": 135168,
-            "input": 126976,
-            "output": 8192
+            "input": 118784,
+            "output": 16384
           },
           "options": {
             "reasoningEffort": "medium"
@@ -1249,8 +1386,8 @@
           },
           "limit": {
             "context": 135168,
-            "input": 126976,
-            "output": 8192
+            "input": 118784,
+            "output": 16384
           },
           "options": {
             "reasoningEffort": "medium"
@@ -1280,8 +1417,8 @@
           },
           "limit": {
             "context": 32768,
-            "input": 24576,
-            "output": 8192
+            "input": 16384,
+            "output": 16384
           }
         },
         "server.bonsai-27b-q2": {
@@ -1297,8 +1434,8 @@
           },
           "limit": {
             "context": 32768,
-            "input": 24576,
-            "output": 8192
+            "input": 16384,
+            "output": 16384
           }
         },
         "server.gemma-4-E2B": {
@@ -1315,8 +1452,8 @@
           },
           "limit": {
             "context": 32768,
-            "input": 24576,
-            "output": 8192
+            "input": 16384,
+            "output": 16384
           }
         },
         "server.granite-4.1-3b": {
@@ -1332,8 +1469,8 @@
           },
           "limit": {
             "context": 32768,
-            "input": 24576,
-            "output": 8192
+            "input": 16384,
+            "output": 16384
           }
         },
         "server.muse:30b": {
@@ -1349,8 +1486,8 @@
           },
           "limit": {
             "context": 32768,
-            "input": 24576,
-            "output": 8192
+            "input": 16384,
+            "output": 16384
           }
         },
         "server.qwen3-4b": {
@@ -1366,8 +1503,8 @@
           },
           "limit": {
             "context": 32768,
-            "input": 24576,
-            "output": 8192
+            "input": 16384,
+            "output": 16384
           }
         },
         "server.qwen3.5-4b": {
@@ -1384,8 +1521,8 @@
           },
           "limit": {
             "context": 32768,
-            "input": 24576,
-            "output": 8192
+            "input": 16384,
+            "output": 16384
           }
         },
         "server.qwen3.5-9b": {
@@ -1401,8 +1538,8 @@
           },
           "limit": {
             "context": 65536,
-            "input": 57344,
-            "output": 8192
+            "input": 1,
+            "output": 65536
           }
         },
         "server.qwen3.5-9b-claude": {
@@ -1418,8 +1555,8 @@
           },
           "limit": {
             "context": 65536,
-            "input": 57344,
-            "output": 8192
+            "input": 49152,
+            "output": 16384
           }
         },
         "summarizer": {
@@ -1452,21 +1589,6 @@
     ]
   ],
   "mcp": {
-    "blender": {
-      "type": "local",
-      "command": [
-        "docker",
-        "exec",
-        "-i",
-        "-e",
-        "DISABLE_TELEMETRY=true",
-        "blender",
-        "/config/blender-mcp/venv/bin/python",
-        "-m",
-        "blender_mcp.server"
-      ],
-      "enabled": true
-    },
     "open-webui": {
       "enabled": false,
       "type": "remote",
