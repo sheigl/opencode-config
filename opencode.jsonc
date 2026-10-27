@@ -526,18 +526,6 @@
             }
           }
         },
-        "desktop.strata-q4km-3gpu": {
-          "name": "desktop.strata-q4km-3gpu",
-          "tool_call": true,
-          "modalities": {
-            "input": [
-              "text"
-            ],
-            "output": [
-              "text"
-            ]
-          }
-        },
         "desktop.strata:iq3_s": {
           "name": "desktop.strata:iq3_s",
           "tool_call": true,
@@ -634,18 +622,6 @@
             "xhigh": {
               "reasoningEffort": "xhigh"
             }
-          }
-        },
-        "desktop.strata:q4_k_m-3gpu": {
-          "name": "desktop.strata:q4_k_m-3gpu",
-          "tool_call": true,
-          "modalities": {
-            "input": [
-              "text"
-            ],
-            "output": [
-              "text"
-            ]
           }
         },
         "desktop.swift-qwen3.8-flash-next:IQ3_XXS": {
