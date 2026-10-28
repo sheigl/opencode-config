@@ -217,6 +217,25 @@
             "output": 16384
           }
         },
+        "desktop.muse-q8": {
+          "name": "desktop.muse-q8",
+          "tool_call": true,
+          "reasoning": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 262144,
+            "input": 245760,
+            "output": 16384
+          }
+        },
         "desktop.muse:30b": {
           "name": "desktop.muse:30b",
           "tool_call": true,
@@ -233,6 +252,25 @@
           "limit": {
             "context": 131072,
             "input": 114688,
+            "output": 16384
+          }
+        },
+        "desktop.muse:30b-q8": {
+          "name": "desktop.muse:30b-q8",
+          "tool_call": true,
+          "reasoning": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 262144,
+            "input": 245760,
             "output": 16384
           }
         },
