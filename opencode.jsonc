@@ -307,8 +307,8 @@
           },
           "limit": {
             "context": 200000,
-            "input": 183616,
-            "output": 16384
+            "input": 167232,
+            "output": 32768
           },
           "options": {
             "reasoningEffort": "medium"
@@ -340,8 +340,8 @@
           },
           "limit": {
             "context": 200000,
-            "input": 1,
-            "output": 200000
+            "input": 167232,
+            "output": 32768
           },
           "options": {
             "reasoningEffort": "medium"
@@ -472,8 +472,8 @@
           },
           "limit": {
             "context": 200000,
-            "input": 1,
-            "output": 200000
+            "input": 183616,
+            "output": 16384
           },
           "options": {
             "reasoningEffort": "medium"
@@ -891,11 +891,9 @@
         "desktop2.muse-glimmer-30b:q4": {
           "name": "desktop2.muse-glimmer-30b:q4",
           "tool_call": true,
-          "reasoning": true,
           "modalities": {
             "input": [
-              "text",
-              "image"
+              "text"
             ],
             "output": [
               "text"
@@ -1214,8 +1212,8 @@
           },
           "limit": {
             "context": 65536,
-            "input": 1,
-            "output": 65536
+            "input": 49152,
+            "output": 16384
           }
         },
         "server.qwen3.5-9b-claude": {
