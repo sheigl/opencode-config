@@ -888,12 +888,14 @@
             "output": 16384
           }
         },
-        "desktop2.muse-glimmer-30b:q4": {
-          "name": "desktop2.muse-glimmer-30b:q4",
+        "desktop2.muse-glimmer-30b:q6": {
+          "name": "desktop2.muse-glimmer-30b:q6",
           "tool_call": true,
+          "reasoning": true,
           "modalities": {
             "input": [
-              "text"
+              "text",
+              "image"
             ],
             "output": [
               "text"
@@ -992,6 +994,39 @@
           "limit": {
             "context": 135168,
             "input": 118784,
+            "output": 16384
+          },
+          "options": {
+            "reasoningEffort": "medium"
+          },
+          "variants": {
+            "low": {
+              "reasoningEffort": "low"
+            },
+            "medium": {
+              "reasoningEffort": "medium"
+            },
+            "xhigh": {
+              "reasoningEffort": "xhigh"
+            }
+          }
+        },
+        "desktop2.swift-1.5-qwen3.8-27b:q6": {
+          "name": "desktop2.swift-1.5-qwen3.8-27b:q6",
+          "tool_call": true,
+          "reasoning": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 131072,
+            "input": 114688,
             "output": 16384
           },
           "options": {
