@@ -373,8 +373,8 @@
           },
           "limit": {
             "context": 200000,
-            "input": 183616,
-            "output": 16384
+            "input": 167232,
+            "output": 32768
           },
           "options": {
             "reasoningEffort": "medium"
