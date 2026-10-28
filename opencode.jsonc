@@ -292,39 +292,6 @@
             "output": 16384
           }
         },
-        "desktop.qwen3.8-flash-next-gsq-rco:IQ3_S": {
-          "name": "desktop.qwen3.8-flash-next-gsq-rco:IQ3_S",
-          "tool_call": true,
-          "reasoning": true,
-          "modalities": {
-            "input": [
-              "text",
-              "image"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "limit": {
-            "context": 200000,
-            "input": 167232,
-            "output": 32768
-          },
-          "options": {
-            "reasoningEffort": "medium"
-          },
-          "variants": {
-            "low": {
-              "reasoningEffort": "low"
-            },
-            "medium": {
-              "reasoningEffort": "medium"
-            },
-            "xhigh": {
-              "reasoningEffort": "xhigh"
-            }
-          }
-        },
         "desktop.qwen3.8-flash-next:Q4_K_M": {
           "name": "desktop.qwen3.8-flash-next:Q4_K_M",
           "tool_call": true,
@@ -358,74 +325,8 @@
             }
           }
         },
-        "desktop.strata-iq3s": {
-          "name": "desktop.strata-iq3s",
-          "tool_call": true,
-          "reasoning": true,
-          "modalities": {
-            "input": [
-              "text",
-              "image"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "limit": {
-            "context": 200000,
-            "input": 167232,
-            "output": 32768
-          },
-          "options": {
-            "reasoningEffort": "medium"
-          },
-          "variants": {
-            "low": {
-              "reasoningEffort": "low"
-            },
-            "medium": {
-              "reasoningEffort": "medium"
-            },
-            "xhigh": {
-              "reasoningEffort": "xhigh"
-            }
-          }
-        },
         "desktop.strata-q4km": {
           "name": "desktop.strata-q4km",
-          "tool_call": true,
-          "reasoning": true,
-          "modalities": {
-            "input": [
-              "text",
-              "image"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "limit": {
-            "context": 200000,
-            "input": 167232,
-            "output": 32768
-          },
-          "options": {
-            "reasoningEffort": "medium"
-          },
-          "variants": {
-            "low": {
-              "reasoningEffort": "low"
-            },
-            "medium": {
-              "reasoningEffort": "medium"
-            },
-            "xhigh": {
-              "reasoningEffort": "xhigh"
-            }
-          }
-        },
-        "desktop.strata:iq3_s": {
-          "name": "desktop.strata:iq3_s",
           "tool_call": true,
           "reasoning": true,
           "modalities": {
