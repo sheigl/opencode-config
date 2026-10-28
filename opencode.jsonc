@@ -94,6 +94,25 @@
             "output": 16384
           }
         },
+        "desktop.gemma4:31b": {
+          "name": "desktop.gemma4:31b",
+          "tool_call": true,
+          "reasoning": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 131072,
+            "input": 114688,
+            "output": 16384
+          }
+        },
         "desktop.gemma4:e4b": {
           "name": "desktop.gemma4:e4b",
           "tool_call": true,
