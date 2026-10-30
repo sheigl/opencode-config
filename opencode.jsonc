@@ -387,8 +387,8 @@
             "output": 16384
           }
         },
-        "desktop.qwen3.8-flash-next:UD-Q6_K_XL": {
-          "name": "desktop.qwen3.8-flash-next:UD-Q6_K_XL",
+        "desktop.qwen3.8-flash-next:Q5_K_M": {
+          "name": "desktop.qwen3.8-flash-next:Q5_K_M",
           "tool_call": true,
           "reasoning": true,
           "modalities": {
@@ -400,8 +400,8 @@
             ]
           },
           "limit": {
-            "context": 131072,
-            "input": 98304,
+            "context": 200000,
+            "input": 167232,
             "output": 32768
           },
           "options": {
@@ -419,8 +419,8 @@
             }
           }
         },
-        "desktop.strata-q6": {
-          "name": "desktop.strata-q6",
+        "desktop.strata-q5": {
+          "name": "desktop.strata-q5",
           "tool_call": true,
           "reasoning": true,
           "modalities": {
@@ -432,8 +432,8 @@
             ]
           },
           "limit": {
-            "context": 131072,
-            "input": 98304,
+            "context": 200000,
+            "input": 167232,
             "output": 32768
           },
           "options": {
@@ -451,8 +451,8 @@
             }
           }
         },
-        "desktop.strata:ud-q6_k_xl": {
-          "name": "desktop.strata:ud-q6_k_xl",
+        "desktop.strata:q5_k_m": {
+          "name": "desktop.strata:q5_k_m",
           "tool_call": true,
           "reasoning": true,
           "modalities": {
@@ -464,8 +464,8 @@
             ]
           },
           "limit": {
-            "context": 131072,
-            "input": 98304,
+            "context": 200000,
+            "input": 167232,
             "output": 32768
           },
           "options": {
