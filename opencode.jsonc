@@ -292,8 +292,8 @@
           },
           "limit": {
             "context": 131072,
-            "input": 114688,
-            "output": 16384
+            "input": 98304,
+            "output": 32768
           }
         },
         "desktop.strata-q5": {
@@ -310,8 +310,8 @@
           },
           "limit": {
             "context": 131072,
-            "input": 114688,
-            "output": 16384
+            "input": 98304,
+            "output": 32768
           }
         },
         "desktop.strata:q5_k_m": {
@@ -328,8 +328,8 @@
           },
           "limit": {
             "context": 131072,
-            "input": 114688,
-            "output": 16384
+            "input": 98304,
+            "output": 32768
           }
         },
         "desktop.swift1.5-qwen3.8-27b-q4-1": {
