@@ -598,7 +598,14 @@ def build_model_entry(model_id: str, meta: dict, caps: dict, defaults: dict) -> 
         # hard output cap, so reserve `max_output` from the context for
         # generation (defaults.max_output in scripts/config.json).
         output = caps.get("output") or int(defaults.get("max_output") or 8192)
-        output = min(output, int(context))
+        # litellm's model_info.max_output_tokens is sometimes really the context
+        # window (200000 for the qwen3.8 entries). Clamping that to the context
+        # left input at 1 token, which made OpenCode compact on the first turn.
+        # An output budget that eats the whole window is not a budget: fall back
+        # to defaults.max_output, then clamp.
+        if int(output) >= int(context):
+            output = int(defaults.get("max_output") or 8192)
+        output = min(int(output), int(context))
         entry["limit"] = {
             "context": int(context),
             "input": max(int(context) - output, 1),

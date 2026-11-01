@@ -1144,6 +1144,17 @@
     ]
   ],
   "mcp": {
+    "chrome-devtools": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "chrome-devtools-mcp@latest",
+        "--slim",
+        "--headless"
+      ],
+      "enabled": true
+    },
     "open-webui": {
       "enabled": false,
       "type": "remote",

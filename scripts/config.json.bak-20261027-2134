@@ -1,0 +1,73 @@
+{
+  "llama_swap": {
+    "machines": {
+      "sheigl-ms-7a38.tailc63ae8.ts.net": {
+        "local": true,
+        "config": "/home/sheigl/.config/llama-swap/config.yaml"
+      },
+      "desktop-1cosh3m2.tailc63ae8.ts.net": {
+        "ssh": "desktop2.home",
+        "config": "~/.config/llama-swap/config.yaml"
+      },
+      "server.tailc63ae8.ts.net": {
+        "ssh": "server.local",
+        "config": "~/.config/llama-swap/config.yaml"
+      }
+    }
+  },
+  "defaults": {
+    "tool_call": true,
+    "max_output": 16384
+  },
+  "overrides": {
+    "desktop.terse-coder:27b": {
+      "context": 163840,
+      "output": 32768,
+      "vision": true
+    },
+    "desktop.swift1.5-qwen3.8-flash-next": {
+      "context": 65536,
+      "output": 32768,
+      "vision": true
+    },
+    "desktop.k2-horizon-7b": {
+      "context": 65536,
+      "output": 32768
+    },
+    "swift1.5-qwen3.8-27b-vllm": {
+      "context": 163840,
+      "output": 32768,
+      "vision": true
+    },
+    "desktop.swift1.5-qwen3.8-27b-vllm-1": {
+      "context": 163840,
+      "output": 32768,
+      "vision": true
+    },
+    "desktop.swift1.5-qwen3.8-27b-vllm-2": {
+      "context": 163840,
+      "output": 32768,
+      "vision": true
+    },
+    "desktop.strata-iq3s": {
+      "context": 200000,
+      "output": 32768,
+      "vision": true
+    },
+    "desktop.strata:iq3_s": {
+      "context": 200000,
+      "output": 32768,
+      "vision": true
+    },
+    "desktop.strata-q4km": {
+      "output": 32768,
+      "vision": true
+    },
+    "desktop2.swift-1.5-qwen3.8-27b:q6": {
+      "vision": true
+    },
+    "desktop2.qwen3.8-27b:q4": {
+      "vision": true
+    }
+  }
+}
