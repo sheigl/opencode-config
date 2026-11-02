@@ -300,24 +300,6 @@
             ]
           }
         },
-        "desktop.qwen3.8-flash-next:Q5_K_M": {
-          "name": "desktop.qwen3.8-flash-next:Q5_K_M",
-          "tool_call": true,
-          "modalities": {
-            "input": [
-              "text",
-              "image"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "limit": {
-            "context": 131072,
-            "input": 114688,
-            "output": 16384
-          }
-        },
         "desktop.swift1.5-qwen3.8-27b-q4-1": {
           "name": "desktop.swift1.5-qwen3.8-27b-q4-1",
           "tool_call": true,
