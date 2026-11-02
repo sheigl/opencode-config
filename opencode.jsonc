@@ -216,18 +216,6 @@
             ]
           }
         },
-        "desktop.muse:30b": {
-          "name": "desktop.muse:30b",
-          "tool_call": true,
-          "modalities": {
-            "input": [
-              "text"
-            ],
-            "output": [
-              "text"
-            ]
-          }
-        },
         "desktop.muse:30b-q6": {
           "name": "desktop.muse:30b-q6",
           "tool_call": true,
@@ -328,30 +316,6 @@
             "context": 131072,
             "input": 114688,
             "output": 16384
-          }
-        },
-        "desktop.strata-q5": {
-          "name": "desktop.strata-q5",
-          "tool_call": true,
-          "modalities": {
-            "input": [
-              "text"
-            ],
-            "output": [
-              "text"
-            ]
-          }
-        },
-        "desktop.strata:q5_k_m": {
-          "name": "desktop.strata:q5_k_m",
-          "tool_call": true,
-          "modalities": {
-            "input": [
-              "text"
-            ],
-            "output": [
-              "text"
-            ]
           }
         },
         "desktop.swift1.5-qwen3.8-27b-q4-1": {
