@@ -19,6 +19,11 @@
             "output": [
               "text"
             ]
+          },
+          "limit": {
+            "context": 131072,
+            "input": 114688,
+            "output": 16384
           }
         },
         "desktop.comfyui_auto": {
@@ -180,6 +185,11 @@
             "output": [
               "text"
             ]
+          },
+          "limit": {
+            "context": 32768,
+            "input": 16384,
+            "output": 16384
           }
         },
         "desktop.magentic-brain": {
@@ -208,6 +218,18 @@
         },
         "desktop.muse:30b": {
           "name": "desktop.muse:30b",
+          "tool_call": true,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "desktop.muse:30b-q6": {
+          "name": "desktop.muse:30b-q6",
           "tool_call": true,
           "modalities": {
             "input": [
@@ -278,6 +300,18 @@
             ]
           }
         },
+        "desktop.qwen3.8-flash-next:Q4_K_XL": {
+          "name": "desktop.qwen3.8-flash-next:Q4_K_XL",
+          "tool_call": true,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
         "desktop.qwen3.8-flash-next:Q5_K_M": {
           "name": "desktop.qwen3.8-flash-next:Q5_K_M",
           "tool_call": true,
@@ -301,17 +335,11 @@
           "tool_call": true,
           "modalities": {
             "input": [
-              "text",
-              "image"
+              "text"
             ],
             "output": [
               "text"
             ]
-          },
-          "limit": {
-            "context": 131072,
-            "input": 114688,
-            "output": 16384
           }
         },
         "desktop.strata:q5_k_m": {
@@ -319,17 +347,11 @@
           "tool_call": true,
           "modalities": {
             "input": [
-              "text",
-              "image"
+              "text"
             ],
             "output": [
               "text"
             ]
-          },
-          "limit": {
-            "context": 131072,
-            "input": 114688,
-            "output": 16384
           }
         },
         "desktop.swift1.5-qwen3.8-27b-q4-1": {
@@ -534,6 +556,11 @@
             "output": [
               "text"
             ]
+          },
+          "limit": {
+            "context": 131072,
+            "input": 114688,
+            "output": 16384
           }
         },
         "desktop2.ornith1.5:9b": {
@@ -620,6 +647,11 @@
             "output": [
               "text"
             ]
+          },
+          "limit": {
+            "context": 131072,
+            "input": 114688,
+            "output": 16384
           }
         },
         "go.beam-free": {
@@ -968,6 +1000,11 @@
             "output": [
               "text"
             ]
+          },
+          "limit": {
+            "context": 131072,
+            "input": 114688,
+            "output": 16384
           }
         },
         "server.bonsai-27b-q1": {
@@ -1004,6 +1041,11 @@
             "output": [
               "text"
             ]
+          },
+          "limit": {
+            "context": 32768,
+            "input": 16384,
+            "output": 16384
           }
         },
         "server.embedding-4b": {
