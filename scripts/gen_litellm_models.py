@@ -89,6 +89,42 @@ def fetch_litellm_models(server: str, api_key: str) -> tuple[list[str], dict, se
         if mid and str(mid) not in ids:
             ids.append(str(mid))
 
+    # The gateway may be a router with no LiteLLM /model/info (llm_router): build
+    # the same view from its own /v1/models fields. `owned_by` is the machine, so
+    # machine_for_host still reaches that box's llama-swap config for the real
+    # flags; `max_output_tokens` and the limits come from the router itself.
+    router_entries: dict[str, dict] = {}
+    for item in listed.get("data", []):
+        if not isinstance(item, dict) or not item.get("id"):
+            continue
+        mid = str(item["id"])
+        host = str(item.get("owned_by") or "")
+        mi: dict = {}
+        ctx = item.get("context_length") or item.get("context_window")
+        if ctx:
+            mi["max_input_tokens"] = int(ctx)
+        if item.get("max_output_tokens"):
+            mi["max_output_tokens"] = int(item["max_output_tokens"])
+        traits = {str(t).lower() for t in (item.get("traits") or [])}
+        mods = {str(m).lower() for m in (item.get("input_modalities") or [])}
+        params = {str(p).lower() for p in (item.get("supported_parameters") or [])}
+        if "vision" in traits or "image" in mods:
+            mi["supports_vision"] = True
+        if "tools" in traits or "tool_call" in traits or "tools" in params or "tool_choice" in params:
+            mi["supports_function_calling"] = True
+        if "reasoning" in traits:
+            mi["supports_reasoning"] = True
+        router_entries[mid] = {
+            "api_base": f"http://{host}/v1" if host else None,
+            # builds spell it either way, and the OpenAI-style listing may carry
+            # no upstream id at all; resolve_caps falls back to stripping the
+            # machine prefix off the served id.
+            "downstream_id": str(
+                item.get("upstream_model") or item.get("upstreamModel") or mid
+            ),
+            "model_info": mi,
+        }
+
     by_name: dict[str, dict] = {}
     hosts_by_name: dict[str, set[str]] = {}
     for item in info.get("data", []):
@@ -122,6 +158,10 @@ def fetch_litellm_models(server: str, api_key: str) -> tuple[list[str], dict, se
     # litellm load-balances between them, so neither host's llama-swap flags can
     # be called correct for the name. Reported instead of guessed at.
     ambiguous = {n for n, hosts in hosts_by_name.items() if len(hosts) > 1}
+    # /model/info wins where it exists (a LiteLLM gateway); otherwise the router's
+    # own fields stand in for it.
+    for name, entry in router_entries.items():
+        by_name.setdefault(name, entry)
     return ids, by_name, ambiguous
 
 
@@ -231,7 +271,10 @@ def parse_flags(cmd: str) -> dict:
     if ctx:
         caps["context"] = int(ctx.group(1))
 
-    emb = re.search(r"(?:^|\s)--embedding\b", cmd)
+    # llama.cpp accepts --embeddings (the flag the embedding entries use) as
+    # well as --embedding; matching only the singular let an embedding model
+    # through as a chat model with a made-up limit.
+    emb = re.search(r"(?:^|\s)--embeddings?\b", cmd)
     rerank = re.search(r"(?:^|\s)--reranking\b", cmd)
     caps["embedding"] = bool(emb or rerank)
 
@@ -487,6 +530,15 @@ def resolve_caps(model_id: str, meta: dict, entries_by_host: dict[str, dict]) ->
     for entry in (model_id, down_id):
         candidates.append(entry)
         candidates.append(normalize(entry))
+    # llm_router's OpenAI-style /v1/models carries no upstream id, so a served id
+    # keeps its machine prefix (`desktop2.lfm2.5-vl-3b`) while llama-swap entry
+    # names have none (`lfm2.5-vl-3b`). Matching only against this host's table
+    # makes stripping the first label safe.
+    for entry in (model_id, down_id):
+        if "." in entry:
+            bare = entry.split(".", 1)[1]
+            candidates.append(bare)
+            candidates.append(normalize(bare))
 
     for hostname, parsed in entries_by_host.items():
         table = parsed["table"]
