@@ -492,6 +492,42 @@
             ]
           }
         },
+        "desktop2.lfm2.5-vl-3b": {
+          "name": "desktop2.lfm2.5-vl-3b",
+          "tool_call": true,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "desktop2.lfm2.5-vl-3b:sycl1": {
+          "name": "desktop2.lfm2.5-vl-3b:sycl1",
+          "tool_call": true,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "desktop2.lfm2.5-vl-3b:sycl2": {
+          "name": "desktop2.lfm2.5-vl-3b:sycl2",
+          "tool_call": true,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
         "desktop2.muse-glimmer-30b:q6": {
           "name": "desktop2.muse-glimmer-30b:q6",
           "tool_call": true,
