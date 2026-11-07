@@ -1180,16 +1180,8 @@
       ],
       "enabled": true
     },
-    "open-webui": {
-      "enabled": false,
-      "type": "remote",
-      "url": "http://server.tailc63ae8.ts.net:4042/mcp"
-    },
-    "browse-server": {
-      "type": "remote",
-      "url": "http://server.home:8111/mcp",
-      "enabled": true
-    },
+    
+    
     "github": {
       "type": "remote",
       "url": "https://api.githubcopilot.com/mcp",

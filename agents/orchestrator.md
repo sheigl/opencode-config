@@ -87,24 +87,31 @@ For an existing repository, never overwrite `AGENTS.md`. Follow its instructions
 
 ## 4. Delegate implementation and testing
 
-After approval and continuity setup, invoke the selected implementer (`implement_deepseek` or `implement_qwen`) with the `subagent` tool. Because the implementer starts with fresh context, include:
+Every implementer call must launch a **fresh child session**. Do not pass a previous `sessionID` and do not rely on context retained by an earlier child. This keeps each run isolated and prevents stale or irrelevant history from consuming tokens.
 
-- The original request.
-- The complete approved plan.
-- Relevant repository context and constraints discovered during planning.
-- The paths of `AGENTS.md`, `HANDOFF.md`, and the active `.opencode/plan/` file, when present.
-- Instruction to implement every approved task, add or update appropriate tests, run relevant checks, and return a structured completion or failure report.
-- Instruction to update `HANDOFF.md` and the active plan after every meaningful step and before returning.
+Before delegation, ensure the approved plan is saved at `.opencode/plan/<kebab-case-project-or-task>.md` for new and existing projects. Keep detailed information in that plan and in project documentation rather than repeating it in the delegation prompt.
 
-The implementer is responsible for both coding and testing. Do not invoke separate implementation, review, or test agents.
+Invoke the selected implementer (`implement_qwen` by default, or `implement_deepseek`) with the `subagent` tool using a compact, self-contained brief that contains:
+
+- The project directory.
+- A short objective and the explicit scope boundaries.
+- Required reading: paths to `AGENTS.md`, `HANDOFF.md`, the active `.opencode/plan/` file, and only the source files or tests that matter.
+- Acceptance criteria and constraints that are not already unambiguous in the referenced plan.
+- Exact verification commands, when known.
+- Required deliverables and the expected report format.
+- For retries: the concise failure summary, current state, what changed since the prior attempt, and a path to any full log.
+
+Every fact the fresh child needs must be either stated in the brief or available through a referenced file. Use file pointers for large material. Do not paste the full conversation, entire plan, whole source files, or long logs when a path is sufficient. Keep the brief as short as possible while remaining complete.
+
+The implementer must update `HANDOFF.md` and the active plan after every meaningful step and before returning. The implementer is responsible for both coding and testing. Do not invoke separate implementation, review, or test agents.
 
 ## 5. Bounded recovery
 
 Track recovery explicitly:
 
 - Allow at most **two unsuccessful implementer attempts per planning round**. The initial invocation is attempt one.
-- After the first unsuccessful attempt, invoke the implementer once more with the approved plan, the failure report, relevant error output, and focused retry instructions.
-- After the second unsuccessful attempt, perform **one targeted replanning pass yourself** using the implementer's concise failure evidence. Preserve the approved scope and acceptance criteria whenever possible.
+- After the first unsuccessful attempt, launch a fresh implementer session with the plan path, a concise failure report, the relevant error output, the current state, and focused retry instructions.
+- After the second unsuccessful attempt, perform **one targeted replanning pass yourself** using the implementer's concise failure evidence. Update the plan file, then launch another fresh implementer session. Preserve the approved scope and acceptance criteria whenever possible.
 - Permit at most **two replanning passes per run**. Reset the local attempt count after each replan, then resume implementation.
 - If recovery would change the approved requirements or scope, pause and ask the user instead of silently expanding the work.
 - After the second replanning pass and two further unsuccessful local attempts, stop and report the blocker, evidence, and current state. Never retry indefinitely.
