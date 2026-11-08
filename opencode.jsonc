@@ -407,11 +407,9 @@
         "desktop.qwen3.8-flash-next:Q4_K_M-strata": {
           "name": "desktop.qwen3.8-flash-next:Q4_K_M-strata",
           "tool_call": true,
-          "reasoning": true,
           "modalities": {
             "input": [
-              "text",
-              "image"
+              "text"
             ],
             "output": [
               "text"
@@ -421,26 +419,11 @@
             "context": 200000,
             "input": 183616,
             "output": 16384
-          },
-          "options": {
-            "reasoningEffort": "medium"
-          },
-          "variants": {
-            "low": {
-              "reasoningEffort": "low"
-            },
-            "medium": {
-              "reasoningEffort": "medium"
-            },
-            "xhigh": {
-              "reasoningEffort": "xhigh"
-            }
           }
         },
         "desktop.qwen3.8-flash-next:Q4_K_XL": {
           "name": "desktop.qwen3.8-flash-next:Q4_K_XL",
           "tool_call": true,
-          "reasoning": true,
           "modalities": {
             "input": [
               "text",
@@ -454,49 +437,26 @@
             "context": 131072,
             "input": 114688,
             "output": 16384
-          },
-          "options": {
-            "reasoningEffort": "medium"
-          },
-          "variants": {
-            "low": {
-              "reasoningEffort": "low"
-            },
-            "medium": {
-              "reasoningEffort": "medium"
-            },
-            "xhigh": {
-              "reasoningEffort": "xhigh"
-            }
           }
         },
         "desktop.qwen3.8-flash-next:Q4_K_XL-llamacpp": {
           "name": "desktop.qwen3.8-flash-next:Q4_K_XL-llamacpp",
           "tool_call": true,
-          "reasoning": true,
           "modalities": {
             "input": [
-              "text",
-              "image"
+              "text"
             ],
             "output": [
               "text"
             ]
-          },
-          "limit": {
-            "context": 262144,
-            "input": 245760,
-            "output": 16384
           }
         },
         "desktop.qwen3.8-flash-next:Q4_K_XL-strata": {
           "name": "desktop.qwen3.8-flash-next:Q4_K_XL-strata",
           "tool_call": true,
-          "reasoning": true,
           "modalities": {
             "input": [
-              "text",
-              "image"
+              "text"
             ],
             "output": [
               "text"
@@ -506,30 +466,14 @@
             "context": 131072,
             "input": 114688,
             "output": 16384
-          },
-          "options": {
-            "reasoningEffort": "medium"
-          },
-          "variants": {
-            "low": {
-              "reasoningEffort": "low"
-            },
-            "medium": {
-              "reasoningEffort": "medium"
-            },
-            "xhigh": {
-              "reasoningEffort": "xhigh"
-            }
           }
         },
         "desktop.qwen3.8-flash-next:Swift-Q4_K_M": {
           "name": "desktop.qwen3.8-flash-next:Swift-Q4_K_M",
           "tool_call": true,
-          "reasoning": true,
           "modalities": {
             "input": [
-              "text",
-              "image"
+              "text"
             ],
             "output": [
               "text"
@@ -539,30 +483,14 @@
             "context": 200000,
             "input": 183616,
             "output": 16384
-          },
-          "options": {
-            "reasoningEffort": "medium"
-          },
-          "variants": {
-            "low": {
-              "reasoningEffort": "low"
-            },
-            "medium": {
-              "reasoningEffort": "medium"
-            },
-            "xhigh": {
-              "reasoningEffort": "xhigh"
-            }
           }
         },
         "desktop.strata-swift-q4km": {
           "name": "desktop.strata-swift-q4km",
           "tool_call": true,
-          "reasoning": true,
           "modalities": {
             "input": [
-              "text",
-              "image"
+              "text"
             ],
             "output": [
               "text"
@@ -572,20 +500,6 @@
             "context": 200000,
             "input": 183616,
             "output": 16384
-          },
-          "options": {
-            "reasoningEffort": "medium"
-          },
-          "variants": {
-            "low": {
-              "reasoningEffort": "low"
-            },
-            "medium": {
-              "reasoningEffort": "medium"
-            },
-            "xhigh": {
-              "reasoningEffort": "xhigh"
-            }
           }
         },
         "desktop.swift1.5-qwen3.8-27b-q4-1": {
