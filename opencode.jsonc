@@ -611,6 +611,38 @@
             }
           }
         },
+        "desktop2.swift-qwen3.8-flash-next": {
+          "name": "desktop2.swift-qwen3.8-flash-next",
+          "tool_call": true,
+          "reasoning": true,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 131072,
+            "input": 114688,
+            "output": 16384
+          },
+          "options": {
+            "reasoningEffort": "medium"
+          },
+          "variants": {
+            "low": {
+              "reasoningEffort": "low"
+            },
+            "medium": {
+              "reasoningEffort": "medium"
+            },
+            "xhigh": {
+              "reasoningEffort": "xhigh"
+            }
+          }
+        },
         "go.beam-free": {
           "name": "go.beam-free",
           "tool_call": true,
