@@ -19,11 +19,6 @@
             "output": [
               "text"
             ]
-          },
-          "limit": {
-            "context": 131072,
-            "input": 114688,
-            "output": 16384
           }
         },
         "desktop.comfyui_auto": {
@@ -366,24 +361,6 @@
             "output": 16384
           }
         },
-        "desktop2.flint:q4": {
-          "name": "desktop2.flint:q4",
-          "tool_call": true,
-          "reasoning": true,
-          "modalities": {
-            "input": [
-              "text"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "limit": {
-            "context": 131072,
-            "input": 114688,
-            "output": 16384
-          }
-        },
         "desktop2.ibm-granite4.1:3b": {
           "name": "desktop2.ibm-granite4.1:3b",
           "tool_call": true,
@@ -399,6 +376,38 @@
             "context": 65536,
             "input": 49152,
             "output": 16384
+          }
+        },
+        "desktop2.k2-horizon-7b:q4": {
+          "name": "desktop2.k2-horizon-7b:q4",
+          "tool_call": true,
+          "reasoning": true,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 32768,
+            "input": 16384,
+            "output": 16384
+          },
+          "options": {
+            "reasoningEffort": "medium"
+          },
+          "variants": {
+            "low": {
+              "reasoningEffort": "low"
+            },
+            "medium": {
+              "reasoningEffort": "medium"
+            },
+            "xhigh": {
+              "reasoningEffort": "xhigh"
+            }
           }
         },
         "desktop2.lfm2.5-vl-3b": {
@@ -455,63 +464,6 @@
             "output": 16384
           }
         },
-        "desktop2.muse-glimmer-30b:q6": {
-          "name": "desktop2.muse-glimmer-30b:q6",
-          "tool_call": true,
-          "reasoning": true,
-          "modalities": {
-            "input": [
-              "text",
-              "image"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "limit": {
-            "context": 131072,
-            "input": 114688,
-            "output": 16384
-          }
-        },
-        "desktop2.ornith1.5:9b": {
-          "name": "desktop2.ornith1.5:9b",
-          "tool_call": true,
-          "reasoning": true,
-          "modalities": {
-            "input": [
-              "text",
-              "image"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "limit": {
-            "context": 65536,
-            "input": 49152,
-            "output": 16384
-          }
-        },
-        "desktop2.ornith1.5:9b-uncensored": {
-          "name": "desktop2.ornith1.5:9b-uncensored",
-          "tool_call": true,
-          "reasoning": true,
-          "modalities": {
-            "input": [
-              "text",
-              "image"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "limit": {
-            "context": 65536,
-            "input": 49152,
-            "output": 16384
-          }
-        },
         "desktop2.qwen3.8-27b:q4": {
           "name": "desktop2.qwen3.8-27b:q4",
           "tool_call": true,
@@ -528,72 +480,6 @@
           "limit": {
             "context": 135168,
             "input": 118784,
-            "output": 16384
-          },
-          "options": {
-            "reasoningEffort": "medium"
-          },
-          "variants": {
-            "low": {
-              "reasoningEffort": "low"
-            },
-            "medium": {
-              "reasoningEffort": "medium"
-            },
-            "xhigh": {
-              "reasoningEffort": "xhigh"
-            }
-          }
-        },
-        "desktop2.swift-1.5-qwen3.8-27b:q4": {
-          "name": "desktop2.swift-1.5-qwen3.8-27b:q4",
-          "tool_call": true,
-          "reasoning": true,
-          "modalities": {
-            "input": [
-              "text",
-              "image"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "limit": {
-            "context": 135168,
-            "input": 118784,
-            "output": 16384
-          },
-          "options": {
-            "reasoningEffort": "medium"
-          },
-          "variants": {
-            "low": {
-              "reasoningEffort": "low"
-            },
-            "medium": {
-              "reasoningEffort": "medium"
-            },
-            "xhigh": {
-              "reasoningEffort": "xhigh"
-            }
-          }
-        },
-        "desktop2.swift-1.5-qwen3.8-27b:q6": {
-          "name": "desktop2.swift-1.5-qwen3.8-27b:q6",
-          "tool_call": true,
-          "reasoning": true,
-          "modalities": {
-            "input": [
-              "text",
-              "image"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "limit": {
-            "context": 131072,
-            "input": 114688,
             "output": 16384
           },
           "options": {
@@ -989,10 +875,22 @@
             "output": [
               "text"
             ]
+          }
+        },
+        "qwen": {
+          "name": "qwen",
+          "tool_call": true,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
           },
           "limit": {
-            "context": 131072,
-            "input": 114688,
+            "context": 200000,
+            "input": 183616,
             "output": 16384
           }
         },
