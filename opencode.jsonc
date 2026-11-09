@@ -391,8 +391,8 @@
             ]
           },
           "limit": {
-            "context": 32768,
-            "input": 16384,
+            "context": 65536,
+            "input": 49152,
             "output": 16384
           },
           "options": {
