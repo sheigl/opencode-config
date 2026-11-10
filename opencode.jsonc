@@ -179,8 +179,8 @@
             ]
           },
           "limit": {
-            "context": 200000,
-            "input": 183616,
+            "context": 204800,
+            "input": 188416,
             "output": 16384
           },
           "options": {
@@ -231,8 +231,8 @@
             ]
           },
           "limit": {
-            "context": 200000,
-            "input": 183616,
+            "context": 204800,
+            "input": 188416,
             "output": 16384
           },
           "options": {
