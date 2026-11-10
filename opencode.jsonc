@@ -165,6 +165,25 @@
             "output": 16384
           }
         },
+        "desktop.qwen3.8-flash-next:Q4_K_XL-llamacpp": {
+          "name": "desktop.qwen3.8-flash-next:Q4_K_XL-llamacpp",
+          "tool_call": true,
+          "reasoning": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 204800,
+            "input": 188416,
+            "output": 16384
+          }
+        },
         "desktop.swift1.5-qwen3.8-27b-q4-1": {
           "name": "desktop.swift1.5-qwen3.8-27b-q4-1",
           "tool_call": true,
@@ -330,6 +349,18 @@
             }
           }
         },
+        "desktop2.ace-step": {
+          "name": "desktop2.ace-step",
+          "tool_call": true,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
         "desktop2.comfyui_auto": {
           "name": "desktop2.comfyui_auto",
           "tool_call": true,
@@ -359,6 +390,18 @@
             "context": 32768,
             "input": 16384,
             "output": 16384
+          }
+        },
+        "desktop2.heartmula": {
+          "name": "desktop2.heartmula",
+          "tool_call": true,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
           }
         },
         "desktop2.ibm-granite4.1:3b": {
@@ -464,6 +507,18 @@
             "output": 16384
           }
         },
+        "desktop2.minimax-music3": {
+          "name": "desktop2.minimax-music3",
+          "tool_call": true,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
         "desktop2.qwen3.8-27b:q4": {
           "name": "desktop2.qwen3.8-27b:q4",
           "tool_call": true,
@@ -497,6 +552,30 @@
             }
           }
         },
+        "desktop2.sheetsage2": {
+          "name": "desktop2.sheetsage2",
+          "tool_call": true,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "desktop2.stable-audio": {
+          "name": "desktop2.stable-audio",
+          "tool_call": true,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
         "desktop2.swift-qwen3.8-flash-next": {
           "name": "desktop2.swift-qwen3.8-flash-next",
           "tool_call": true,
@@ -527,6 +606,18 @@
             "xhigh": {
               "reasoningEffort": "xhigh"
             }
+          }
+        },
+        "desktop2.yue2-q8": {
+          "name": "desktop2.yue2-q8",
+          "tool_call": true,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
           }
         },
         "go.beam-free": {
