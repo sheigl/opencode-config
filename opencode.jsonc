@@ -623,6 +623,18 @@
             "output": 16384
           }
         },
+        "desktop2.qwen3.6-35b-a3b:ud-q6_k_xl": {
+          "name": "desktop2.qwen3.6-35b-a3b:ud-q6_k_xl",
+          "tool_call": true,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
         "desktop2.qwen3.8-27b:q4": {
           "name": "desktop2.qwen3.8-27b:q4",
           "tool_call": true,
@@ -678,38 +690,6 @@
             "output": [
               "text"
             ]
-          }
-        },
-        "desktop2.swift-qwen3.8-flash-next": {
-          "name": "desktop2.swift-qwen3.8-flash-next",
-          "tool_call": true,
-          "reasoning": true,
-          "modalities": {
-            "input": [
-              "text"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "limit": {
-            "context": 131072,
-            "input": 114688,
-            "output": 16384
-          },
-          "options": {
-            "reasoningEffort": "medium"
-          },
-          "variants": {
-            "low": {
-              "reasoningEffort": "low"
-            },
-            "medium": {
-              "reasoningEffort": "medium"
-            },
-            "xhigh": {
-              "reasoningEffort": "xhigh"
-            }
           }
         },
         "desktop2.yue2-q8": {
