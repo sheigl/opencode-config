@@ -604,8 +604,8 @@
             ]
           }
         },
-        "desktop2.muse-glimmer-30b:q4": {
-          "name": "desktop2.muse-glimmer-30b:q4",
+        "desktop2.muse-glimmer-30b:q3": {
+          "name": "desktop2.muse-glimmer-30b:q3",
           "tool_call": true,
           "reasoning": true,
           "modalities": {
