@@ -458,6 +458,25 @@
             "output": 16384
           }
         },
+        "desktop2.gemma-4-12b:q5": {
+          "name": "desktop2.gemma-4-12b:q5",
+          "tool_call": true,
+          "reasoning": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 32768,
+            "input": 16384,
+            "output": 16384
+          }
+        },
         "desktop2.heartmula": {
           "name": "desktop2.heartmula",
           "tool_call": true,
@@ -583,6 +602,25 @@
             "output": [
               "text"
             ]
+          }
+        },
+        "desktop2.muse-glimmer-30b:q4": {
+          "name": "desktop2.muse-glimmer-30b:q4",
+          "tool_call": true,
+          "reasoning": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 65536,
+            "input": 49152,
+            "output": 16384
           }
         },
         "desktop2.qwen3.8-27b:q4": {
