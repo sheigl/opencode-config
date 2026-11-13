@@ -19,27 +19,5 @@
     "tool_call": true,
     "max_output": 16384
   },
-  "overrides": {
-    "desktop.k2-horizon-7b": {
-      "context": 65536
-    },
-    "desktop.swift1.5-qwen3.8-27b-vllm-1": {
-      "context": 163840,
-      "vision": true
-    },
-    "desktop.swift1.5-qwen3.8-27b-vllm-2": {
-      "context": 163840,
-      "vision": true
-    },
-    "desktop2.swift-1.5-qwen3.8-27b:q6": {
-      "vision": true
-    },
-    "desktop2.qwen3.8-27b:q4": {
-      "vision": true
-    },
-    "desktop.qwen3.8-flash-next:Q4_K_XL": {
-      "vision": true,
-      "output": 16384
-    }
-  }
+  "overrides": {}
 }
