@@ -633,10 +633,15 @@
             "output": [
               "text"
             ]
+          },
+          "limit": {
+            "context": 32768,
+            "input": 16384,
+            "output": 16384
           }
         },
-        "desktop2.qwen3.8-27b:q4": {
-          "name": "desktop2.qwen3.8-27b:q4",
+        "desktop2.qwen3.8-27b:iq3xxs": {
+          "name": "desktop2.qwen3.8-27b:iq3xxs",
           "tool_call": true,
           "reasoning": true,
           "modalities": {
@@ -649,8 +654,8 @@
             ]
           },
           "limit": {
-            "context": 135168,
-            "input": 118784,
+            "context": 65536,
+            "input": 49152,
             "output": 16384
           },
           "options": {
@@ -690,6 +695,23 @@
             "output": [
               "text"
             ]
+          }
+        },
+        "desktop2.tiel-coder-35b-a3b:ud-q6_k_xl": {
+          "name": "desktop2.tiel-coder-35b-a3b:ud-q6_k_xl",
+          "tool_call": true,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 32768,
+            "input": 16384,
+            "output": 16384
           }
         },
         "desktop2.yue2-q8": {
