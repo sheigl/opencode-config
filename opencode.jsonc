@@ -453,8 +453,27 @@
             ]
           },
           "limit": {
-            "context": 32768,
-            "input": 16384,
+            "context": 131072,
+            "input": 114688,
+            "output": 16384
+          }
+        },
+        "desktop2.fara1.5:dflash": {
+          "name": "desktop2.fara1.5:dflash",
+          "tool_call": true,
+          "reasoning": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 65536,
+            "input": 49152,
             "output": 16384
           }
         },
@@ -602,6 +621,25 @@
             "output": [
               "text"
             ]
+          }
+        },
+        "desktop2.muse-glimmer-30b:iq3xxs": {
+          "name": "desktop2.muse-glimmer-30b:iq3xxs",
+          "tool_call": true,
+          "reasoning": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 65536,
+            "input": 49152,
+            "output": 16384
           }
         },
         "desktop2.qwen3.8-27b:iq3xxs": {
