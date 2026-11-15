@@ -185,8 +185,8 @@
             ]
           },
           "limit": {
-            "context": 524288,
-            "input": 507904,
+            "context": 393216,
+            "input": 376832,
             "output": 16384
           },
           "options": {
@@ -594,6 +594,24 @@
             "xhigh": {
               "reasoningEffort": "xhigh"
             }
+          }
+        },
+        "desktop2.lfm-2.5-24b:UD-Q6_K_XL": {
+          "name": "desktop2.lfm-2.5-24b:UD-Q6_K_XL",
+          "tool_call": true,
+          "reasoning": true,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 32768,
+            "input": 16384,
+            "output": 16384
           }
         },
         "desktop2.lfm2.5-vl-3b": {
