@@ -12,3 +12,18 @@
 # Unignore the model-generation script and its machines config
 !scripts/
 !scripts/**
+
+# Keep only the shared workflow skills required by the tracked agents
+!skills/
+!skills/story-implementation/
+!skills/story-implementation/SKILL.md
+!skills/feature-quality-review/
+!skills/feature-quality-review/SKILL.md
+
+# Keep the orchestrator's project bootstrap template
+!templates/
+!templates/project-agents.md
+
+# Keep slash commands, so every machine gets them on pull
+!commands/
+!commands/**
