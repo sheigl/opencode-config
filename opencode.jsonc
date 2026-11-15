@@ -14,16 +14,15 @@
           "tool_call": true,
           "modalities": {
             "input": [
-              "text",
-              "image"
+              "text"
             ],
             "output": [
               "text"
             ]
           },
           "limit": {
-            "context": 65536,
-            "input": 49152,
+            "context": 131072,
+            "input": 114688,
             "output": 16384
           }
         },
@@ -218,8 +217,8 @@
             ]
           },
           "limit": {
-            "context": 204800,
-            "input": 188416,
+            "context": 131072,
+            "input": 114688,
             "output": 16384
           },
           "options": {
@@ -270,8 +269,8 @@
             ]
           },
           "limit": {
-            "context": 204800,
-            "input": 188416,
+            "context": 131072,
+            "input": 114688,
             "output": 16384
           },
           "options": {
@@ -1073,16 +1072,15 @@
           "tool_call": true,
           "modalities": {
             "input": [
-              "text",
-              "image"
+              "text"
             ],
             "output": [
               "text"
             ]
           },
           "limit": {
-            "context": 65536,
-            "input": 49152,
+            "context": 131072,
+            "input": 114688,
             "output": 16384
           }
         },
