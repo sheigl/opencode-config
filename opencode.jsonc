@@ -14,11 +14,17 @@
           "tool_call": true,
           "modalities": {
             "input": [
-              "text"
+              "text",
+              "image"
             ],
             "output": [
               "text"
             ]
+          },
+          "limit": {
+            "context": 65536,
+            "input": 49152,
+            "output": 16384
           }
         },
         "desktop.comfyui_auto": {
@@ -163,6 +169,39 @@
             "context": 262144,
             "input": 245760,
             "output": 16384
+          }
+        },
+        "desktop.qwen3.8-27b:UD-Q6_K_L": {
+          "name": "desktop.qwen3.8-27b:UD-Q6_K_L",
+          "tool_call": true,
+          "reasoning": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 524288,
+            "input": 507904,
+            "output": 16384
+          },
+          "options": {
+            "reasoningEffort": "medium"
+          },
+          "variants": {
+            "low": {
+              "reasoningEffort": "low"
+            },
+            "medium": {
+              "reasoningEffort": "medium"
+            },
+            "xhigh": {
+              "reasoningEffort": "xhigh"
+            }
           }
         },
         "desktop.qwen3.8-flash-next:Q4_K_XL": {
@@ -559,42 +598,6 @@
         },
         "desktop2.lfm2.5-vl-3b": {
           "name": "desktop2.lfm2.5-vl-3b",
-          "tool_call": true,
-          "modalities": {
-            "input": [
-              "text",
-              "image"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "limit": {
-            "context": 32768,
-            "input": 16384,
-            "output": 16384
-          }
-        },
-        "desktop2.lfm2.5-vl-3b:sycl1": {
-          "name": "desktop2.lfm2.5-vl-3b:sycl1",
-          "tool_call": true,
-          "modalities": {
-            "input": [
-              "text",
-              "image"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "limit": {
-            "context": 32768,
-            "input": 16384,
-            "output": 16384
-          }
-        },
-        "desktop2.lfm2.5-vl-3b:sycl2": {
-          "name": "desktop2.lfm2.5-vl-3b:sycl2",
           "tool_call": true,
           "modalities": {
             "input": [
@@ -1052,11 +1055,17 @@
           "tool_call": true,
           "modalities": {
             "input": [
-              "text"
+              "text",
+              "image"
             ],
             "output": [
               "text"
             ]
+          },
+          "limit": {
+            "context": 65536,
+            "input": 49152,
+            "output": 16384
           }
         },
         "qwen": {
@@ -1069,11 +1078,6 @@
             "output": [
               "text"
             ]
-          },
-          "limit": {
-            "context": 204800,
-            "input": 188416,
-            "output": 16384
           }
         },
         "server.bonsai-27b-q1": {
