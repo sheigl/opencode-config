@@ -21,8 +21,8 @@
             ]
           },
           "limit": {
-            "context": 131072,
-            "input": 114688,
+            "context": 65536,
+            "input": 49152,
             "output": 16384
           }
         },
@@ -1096,8 +1096,8 @@
             ]
           },
           "limit": {
-            "context": 131072,
-            "input": 114688,
+            "context": 65536,
+            "input": 49152,
             "output": 16384
           }
         },
