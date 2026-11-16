@@ -217,8 +217,8 @@
             ]
           },
           "limit": {
-            "context": 131072,
-            "input": 114688,
+            "context": 204800,
+            "input": 188416,
             "output": 16384
           },
           "options": {
@@ -269,8 +269,8 @@
             ]
           },
           "limit": {
-            "context": 131072,
-            "input": 114688,
+            "context": 204800,
+            "input": 188416,
             "output": 16384
           },
           "options": {
@@ -1094,6 +1094,11 @@
             "output": [
               "text"
             ]
+          },
+          "limit": {
+            "context": 204800,
+            "input": 188416,
+            "output": 16384
           }
         },
         "server.bonsai-27b-q1": {
