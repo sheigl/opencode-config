@@ -170,6 +170,42 @@
             "output": 16384
           }
         },
+        "desktop.nanbeige4.3-33b:Q6_K_L": {
+          "name": "desktop.nanbeige4.3-33b:Q6_K_L",
+          "tool_call": true,
+          "reasoning": true,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 196608,
+            "input": 180224,
+            "output": 16384
+          }
+        },
+        "desktop.nanbeige:33b-q6": {
+          "name": "desktop.nanbeige:33b-q6",
+          "tool_call": true,
+          "reasoning": true,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 196608,
+            "input": 180224,
+            "output": 16384
+          }
+        },
         "desktop.qwen3.8-27b:UD-Q6_K_L": {
           "name": "desktop.qwen3.8-27b:UD-Q6_K_L",
           "tool_call": true,
@@ -477,6 +513,39 @@
             ]
           }
         },
+        "desktop2.cyber-tiel-coder-35b-a3b:UD-Q4_K_XL": {
+          "name": "desktop2.cyber-tiel-coder-35b-a3b:UD-Q4_K_XL",
+          "tool_call": true,
+          "reasoning": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 65536,
+            "input": 49152,
+            "output": 16384
+          },
+          "options": {
+            "reasoningEffort": "medium"
+          },
+          "variants": {
+            "low": {
+              "reasoningEffort": "low"
+            },
+            "medium": {
+              "reasoningEffort": "medium"
+            },
+            "xhigh": {
+              "reasoningEffort": "xhigh"
+            }
+          }
+        },
         "desktop2.fara1.5": {
           "name": "desktop2.fara1.5",
           "tool_call": true,
@@ -641,58 +710,6 @@
             "output": [
               "text"
             ]
-          }
-        },
-        "desktop2.muse-glimmer-30b:iq3xxs": {
-          "name": "desktop2.muse-glimmer-30b:iq3xxs",
-          "tool_call": true,
-          "reasoning": true,
-          "modalities": {
-            "input": [
-              "text",
-              "image"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "limit": {
-            "context": 65536,
-            "input": 49152,
-            "output": 16384
-          }
-        },
-        "desktop2.qwen3.8-27b:iq3xxs": {
-          "name": "desktop2.qwen3.8-27b:iq3xxs",
-          "tool_call": true,
-          "reasoning": true,
-          "modalities": {
-            "input": [
-              "text",
-              "image"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "limit": {
-            "context": 65536,
-            "input": 49152,
-            "output": 16384
-          },
-          "options": {
-            "reasoningEffort": "medium"
-          },
-          "variants": {
-            "low": {
-              "reasoningEffort": "low"
-            },
-            "medium": {
-              "reasoningEffort": "medium"
-            },
-            "xhigh": {
-              "reasoningEffort": "xhigh"
-            }
           }
         },
         "desktop2.sheetsage2": {
