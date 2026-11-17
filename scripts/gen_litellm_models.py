@@ -58,7 +58,7 @@ MACHINES_PATH = os.path.join(SCRIPT_DIR, "config.json")
 
 # Top-level sections carried over from an existing config so a full rewrite
 # does not silently drop unrelated settings (mcp, plugin, instructions...).
-CARRIED_FIELDS = ("instructions", "plugin", "mcp", "disabled_providers")
+CARRIED_FIELDS = ("instructions", "plugin", "mcp", "disabled_providers", "experimental")
 
 SSL_CTX = ssl.create_default_context()
 SSL_CTX.check_hostname = False
@@ -390,7 +390,8 @@ def parse_strata(machine: dict, path: str) -> tuple[dict, list[str]]:
 
     Reads the engine's real `args` with the same flag grammar as a cmd, and
     treats the `vision` block as the --mmproj equivalent it is. Returns
-    ({}, []) when the config is unreadable, leaving the model name-only.
+    ({}, []) when the config is unreadable, leaving those capabilities to
+    fall back to other available metadata.
     """
     body = read_remote_text(machine, path)
     try:
@@ -495,8 +496,15 @@ def parse_llamaswap(text: str, machine: dict | None = None) -> dict:
                 s_caps, strata_templates = parse_strata(machine, cfg_path)
                 if s_caps.get("context") is not None:
                     caps["context"] = s_caps["context"]
-                caps["vision"] = s_caps["vision"]
-                if s_caps["reasoning"] is not None:
+                if "vision" in s_caps:
+                    caps["vision"] = s_caps["vision"]
+                elif not caps.get("vision") and "--language-model-only" not in cmd:
+                    # The Strata config is unreadable or invalid. parse_flags()
+                    # defaults vision to False, but that is not evidence that a
+                    # Strata model is text-only. Preserve explicit cmd evidence;
+                    # otherwise let gateway metadata provide the fallback.
+                    caps.pop("vision", None)
+                if s_caps.get("reasoning") is not None:
                     caps["reasoning"] = s_caps["reasoning"]
 
         found = template_caps(cmd, strata_templates)
@@ -595,7 +603,7 @@ def merge_caps(model_id: str, meta: dict, caps: dict | None, mach, overrides: di
         # guarded on override_keys, not truthiness: an override of
         # `vision: false` must still win over a llama-swap cmd that says
         # text-only, while the normal precedence is kept for other models.
-        if "vision" not in override_keys:
+        if "vision" not in override_keys and caps.get("vision") is not None:
             final["vision"] = caps["vision"]
         if caps["reasoning"] is not None:
             final["reasoning"] = caps["reasoning"]
