@@ -324,6 +324,23 @@
             }
           }
         },
+        "desktop.qwen3.8-flash-next:Q4_K_XL-xemaya": {
+          "name": "desktop.qwen3.8-flash-next:Q4_K_XL-xemaya",
+          "tool_call": true,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 204800,
+            "input": 188416,
+            "output": 16384
+          }
+        },
         "desktop.swift1.5-qwen3.8-27b-q4-1": {
           "name": "desktop.swift1.5-qwen3.8-27b-q4-1",
           "tool_call": true,
