@@ -19,6 +19,11 @@
             "output": [
               "text"
             ]
+          },
+          "limit": {
+            "context": 65536,
+            "input": 49152,
+            "output": 16384
           }
         },
         "desktop.comfyui_auto": {
@@ -988,6 +993,11 @@
             "output": [
               "text"
             ]
+          },
+          "limit": {
+            "context": 65536,
+            "input": 49152,
+            "output": 16384
           }
         },
         "qwen": {
