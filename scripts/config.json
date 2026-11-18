@@ -19,14 +19,5 @@
     "tool_call": true,
     "max_output": 16384
   },
-  "overrides": {
-    "oracle": {
-      "context": 65536,
-      "output": 16384
-    },
-    "clyde": {
-      "context": 65536,
-      "output": 16384
-    }
-  }
+  "overrides": {}
 }
