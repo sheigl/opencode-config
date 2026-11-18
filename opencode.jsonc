@@ -14,16 +14,15 @@
           "tool_call": true,
           "modalities": {
             "input": [
-              "text",
-              "image"
+              "text"
             ],
             "output": [
               "text"
             ]
           },
           "limit": {
-            "context": 65536,
-            "input": 49152,
+            "context": 131072,
+            "input": 114688,
             "output": 16384
           }
         },
@@ -413,8 +412,8 @@
             ]
           }
         },
-        "desktop2.cyber-tiel-coder-35b-a3b:UD-Q4_K_XL": {
-          "name": "desktop2.cyber-tiel-coder-35b-a3b:UD-Q4_K_XL",
+        "desktop2.cyber-tiel-coder-35b-a3b:UD-Q6_K_XL": {
+          "name": "desktop2.cyber-tiel-coder-35b-a3b:UD-Q6_K_XL",
           "tool_call": true,
           "reasoning": true,
           "modalities": {
@@ -989,16 +988,15 @@
           "tool_call": true,
           "modalities": {
             "input": [
-              "text",
-              "image"
+              "text"
             ],
             "output": [
               "text"
             ]
           },
           "limit": {
-            "context": 65536,
-            "input": 49152,
+            "context": 131072,
+            "input": 114688,
             "output": 16384
           }
         },
