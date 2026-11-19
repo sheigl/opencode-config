@@ -629,6 +629,39 @@
             ]
           }
         },
+        "desktop2.qwen3.8-27b:UD-Q4_K_XL": {
+          "name": "desktop2.qwen3.8-27b:UD-Q4_K_XL",
+          "tool_call": true,
+          "reasoning": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 65536,
+            "input": 49152,
+            "output": 16384
+          },
+          "options": {
+            "reasoningEffort": "medium"
+          },
+          "variants": {
+            "low": {
+              "reasoningEffort": "low"
+            },
+            "medium": {
+              "reasoningEffort": "medium"
+            },
+            "xhigh": {
+              "reasoningEffort": "xhigh"
+            }
+          }
+        },
         "desktop2.sheetsage2": {
           "name": "desktop2.sheetsage2",
           "tool_call": true,
