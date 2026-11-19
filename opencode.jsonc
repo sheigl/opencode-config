@@ -22,8 +22,8 @@
             ]
           },
           "limit": {
-            "context": 98304,
-            "input": 81920,
+            "context": 65536,
+            "input": 49152,
             "output": 16384
           }
         },
@@ -37,23 +37,6 @@
             "output": [
               "text"
             ]
-          }
-        },
-        "desktop.deepseek-v4.1-flash-1017:Maya-S-IQ2_XXS-xemaya": {
-          "name": "desktop.deepseek-v4.1-flash-1017:Maya-S-IQ2_XXS-xemaya",
-          "tool_call": true,
-          "modalities": {
-            "input": [
-              "text"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "limit": {
-            "context": 32768,
-            "input": 16384,
-            "output": 16384
           }
         },
         "desktop.gemma4:31b": {
@@ -1047,8 +1030,8 @@
             ]
           },
           "limit": {
-            "context": 98304,
-            "input": 81920,
+            "context": 65536,
+            "input": 49152,
             "output": 16384
           }
         },
