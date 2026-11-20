@@ -533,6 +533,39 @@
             "output": 16384
           }
         },
+        "desktop2.inkling-2-mini:UD-Q8_K_XL": {
+          "name": "desktop2.inkling-2-mini:UD-Q8_K_XL",
+          "tool_call": true,
+          "reasoning": true,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 98304,
+            "input": 81920,
+            "output": 16384
+          },
+          "options": {
+            "reasoningEffort": "medium"
+          },
+          "variants": {
+            "low": {
+              "reasoningEffort": "low"
+            },
+            "medium": {
+              "reasoningEffort": "medium"
+            },
+            "xhigh": {
+              "reasoningEffort": "xhigh"
+            }
+          }
+        },
         "desktop2.k2-horizon-7b:q4": {
           "name": "desktop2.k2-horizon-7b:q4",
           "tool_call": true,
