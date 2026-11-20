@@ -19,5 +19,12 @@
     "tool_call": true,
     "max_output": 16384
   },
+  "compaction": {
+    "auto": true,
+    "keep": {
+      "tokens": 15000
+    },
+    "buffer": "15%"
+  },
   "overrides": {}
 }

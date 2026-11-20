@@ -58,7 +58,7 @@ MACHINES_PATH = os.path.join(SCRIPT_DIR, "config.json")
 
 # Top-level sections carried over from an existing config so a full rewrite
 # does not silently drop unrelated settings (mcp, plugin, instructions...).
-CARRIED_FIELDS = ("instructions", "plugin", "mcp", "disabled_providers", "experimental")
+CARRIED_FIELDS = ("instructions", "plugin", "mcp", "disabled_providers", "experimental", "compaction")
 
 SSL_CTX = ssl.create_default_context()
 SSL_CTX.check_hostname = False
@@ -691,7 +691,11 @@ def load_existing_config(path: str) -> dict:
     return {}
 
 
-def build_config(models: dict[str, dict], existing: dict | None = None) -> dict:
+def build_config(
+    models: dict[str, dict],
+    existing: dict | None = None,
+    compaction: dict | None = None,
+) -> dict:
     config = {
         "$schema": "https://opencode.ai/config.json",
         "provider": {
@@ -711,6 +715,10 @@ def build_config(models: dict[str, dict], existing: dict | None = None) -> dict:
     for field in CARRIED_FIELDS:
         if field in existing:
             config[field] = existing[field]
+    # scripts/config.json is the source of truth for compaction, so a value
+    # there wins over whatever the previous generated file carried.
+    if compaction:
+        config["compaction"] = compaction
     return config
 
 
@@ -747,6 +755,7 @@ def main() -> int:
     machines = mach_cfg.get("llama_swap", {}).get("machines", {})
     defaults = mach_cfg.get("defaults", {})
     overrides = mach_cfg.get("overrides", {})
+    compaction = mach_cfg.get("compaction") or {}
 
     print(f"Fetching models from {server} ...")
     model_ids, by_name, ambiguous = fetch_litellm_models(server, api_key)
@@ -825,7 +834,7 @@ def main() -> int:
             print(f"\nOverrides matching no model (ignored): {', '.join(unused)}")
             print("Check those keys against the served model ids in scripts/config.json.")
 
-    config = build_config(models, load_existing_config(path))
+    config = build_config(models, load_existing_config(path), compaction)
     with open(path, "w", encoding="utf-8") as fh:
         json.dump(config, fh, indent=2)
         fh.write("\n")
