@@ -22,8 +22,8 @@
             ]
           },
           "limit": {
-            "context": 65536,
-            "input": 49152,
+            "context": 98304,
+            "input": 81920,
             "output": 16384
           }
         },
@@ -252,8 +252,8 @@
             ]
           },
           "limit": {
-            "context": 204800,
-            "input": 188416,
+            "context": 262144,
+            "input": 245760,
             "output": 16384
           }
         },
@@ -1063,8 +1063,8 @@
             ]
           },
           "limit": {
-            "context": 65536,
-            "input": 49152,
+            "context": 98304,
+            "input": 81920,
             "output": 16384
           }
         },
@@ -1080,8 +1080,8 @@
             ]
           },
           "limit": {
-            "context": 204800,
-            "input": 188416,
+            "context": 262144,
+            "input": 245760,
             "output": 16384
           }
         },
@@ -1323,5 +1323,12 @@
   },
   "experimental": {
     "subagent_depth": 2
+  },
+  "compaction": {
+    "auto": true,
+    "keep": {
+      "tokens": 15000
+    },
+    "buffer": "15%"
   }
 }
