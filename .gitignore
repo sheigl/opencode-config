@@ -19,6 +19,8 @@
 !skills/story-implementation/SKILL.md
 !skills/feature-quality-review/
 !skills/feature-quality-review/SKILL.md
+!skills/domain-driven-design/
+!skills/domain-driven-design/**
 
 # Keep the orchestrator's project bootstrap template
 !templates/
