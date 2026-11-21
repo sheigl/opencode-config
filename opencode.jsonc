@@ -414,39 +414,6 @@
             ]
           }
         },
-        "desktop2.cyber-tiel-coder-35b-a3b:UD-Q6_K_XL": {
-          "name": "desktop2.cyber-tiel-coder-35b-a3b:UD-Q6_K_XL",
-          "tool_call": true,
-          "reasoning": true,
-          "modalities": {
-            "input": [
-              "text",
-              "image"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "limit": {
-            "context": 98304,
-            "input": 81920,
-            "output": 16384
-          },
-          "options": {
-            "reasoningEffort": "medium"
-          },
-          "variants": {
-            "low": {
-              "reasoningEffort": "low"
-            },
-            "medium": {
-              "reasoningEffort": "medium"
-            },
-            "xhigh": {
-              "reasoningEffort": "xhigh"
-            }
-          }
-        },
         "desktop2.fara1.5": {
           "name": "desktop2.fara1.5",
           "tool_call": true,
@@ -708,8 +675,8 @@
             ]
           }
         },
-        "desktop2.tiel-coder-35b-a3b:UD-Q6_K_XL": {
-          "name": "desktop2.tiel-coder-35b-a3b:UD-Q6_K_XL",
+        "desktop2.swift-1.5-qwen3.8-27b:Q4_K_XL": {
+          "name": "desktop2.swift-1.5-qwen3.8-27b:Q4_K_XL",
           "tool_call": true,
           "reasoning": true,
           "modalities": {
