@@ -1,7 +1,9 @@
 ---
 description: "Read-only vision inspector: describes screenshots, images, diagrams, and rendered UI for text-only agents."
 mode: subagent
-model: litellm/vision
+# Pinned to desktop2's live vision model: the litellm/vision group's members
+# currently fail to load and the group surfaces as not supporting image input.
+model: desktop2.lfm2.5-vl-3b
 permissions:
   - action: "*"
     resource: "*"
