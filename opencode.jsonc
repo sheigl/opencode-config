@@ -271,8 +271,8 @@
             ]
           },
           "limit": {
-            "context": 262144,
-            "input": 245760,
+            "context": 200000,
+            "input": 183616,
             "output": 16384
           }
         },
@@ -1138,8 +1138,8 @@
             ]
           },
           "limit": {
-            "context": 262144,
-            "input": 245760,
+            "context": 200000,
+            "input": 183616,
             "output": 16384
           }
         },
@@ -1327,6 +1327,11 @@
             "output": [
               "text"
             ]
+          },
+          "limit": {
+            "context": 32768,
+            "input": 16384,
+            "output": 16384
           }
         }
       }
