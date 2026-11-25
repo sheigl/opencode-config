@@ -22,9 +22,9 @@
             ]
           },
           "limit": {
-            "context": 131072,
-            "input": 114688,
-            "output": 16384
+            "context": 4096,
+            "input": 1,
+            "output": 4096
           }
         },
         "desktop.comfyui_auto": {
@@ -238,24 +238,6 @@
             "xhigh": {
               "reasoningEffort": "xhigh"
             }
-          }
-        },
-        "desktop.qwen3.8-flash-next:Q4_K_XL-xemaya": {
-          "name": "desktop.qwen3.8-flash-next:Q4_K_XL-xemaya",
-          "tool_call": true,
-          "modalities": {
-            "input": [
-              "text",
-              "image"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "limit": {
-            "context": 262144,
-            "input": 245760,
-            "output": 16384
           }
         },
         "desktop.qwen3.8-flash-next:Q5_K_L-swift": {
@@ -503,8 +485,8 @@
             ]
           },
           "limit": {
-            "context": 131072,
-            "input": 114688,
+            "context": 32768,
+            "input": 16384,
             "output": 16384
           }
         },
@@ -537,70 +519,21 @@
             "output": 16384
           }
         },
-        "desktop2.inkling-2-mini:Q4_K_M": {
-          "name": "desktop2.inkling-2-mini:Q4_K_M",
+        "desktop2.inkling-2-mini-ud-q4_k_xl": {
+          "name": "desktop2.inkling-2-mini-ud-q4_k_xl",
           "tool_call": true,
-          "reasoning": true,
           "modalities": {
             "input": [
-              "text",
-              "image"
+              "text"
             ],
             "output": [
               "text"
             ]
           },
           "limit": {
-            "context": 32768,
-            "input": 16384,
+            "context": 98304,
+            "input": 81920,
             "output": 16384
-          },
-          "options": {
-            "reasoningEffort": "medium"
-          },
-          "variants": {
-            "low": {
-              "reasoningEffort": "low"
-            },
-            "medium": {
-              "reasoningEffort": "medium"
-            },
-            "xhigh": {
-              "reasoningEffort": "xhigh"
-            }
-          }
-        },
-        "desktop2.inkling-2-mini:UD-Q8_K_XL": {
-          "name": "desktop2.inkling-2-mini:UD-Q8_K_XL",
-          "tool_call": true,
-          "reasoning": true,
-          "modalities": {
-            "input": [
-              "text",
-              "image"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "limit": {
-            "context": 32768,
-            "input": 16384,
-            "output": 16384
-          },
-          "options": {
-            "reasoningEffort": "medium"
-          },
-          "variants": {
-            "low": {
-              "reasoningEffort": "low"
-            },
-            "medium": {
-              "reasoningEffort": "medium"
-            },
-            "xhigh": {
-              "reasoningEffort": "xhigh"
-            }
           }
         },
         "desktop2.k2-horizon-7b:q4": {
@@ -683,9 +616,9 @@
             ]
           },
           "limit": {
-            "context": 131072,
-            "input": 114688,
-            "output": 16384
+            "context": 8192,
+            "input": 4096,
+            "output": 4096
           },
           "options": {
             "reasoningEffort": "medium"
@@ -740,9 +673,9 @@
             ]
           },
           "limit": {
-            "context": 131072,
-            "input": 114688,
-            "output": 16384
+            "context": 4096,
+            "input": 2048,
+            "output": 2048
           },
           "options": {
             "reasoningEffort": "medium"
@@ -1120,9 +1053,9 @@
             ]
           },
           "limit": {
-            "context": 131072,
-            "input": 114688,
-            "output": 16384
+            "context": 4096,
+            "input": 1,
+            "output": 4096
           }
         },
         "qwen": {
