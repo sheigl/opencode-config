@@ -10,7 +10,7 @@
         "config": "~/.config/llama-swap/config.yaml"
       },
       "server.tailc63ae8.ts.net": {
-        "ssh": "server.local",
+        "ssh": "server.tailc63ae8.ts.net",
         "config": "~/.config/llama-swap/config.yaml"
       }
     }
@@ -26,5 +26,12 @@
     },
     "buffer": "8%"
   },
-  "overrides": {}
+  "overrides": {
+    "desktop2.qwen3.8-27b:UD-Q4_K_XL": {
+      "output": 4096
+    },
+    "desktop2.swift-1.5-qwen3.8-27b:Q4_K_XL": {
+      "output": 2048
+    }
+  }
 }
