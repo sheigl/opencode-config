@@ -23,8 +23,8 @@
           },
           "limit": {
             "context": 4096,
-            "input": 1,
-            "output": 4096
+            "input": 2048,
+            "output": 2048
           }
         },
         "desktop.comfyui_auto": {
@@ -1054,8 +1054,8 @@
           },
           "limit": {
             "context": 4096,
-            "input": 1,
-            "output": 4096
+            "input": 2048,
+            "output": 2048
           }
         },
         "qwen": {
