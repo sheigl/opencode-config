@@ -14,17 +14,16 @@
           "tool_call": true,
           "modalities": {
             "input": [
-              "text",
-              "image"
+              "text"
             ],
             "output": [
               "text"
             ]
           },
           "limit": {
-            "context": 4096,
-            "input": 2048,
-            "output": 2048
+            "context": 98304,
+            "input": 81920,
+            "output": 16384
           }
         },
         "desktop.comfyui_auto": {
@@ -536,42 +535,6 @@
             "output": 16384
           }
         },
-        "desktop2.k2-horizon-7b:q4": {
-          "name": "desktop2.k2-horizon-7b:q4",
-          "tool_call": true,
-          "reasoning": true,
-          "modalities": {
-            "input": [
-              "text"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "limit": {
-            "context": 65536,
-            "input": 49152,
-            "output": 16384
-          }
-        },
-        "desktop2.lfm-2.5-24b:UD-Q6_K_XL": {
-          "name": "desktop2.lfm-2.5-24b:UD-Q6_K_XL",
-          "tool_call": true,
-          "reasoning": true,
-          "modalities": {
-            "input": [
-              "text"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "limit": {
-            "context": 131072,
-            "input": 114688,
-            "output": 16384
-          }
-        },
         "desktop2.lfm2.5-vl-3b": {
           "name": "desktop2.lfm2.5-vl-3b",
           "tool_call": true,
@@ -616,9 +579,9 @@
             ]
           },
           "limit": {
-            "context": 8192,
-            "input": 4096,
-            "output": 4096
+            "context": 65536,
+            "input": 49152,
+            "output": 16384
           },
           "options": {
             "reasoningEffort": "medium"
@@ -673,9 +636,9 @@
             ]
           },
           "limit": {
-            "context": 4096,
-            "input": 2048,
-            "output": 2048
+            "context": 65536,
+            "input": 49152,
+            "output": 16384
           },
           "options": {
             "reasoningEffort": "medium"
@@ -1045,17 +1008,16 @@
           "tool_call": true,
           "modalities": {
             "input": [
-              "text",
-              "image"
+              "text"
             ],
             "output": [
               "text"
             ]
           },
           "limit": {
-            "context": 4096,
-            "input": 2048,
-            "output": 2048
+            "context": 98304,
+            "input": 81920,
+            "output": 16384
           }
         },
         "qwen": {
