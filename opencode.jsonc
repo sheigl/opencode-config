@@ -22,8 +22,8 @@
             ]
           },
           "limit": {
-            "context": 98304,
-            "input": 81920,
+            "context": 32768,
+            "input": 16384,
             "output": 16384
           }
         },
@@ -519,8 +519,8 @@
             "output": 16384
           }
         },
-        "desktop2.inkling-2-mini-ud-q4_k_xl": {
-          "name": "desktop2.inkling-2-mini-ud-q4_k_xl",
+        "desktop2.inkling-2-mini-prime-q4_k_m": {
+          "name": "desktop2.inkling-2-mini-prime-q4_k_m",
           "tool_call": true,
           "modalities": {
             "input": [
@@ -1018,8 +1018,8 @@
             ]
           },
           "limit": {
-            "context": 98304,
-            "input": 81920,
+            "context": 32768,
+            "input": 16384,
             "output": 16384
           }
         },
