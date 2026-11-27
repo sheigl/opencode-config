@@ -14,7 +14,8 @@
           "tool_call": true,
           "modalities": {
             "input": [
-              "text"
+              "text",
+              "image"
             ],
             "output": [
               "text"
@@ -523,7 +524,8 @@
           "tool_call": true,
           "modalities": {
             "input": [
-              "text"
+              "text",
+              "image"
             ],
             "output": [
               "text"
@@ -1008,7 +1010,8 @@
           "tool_call": true,
           "modalities": {
             "input": [
-              "text"
+              "text",
+              "image"
             ],
             "output": [
               "text"
@@ -1055,43 +1058,8 @@
             "output": 16384
           }
         },
-        "server.bonsai-27b-q2": {
-          "name": "server.bonsai-27b-q2",
-          "tool_call": true,
-          "modalities": {
-            "input": [
-              "text"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "limit": {
-            "context": 32768,
-            "input": 16384,
-            "output": 16384
-          }
-        },
         "server.d1-3b": {
           "name": "server.d1-3b",
-          "tool_call": true,
-          "modalities": {
-            "input": [
-              "text",
-              "image"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "limit": {
-            "context": 32768,
-            "input": 16384,
-            "output": 16384
-          }
-        },
-        "server.gemma-4-E2B": {
-          "name": "server.gemma-4-E2B",
           "tool_call": true,
           "modalities": {
             "input": [
